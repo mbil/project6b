@@ -27,7 +27,7 @@ Facebook API
 Miguel gaat zich bezighouden met de inlog van Facebook. Myrthe zorgt dat er een overzichtelijke interface komt. Het boodschappengedeelte zal in elkaar worden gezet door Myrthe. Miguel ontfermt zich over de kalender en de alerts. Het berichtencentrum is een mogelijke extra feature.
 
 ### UI Sketches
-![GitHub Logo](https://github.com/mbil/project6b/blob/master/UIsketch/UIsketch.jpg?raw=true)
+![GitHub Logo](https://github.com/mbil/project6b/blob/master/doc/UIsketch.jpg?raw=true)
 
 
 ### Style Guide:
