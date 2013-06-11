@@ -37,6 +37,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+// zorg dat de method wordt toegepast
 - (IBAction)choiceMade:(UISegmentedControl *)sender {
     [self.delegate userDidMakeChoice:sender.selectedSegmentIndex];
     [self dismissViewControllerAnimated:YES completion:nil];

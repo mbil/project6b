@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+// protocol voor de delegate
 @protocol AlarmsControllerDelegate <NSObject>
 - (void)userDidMakeChoice:(NSUInteger)choice;
 @end
