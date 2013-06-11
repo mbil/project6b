@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B12EBBD117679FB100A68C17 /* Calendar.m in Sources */ = {isa = PBXBuildFile; fileRef = B12EBBD017679FB100A68C17 /* Calendar.m */; };
+		B12EBBD417679FCE00A68C17 /* Roommates.m in Sources */ = {isa = PBXBuildFile; fileRef = B12EBBD317679FCE00A68C17 /* Roommates.m */; };
+		B12EBBD717679FE800A68C17 /* Finances.m in Sources */ = {isa = PBXBuildFile; fileRef = B12EBBD617679FE800A68C17 /* Finances.m */; };
+		B12EBBDA17679FF300A68C17 /* Alerts.m in Sources */ = {isa = PBXBuildFile; fileRef = B12EBBD917679FF300A68C17 /* Alerts.m */; };
+		B12EBBDD17679FFC00A68C17 /* Alarms.m in Sources */ = {isa = PBXBuildFile; fileRef = B12EBBDC17679FFC00A68C17 /* Alarms.m */; };
+		B12EBBE01767A00B00A68C17 /* Shoppinglist.m in Sources */ = {isa = PBXBuildFile; fileRef = B12EBBDF1767A00B00A68C17 /* Shoppinglist.m */; };
 		B19A6DE117671DF00026D06C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19A6DE017671DF00026D06C /* UIKit.framework */; };
 		B19A6DE317671DF00026D06C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19A6DE217671DF00026D06C /* Foundation.framework */; };
 		B19A6DE517671DF00026D06C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19A6DE417671DF00026D06C /* CoreGraphics.framework */; };
@@ -41,6 +47,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B12EBBCF17679FB100A68C17 /* Calendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calendar.h; sourceTree = "<group>"; };
+		B12EBBD017679FB100A68C17 /* Calendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calendar.m; sourceTree = "<group>"; };
+		B12EBBD217679FCE00A68C17 /* Roommates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Roommates.h; sourceTree = "<group>"; };
+		B12EBBD317679FCE00A68C17 /* Roommates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Roommates.m; sourceTree = "<group>"; };
+		B12EBBD517679FE800A68C17 /* Finances.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Finances.h; sourceTree = "<group>"; };
+		B12EBBD617679FE800A68C17 /* Finances.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Finances.m; sourceTree = "<group>"; };
+		B12EBBD817679FF300A68C17 /* Alerts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alerts.h; sourceTree = "<group>"; };
+		B12EBBD917679FF300A68C17 /* Alerts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alerts.m; sourceTree = "<group>"; };
+		B12EBBDB17679FFC00A68C17 /* Alarms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alarms.h; sourceTree = "<group>"; };
+		B12EBBDC17679FFC00A68C17 /* Alarms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alarms.m; sourceTree = "<group>"; };
+		B12EBBDE1767A00B00A68C17 /* Shoppinglist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shoppinglist.h; sourceTree = "<group>"; };
+		B12EBBDF1767A00B00A68C17 /* Shoppinglist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shoppinglist.m; sourceTree = "<group>"; };
 		B19A6DDD17671DF00026D06C /* Huisgenoten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Huisgenoten.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B19A6DE017671DF00026D06C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B19A6DE217671DF00026D06C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -99,6 +117,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B12EBBE11767A03200A68C17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B19A6DF817671DF00026D06C /* MainStoryboard.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B12EBBE21767A03F00A68C17 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B1BF4852176750DC0046BD19 /* financesViewController.h */,
+				B1BF4853176750DC0046BD19 /* financesViewController.m */,
+				B1BF484F176750800046BD19 /* roommatesViewController.h */,
+				B1BF4850176750800046BD19 /* roommatesViewController.m */,
+				B1BF484C176750300046BD19 /* shoppinglistViewController.h */,
+				B1BF484D176750300046BD19 /* shoppinglistViewController.m */,
+				B1BF484917674EC20046BD19 /* calendarViewController.h */,
+				B1BF484A17674EC20046BD19 /* calendarViewController.m */,
+				B1BF484617674B140046BD19 /* alarmsViewController.h */,
+				B1BF484717674B140046BD19 /* alarmsViewController.m */,
+				B19A6DFB17671DF00026D06C /* ViewController.h */,
+				B19A6DFC17671DF00026D06C /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B12EBBE41767A05C00A68C17 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B12EBBD217679FCE00A68C17 /* Roommates.h */,
+				B12EBBD317679FCE00A68C17 /* Roommates.m */,
+				B12EBBD817679FF300A68C17 /* Alerts.h */,
+				B12EBBD917679FF300A68C17 /* Alerts.m */,
+				B12EBBDB17679FFC00A68C17 /* Alarms.h */,
+				B12EBBDC17679FFC00A68C17 /* Alarms.m */,
+				B12EBBCF17679FB100A68C17 /* Calendar.h */,
+				B12EBBD017679FB100A68C17 /* Calendar.m */,
+				B12EBBDE1767A00B00A68C17 /* Shoppinglist.h */,
+				B12EBBDF1767A00B00A68C17 /* Shoppinglist.m */,
+				B12EBBD517679FE800A68C17 /* Finances.h */,
+				B12EBBD617679FE800A68C17 /* Finances.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		B19A6DD417671DF00026D06C = {
 			isa = PBXGroup;
 			children = (
@@ -134,19 +198,9 @@
 			children = (
 				B19A6DEF17671DF00026D06C /* AppDelegate.h */,
 				B19A6DF017671DF00026D06C /* AppDelegate.m */,
-				B19A6DF817671DF00026D06C /* MainStoryboard.storyboard */,
-				B1BF4852176750DC0046BD19 /* financesViewController.h */,
-				B1BF4853176750DC0046BD19 /* financesViewController.m */,
-				B1BF484F176750800046BD19 /* roommatesViewController.h */,
-				B1BF4850176750800046BD19 /* roommatesViewController.m */,
-				B1BF484C176750300046BD19 /* shoppinglistViewController.h */,
-				B1BF484D176750300046BD19 /* shoppinglistViewController.m */,
-				B1BF484917674EC20046BD19 /* calendarViewController.h */,
-				B1BF484A17674EC20046BD19 /* calendarViewController.m */,
-				B1BF484617674B140046BD19 /* alarmsViewController.h */,
-				B1BF484717674B140046BD19 /* alarmsViewController.m */,
-				B19A6DFB17671DF00026D06C /* ViewController.h */,
-				B19A6DFC17671DF00026D06C /* ViewController.m */,
+				B12EBBE41767A05C00A68C17 /* Models */,
+				B12EBBE11767A03200A68C17 /* View */,
+				B12EBBE21767A03F00A68C17 /* Controllers */,
 				B19A6DE717671DF00026D06C /* Supporting Files */,
 			);
 			path = Huisgenoten;
@@ -302,6 +356,12 @@
 				B1BF484E176750300046BD19 /* shoppinglistViewController.m in Sources */,
 				B1BF4851176750800046BD19 /* roommatesViewController.m in Sources */,
 				B1BF4854176750DD0046BD19 /* financesViewController.m in Sources */,
+				B12EBBD117679FB100A68C17 /* Calendar.m in Sources */,
+				B12EBBD417679FCE00A68C17 /* Roommates.m in Sources */,
+				B12EBBD717679FE800A68C17 /* Finances.m in Sources */,
+				B12EBBDA17679FF300A68C17 /* Alerts.m in Sources */,
+				B12EBBDD17679FFC00A68C17 /* Alarms.m in Sources */,
+				B12EBBE01767A00B00A68C17 /* Shoppinglist.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

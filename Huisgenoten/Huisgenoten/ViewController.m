@@ -14,6 +14,8 @@
 
 @implementation ViewController
 
+@synthesize outcome;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -24,6 +26,30 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"toAlarms"]) {
+        alarmsViewController *alarmsVC =
+        (alarmsViewController *) segue.destinationViewController;
+        [alarmsVC setDelegate:self];
+    }
+}
+
+- (void)userDidMakeChoice:(NSUInteger)choice
+{
+    switch (choice) {
+        case 0:
+            self.outcome.text = @"One chosen";
+            break;
+        case 1:
+            self.outcome.text = @"Two chosen";
+            break;
+            
+        default:
+            break;
+    }
 }
 
 @end

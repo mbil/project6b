@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol AlarmsControllerDelegate <NSObject>
+- (void)userDidMakeChoice:(NSUInteger)choice;
+@end
+
 @interface alarmsViewController : UIViewController
-- (IBAction)backAction:(id)sender;
+@property (nonatomic, assign) id <AlarmsControllerDelegate> delegate;
+-(IBAction)choiceMade:(UISegmentedControl *)sender;
 
 @end

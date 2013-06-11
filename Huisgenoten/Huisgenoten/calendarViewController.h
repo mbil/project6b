@@ -11,4 +11,6 @@
 @interface calendarViewController : UIViewController
 - (IBAction)backAction:(id)sender;
 
+@property (nonatomic, assign) id delegate;
+
 @end

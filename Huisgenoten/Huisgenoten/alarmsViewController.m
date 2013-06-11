@@ -14,6 +14,8 @@
 
 @implementation alarmsViewController
 
+@synthesize delegate;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -35,7 +37,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)backAction:(id)sender {
+- (IBAction)choiceMade:(UISegmentedControl *)sender {
+    [self.delegate userDidMakeChoice:sender.selectedSegmentIndex];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
 @end
