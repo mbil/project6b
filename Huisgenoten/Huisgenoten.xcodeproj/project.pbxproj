@@ -13,6 +13,8 @@
 		B12EBBDA17679FF300A68C17 /* Alerts.m in Sources */ = {isa = PBXBuildFile; fileRef = B12EBBD917679FF300A68C17 /* Alerts.m */; };
 		B12EBBDD17679FFC00A68C17 /* Alarms.m in Sources */ = {isa = PBXBuildFile; fileRef = B12EBBDC17679FFC00A68C17 /* Alarms.m */; };
 		B12EBBE01767A00B00A68C17 /* Shoppinglist.m in Sources */ = {isa = PBXBuildFile; fileRef = B12EBBDF1767A00B00A68C17 /* Shoppinglist.m */; };
+		B12EBBE71767B33500A68C17 /* facebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B12EBBE61767B33400A68C17 /* facebookViewController.m */; };
+		B12EBBEA1767B36000A68C17 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = B12EBBE91767B36000A68C17 /* Login.m */; };
 		B19A6DE117671DF00026D06C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19A6DE017671DF00026D06C /* UIKit.framework */; };
 		B19A6DE317671DF00026D06C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19A6DE217671DF00026D06C /* Foundation.framework */; };
 		B19A6DE517671DF00026D06C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19A6DE417671DF00026D06C /* CoreGraphics.framework */; };
@@ -59,6 +61,10 @@
 		B12EBBDC17679FFC00A68C17 /* Alarms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alarms.m; sourceTree = "<group>"; };
 		B12EBBDE1767A00B00A68C17 /* Shoppinglist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shoppinglist.h; sourceTree = "<group>"; };
 		B12EBBDF1767A00B00A68C17 /* Shoppinglist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shoppinglist.m; sourceTree = "<group>"; };
+		B12EBBE51767B33400A68C17 /* facebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = facebookViewController.h; sourceTree = "<group>"; };
+		B12EBBE61767B33400A68C17 /* facebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = facebookViewController.m; sourceTree = "<group>"; };
+		B12EBBE81767B36000A68C17 /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
+		B12EBBE91767B36000A68C17 /* Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
 		B19A6DDD17671DF00026D06C /* Huisgenoten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Huisgenoten.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B19A6DE017671DF00026D06C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B19A6DE217671DF00026D06C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -140,6 +146,8 @@
 				B1BF484717674B140046BD19 /* alarmsViewController.m */,
 				B19A6DFB17671DF00026D06C /* ViewController.h */,
 				B19A6DFC17671DF00026D06C /* ViewController.m */,
+				B12EBBE51767B33400A68C17 /* facebookViewController.h */,
+				B12EBBE61767B33400A68C17 /* facebookViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -159,6 +167,8 @@
 				B12EBBDF1767A00B00A68C17 /* Shoppinglist.m */,
 				B12EBBD517679FE800A68C17 /* Finances.h */,
 				B12EBBD617679FE800A68C17 /* Finances.m */,
+				B12EBBE81767B36000A68C17 /* Login.h */,
+				B12EBBE91767B36000A68C17 /* Login.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -362,6 +372,8 @@
 				B12EBBDA17679FF300A68C17 /* Alerts.m in Sources */,
 				B12EBBDD17679FFC00A68C17 /* Alarms.m in Sources */,
 				B12EBBE01767A00B00A68C17 /* Shoppinglist.m in Sources */,
+				B12EBBE71767B33500A68C17 /* facebookViewController.m in Sources */,
+				B12EBBEA1767B36000A68C17 /* Login.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
