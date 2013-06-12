@@ -2,17 +2,17 @@
 //  alarmsViewController.m
 //  Huisgenoten
 //
-//  Created by Myrthe Bil on 6/11/13.
+//  Created by Myrthe Bil & Miguel Pruijssers on 6/11/13.
 //
 //
 
-#import "alarmsViewController.h"
+#import "alertsViewController.h"
 
-@interface alarmsViewController ()
+@interface alertsViewController ()
 
 @end
 
-@implementation alarmsViewController
+@implementation alertsViewController
 
 @synthesize delegate;
 

@@ -2,7 +2,7 @@
 //  ViewController.m
 //  Huisgenoten
 //
-//  Created by Myrthe Bil on 6/11/13.
+//  Created by Myrthe Bil & Miguel Pruijssers on 6/11/13.
 //
 //
 
@@ -31,10 +31,10 @@
 // dit is een test van een delegate, zo werkt het dus Deel#1
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"toAlarms"]) {
-        alarmsViewController *alarmsVC =
-        (alarmsViewController *) segue.destinationViewController;
-        [alarmsVC setDelegate:self];
+    if ([segue.identifier isEqualToString:@"toAlerts"]) {
+        alertsViewController *alertsVC =
+        (alertsViewController *) segue.destinationViewController;
+        [alertsVC setDelegate:self];
     }
 }
 
