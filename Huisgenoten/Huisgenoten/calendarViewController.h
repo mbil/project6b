@@ -6,9 +6,11 @@
 //
 //
 
-#import <UIKit/UIKit.h>
+#import "CalendarKit.h"
+#import "CKCalendarViewController.h"
 
-@interface calendarViewController : UIViewController
+@interface calendarViewController : CKCalendarViewController
+
 - (IBAction)backAction:(id)sender;
 
 @property (nonatomic, assign) id delegate;
