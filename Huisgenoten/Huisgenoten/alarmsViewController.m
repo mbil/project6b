@@ -1,18 +1,20 @@
 //
-//  alertsViewController.m
+//  alarmsViewController.m
 //  Huisgenoten
 //
 //  Created by Myrthe Bil & Miguel Pruijssers on 6/11/13.
 //
 //
 
-#import "alertsViewController.h"
+#import "alarmsViewController.h"
 
-@interface alertsViewController ()
+@interface alarmsViewController ()
 
 @end
 
-@implementation alertsViewController
+@implementation alarmsViewController
+
+@synthesize delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,6 +35,12 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+// zorg dat de method wordt toegepast
+- (IBAction)choiceMade:(UISegmentedControl *)sender {
+    [self.delegate userDidMakeChoice:sender.selectedSegmentIndex];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

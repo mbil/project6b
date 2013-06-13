@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "alertsViewController.h"
+#import "alarmsViewController.h"
 
 @interface ViewController : UIViewController
-<AlertsControllerDelegate>
+<AlarmsControllerDelegate>
 
 @property (nonatomic, weak) IBOutlet UILabel *outcome;
 

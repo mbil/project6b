@@ -32,8 +32,8 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"toAlerts"]) {
-        alertsViewController *alertsVC =
-        (alertsViewController *) segue.destinationViewController;
+        alarmsViewController *alertsVC =
+        (alarmsViewController *) segue.destinationViewController;
         [alertsVC setDelegate:self];
     }
 }
