@@ -2,19 +2,12 @@
 //  alarmsViewController.h
 //  Huisgenoten
 //
-//  Created by Myrthe Bil & Miguel Pruijssers on 6/11/13.
+//  Created by Miguel Pruijssers on 14-06-13.
 //
 //
 
 #import <UIKit/UIKit.h>
 
-// protocol voor de delegate
-@protocol AlarmsControllerDelegate <NSObject>
-- (void)userDidMakeChoice:(NSUInteger)choice;
-@end
-
-@interface alarmsViewController : UIViewController
-@property (nonatomic, assign) id <AlarmsControllerDelegate> delegate;
--(IBAction)choiceMade:(UISegmentedControl *)sender;
+@interface alarmsViewController : UITableViewController
 
 @end

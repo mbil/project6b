@@ -28,16 +28,15 @@
     // Dispose of any resources that can be recreated.
 }
 
-// dit is een test van een delegate, zo werkt het dus Deel#1
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([segue.identifier isEqualToString:@"toAlerts"]) {
-        alarmsViewController *alertsVC =
-        (alarmsViewController *) segue.destinationViewController;
-        [alertsVC setDelegate:self];
-    }
-}
-
+//// dit is een test van een delegate, zo werkt het dus Deel#1
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+//{
+//    if ([segue.identifier isEqualToString:@"toAlerts"]) {
+//        alarmsViewController *alertsVC =
+//        (alarmsViewController *) segue.destinationViewController;
+//        [alertsVC setDelegate:self];
+//    }
+//}
 
 // test delegate Deel#2
 - (void)userDidMakeChoice:(NSUInteger)choice
