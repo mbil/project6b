@@ -81,7 +81,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="reb-FL-DYs" kind="modal" id="iCa-Tw-28N"/>
+                                    <segue destination="XMz-jT-A5r" kind="modal" id="iCa-Tw-28N"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="35d-Ll-UdF">
@@ -169,12 +169,12 @@
             </objects>
             <point key="canvasLocation" x="-787" y="-521"/>
         </scene>
-        <!--Alarms View Controller-->
+        <!--Alarms View Controller - Alarms-->
         <scene sceneID="Yre-xe-L7S">
             <objects>
                 <tableViewController id="reb-FL-DYs" customClass="alarmsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ndV-3N-I5D">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -202,10 +202,77 @@
                             <outlet property="delegate" destination="reb-FL-DYs" id="8v4-ai-F0v"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Alarms" id="8bP-zq-ZyX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="gYG-Ko-VEn">
+                            <connections>
+                                <segue destination="tR3-mz-XaL" kind="modal" identifier="AddAlarm" id="g2T-Gb-nI6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nuK-Rn-glQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-338" y="-1562"/>
+            <point key="canvasLocation" x="158" y="-1562"/>
+        </scene>
+        <!--Add Alarm View Controller - Voeg alarm toe-->
+        <scene sceneID="oyi-Kr-nrk">
+            <objects>
+                <tableViewController id="FDM-sh-EbX" customClass="AddAlarmViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="3P7-OE-9nX">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="5sC-sZ-ypU">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="mtD-E5-ovV">
+                                        <rect key="frame" x="0.0" y="10" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Naam van alarm" adjustsFontSizeToFit="NO" minimumFontSize="17" id="Jl0-BE-Qfs">
+                                                    <rect key="frame" x="8" y="7" width="284" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                                    <connections>
+                                                        <action selector="done" destination="FDM-sh-EbX" eventType="editingDidEndOnExit" id="9bB-p2-3Yh"/>
+                                                        <outlet property="delegate" destination="FDM-sh-EbX" id="qwx-pO-fdv"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="FDM-sh-EbX" id="RzX-EA-hXE"/>
+                            <outlet property="delegate" destination="FDM-sh-EbX" id="kTD-YC-v9A"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Voeg alarm toe" id="mZj-QX-5f5">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Cm8-dT-BNI">
+                            <connections>
+                                <action selector="cancel" destination="FDM-sh-EbX" id="ZoI-Jr-Nft"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="done" id="GVg-WE-F9C">
+                            <connections>
+                                <action selector="done" destination="FDM-sh-EbX" id="Q6Y-fg-m17"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textField" destination="Jl0-BE-Qfs" id="M0v-wC-sID"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gLA-rQ-xKx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1120" y="-1562"/>
         </scene>
         <!--Shoppinglist View Controller-->
         <scene sceneID="fuW-fV-Uc5">
@@ -315,7 +382,84 @@
             </objects>
             <point key="canvasLocation" x="75" y="-161"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pZC-ob-fTI">
+            <objects>
+                <navigationController id="XMz-jT-A5r" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wkZ-jI-C2J">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="reb-FL-DYs" kind="relationship" relationship="rootViewController" id="3nv-Dx-YMz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZSr-gS-GSF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-338" y="-1562"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5p9-kP-0WG">
+            <objects>
+                <navigationController id="tR3-mz-XaL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LgJ-ul-VQu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FDM-sh-EbX" kind="relationship" relationship="rootViewController" id="VmG-HE-Ufv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gPG-zO-vYV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="638" y="-1562"/>
+        </scene>
     </scenes>
+    <classes>
+        <class className="CKCalendarViewController" superclassName="UINavigationController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CKCalendarViewController.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="outcome" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="alarmsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/alarmsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="addAlarm"/>
+            </relationships>
+        </class>
+        <class className="calendarViewController" superclassName="CKCalendarViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/calendarViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backAction:"/>
+            </relationships>
+        </class>
+        <class className="financesViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/financesViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backAction:"/>
+            </relationships>
+        </class>
+        <class className="roommatesViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/roommatesViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backAction:"/>
+            </relationships>
+        </class>
+        <class className="shoppinglistViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/shoppinglistViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backAction:"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

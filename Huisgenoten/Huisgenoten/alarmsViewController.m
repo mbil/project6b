@@ -7,23 +7,14 @@
 //
 
 #import "alarmsViewController.h"
+#import "AlarmItem.h"
 
 @interface alarmsViewController ()
 
 @end
 
 @implementation alarmsViewController{
-    NSString *row0text;
-    NSString *row1text;
-    NSString *row2text;
-    NSString *row3text;
-    NSString *row4text;
-    
-    BOOL row0checked;
-    BOOL row1checked;
-    BOOL row2checked;
-    BOOL row3checked;
-    BOOL row4checked;
+    NSMutableArray *alarms;
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -39,11 +30,34 @@
 {
     [super viewDidLoad];
 
-    row0text = @"Groene Container";
-    row1text = @"Afwassen";
-    row2text = @"iOS Leren";
-    row3text = @"Huur betalen";
-    row4text = @"Gezamenlijk eten";
+    alarms = [[NSMutableArray alloc] initWithCapacity:20];
+    
+    AlarmItem *item;
+    
+    item = [[AlarmItem alloc] init];
+    item.text = @"Afval";
+    item.checked = NO;
+    [alarms addObject:item];
+    
+    item = [[AlarmItem alloc] init];
+    item.text = @"Huur betalen";
+    item.checked = YES;
+    [alarms addObject:item];
+    
+    item = [[AlarmItem alloc] init];
+    item.text = @"iOS leren";
+    item.checked = YES;
+    [alarms addObject:item];
+    
+    item = [[AlarmItem alloc] init];
+    item.text = @"Boodschappen doen";
+    item.checked = NO;
+    [alarms addObject:item];
+    
+    item = [[AlarmItem alloc] init];
+    item.text = @"Samen eten";
+    item.checked = YES;
+    [alarms addObject:item];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -69,30 +83,32 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 5;
+    return [alarms count];
+}
+
+- (void)configureCheckmarkForCell:(UITableViewCell *)cell withAlarmItem:(AlarmItem *)item
+{
+    if (item.checked) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    } else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+}
+
+- (void)configureTextForCell:(UITableViewCell *)cell withAlarmItem:(AlarmItem *)item
+{
+    UILabel *label = (UILabel *)[cell viewWithTag:1000];
+    label.text = item.text;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"alarmItem"];
     
-    UILabel *label = (UILabel *)[cell viewWithTag:1000];
-    
-    if (indexPath.row == 0) {
-        label.text = row0text;
-    }
-    else if (indexPath.row == 1) {
-        label.text = row1text;
-    }
-    else if (indexPath.row == 2) {
-        label.text = row2text;
-    }
-    else if (indexPath.row == 3) {
-        label.text = row3text;
-    }
-    else if (indexPath.row == 4) {
-        label.text = row4text;
-    }
+    AlarmItem *item = [alarms objectAtIndex:indexPath.row];
+        
+    [self configureTextForCell:cell withAlarmItem:item];
+    [self configureCheckmarkForCell:cell withAlarmItem:item];
     
     return cell;
 }
@@ -141,14 +157,54 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    if (cell.accessoryType == UITableViewCellAccessoryNone) {
-        cell.accessoryType = UITableViewCellAccessoryCheckmark;
-    }
-    else {
-        cell.accessoryType = UITableViewCellAccessoryNone;
-    }
+    
+    AlarmItem *item = [alarms objectAtIndex:indexPath.row];
+    [item toggleChecked];
+    
+    [self configureCheckmarkForCell:cell withAlarmItem:item];
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (IBAction)addAlarm
+{
+    int newRowIndex = [alarms count];
+    
+    AlarmItem *alarm = [[AlarmItem alloc] init];
+    alarm.text = @"New row";
+    alarm.checked = NO;
+    [alarms addObject:alarm];
+    
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:newRowIndex inSection:0];
+    NSArray *indexPaths = [NSArray arrayWithObject:indexPath];
+    [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [alarms removeObjectAtIndex:indexPath.row];
+    
+    NSArray *indexPaths = [NSArray arrayWithObject:indexPath];
+    [tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
+}
+
+- (void)addAlarmViewControllerDidCancel:(AddAlarmViewController *)controller
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)addAlarmViewController:(AddAlarmViewController *)controller didFinishAddingItem:(AlarmItem *)item
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"AddAlarm"]) {
+        UINavigationController *navigationController = segue.destinationViewController;
+        AddAlarmViewController *controller = (AddAlarmViewController *)navigationController.topViewController;
+        controller.delegate = self;
+    }
 }
 
 @end
