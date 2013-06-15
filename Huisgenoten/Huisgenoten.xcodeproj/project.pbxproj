@@ -34,8 +34,8 @@
 		49EB9884176B5DC0009B2627 /* alarmsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB9882176B5DC0009B2627 /* alarmsViewController.m */; };
 		49EB9887176B9474009B2627 /* AlarmItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB9886176B9474009B2627 /* AlarmItem.m */; };
 		49EB9888176B9474009B2627 /* AlarmItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB9886176B9474009B2627 /* AlarmItem.m */; };
-		49EB988B176C7140009B2627 /* AddAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB988A176C7140009B2627 /* AddAlarmViewController.m */; };
-		49EB988C176C7140009B2627 /* AddAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB988A176C7140009B2627 /* AddAlarmViewController.m */; };
+		49EB988B176C7140009B2627 /* AlarmDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB988A176C7140009B2627 /* AlarmDetailViewController.m */; };
+		49EB988C176C7140009B2627 /* AlarmDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB988A176C7140009B2627 /* AlarmDetailViewController.m */; };
 		B12EBBD117679FB100A68C17 /* Calendar.m in Sources */ = {isa = PBXBuildFile; fileRef = B12EBBD017679FB100A68C17 /* Calendar.m */; };
 		B12EBBD417679FCE00A68C17 /* Roommates.m in Sources */ = {isa = PBXBuildFile; fileRef = B12EBBD317679FCE00A68C17 /* Roommates.m */; };
 		B12EBBD717679FE800A68C17 /* Finances.m in Sources */ = {isa = PBXBuildFile; fileRef = B12EBBD617679FE800A68C17 /* Finances.m */; };
@@ -132,8 +132,8 @@
 		49EB9882176B5DC0009B2627 /* alarmsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = alarmsViewController.m; sourceTree = "<group>"; };
 		49EB9885176B9474009B2627 /* AlarmItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmItem.h; sourceTree = "<group>"; };
 		49EB9886176B9474009B2627 /* AlarmItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmItem.m; sourceTree = "<group>"; };
-		49EB9889176C7140009B2627 /* AddAlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddAlarmViewController.h; sourceTree = "<group>"; };
-		49EB988A176C7140009B2627 /* AddAlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddAlarmViewController.m; sourceTree = "<group>"; };
+		49EB9889176C7140009B2627 /* AlarmDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmDetailViewController.h; sourceTree = "<group>"; };
+		49EB988A176C7140009B2627 /* AlarmDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmDetailViewController.m; sourceTree = "<group>"; };
 		B12EBBCF17679FB100A68C17 /* Calendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calendar.h; sourceTree = "<group>"; };
 		B12EBBD017679FB100A68C17 /* Calendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calendar.m; sourceTree = "<group>"; };
 		B12EBBD217679FCE00A68C17 /* Roommates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Roommates.h; sourceTree = "<group>"; };
@@ -345,8 +345,8 @@
 			children = (
 				49EB9881176B5DC0009B2627 /* alarmsViewController.h */,
 				49EB9882176B5DC0009B2627 /* alarmsViewController.m */,
-				49EB9889176C7140009B2627 /* AddAlarmViewController.h */,
-				49EB988A176C7140009B2627 /* AddAlarmViewController.m */,
+				49EB9889176C7140009B2627 /* AlarmDetailViewController.h */,
+				49EB988A176C7140009B2627 /* AlarmDetailViewController.m */,
 				B1BF4852176750DC0046BD19 /* financesViewController.h */,
 				B1BF4853176750DC0046BD19 /* financesViewController.m */,
 				B1BF484F176750800046BD19 /* roommatesViewController.h */,
@@ -613,7 +613,7 @@
 				49EB987A176A1CF6009B2627 /* CKCalendarViewControllerInternal.m in Sources */,
 				49EB9883176B5DC0009B2627 /* alarmsViewController.m in Sources */,
 				49EB9887176B9474009B2627 /* AlarmItem.m in Sources */,
-				49EB988B176C7140009B2627 /* AddAlarmViewController.m in Sources */,
+				49EB988B176C7140009B2627 /* AlarmDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,7 +624,7 @@
 				B19A6E1217671DF00026D06C /* HuisgenotenTests.m in Sources */,
 				49EB9884176B5DC0009B2627 /* alarmsViewController.m in Sources */,
 				49EB9888176B9474009B2627 /* AlarmItem.m in Sources */,
-				49EB988C176C7140009B2627 /* AddAlarmViewController.m in Sources */,
+				49EB988C176C7140009B2627 /* AlarmDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

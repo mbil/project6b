@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AlarmItem : NSObject
+@interface AlarmItem : NSObject <NSCoding>
 
 @property (nonatomic, copy) NSString *text;
 @property (nonatomic, assign) BOOL checked;

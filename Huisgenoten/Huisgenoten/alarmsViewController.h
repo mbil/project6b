@@ -7,10 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AddAlarmViewController.h"
+#import "AlarmDetailViewController.h"
 
-@interface alarmsViewController : UITableViewController <AddAlarmViewControllerDelegate>
-
-- (IBAction)addAlarm;
+@interface alarmsViewController : UITableViewController <AlarmDetailViewControllerDelegate>
 
 @end

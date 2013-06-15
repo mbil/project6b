@@ -10,14 +10,21 @@
 
 @implementation AlarmItem
 
-- (id)init
+- (id)initWithCoder:(NSCoder *)aDecoder
 {
-    self = [super init];
-    if (self) {
-        // Initialization
+    if ((self = [super init])) {
+        self.text = [aDecoder decodeObjectForKey:@"Text"];
+        self.checked = [aDecoder decodeBoolForKey:@"Checked"];
     }
     
     return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+
+    [aCoder encodeObject:self.text forKey:@"Text"];
+    [aCoder encodeBool:self.checked forKey:@"Checked"];
 }
 
 - (void)toggleChecked

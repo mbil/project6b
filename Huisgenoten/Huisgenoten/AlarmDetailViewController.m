@@ -1,19 +1,19 @@
 //
-//  AddAlarmViewController.m
+//  AlarmDetailViewController.m
 //  Huisgenoten
 //
 //  Created by Miguel Pruijssers on 15-06-13.
 //
 //
 
-#import "AddAlarmViewController.h"
+#import "AlarmDetailViewController.h"
 #import "AlarmItem.h"
 
-@interface AddAlarmViewController ()
+@interface AlarmDetailViewController ()
 
 @end
 
-@implementation AddAlarmViewController
+@implementation AlarmDetailViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -28,11 +28,11 @@
 {
     [super viewDidLoad];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    if (self.alarmToEdit != nil) {
+        self.title = @"Edit Alarm";
+        self.textField.text = self.alarmToEdit.text;
+        self.doneBarButton.enabled = YES;
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,16 +50,22 @@
 
 - (IBAction)cancel
 {
-    [self.delegate addAlarmViewControllerDidCancel:self];
+    [self.delegate alarmDetailViewControllerDidCancel:self];
 }
 
 - (IBAction)done
 {
-    AlarmItem *item = [[AlarmItem alloc] init];
-    item.text = self.textField.text;
-    item.checked = NO;
+    if (self.alarmToEdit == nil) {
+        AlarmItem *item = [[AlarmItem alloc] init];
+        item.text = self.textField.text;
+        item.checked = NO;
     
-    [self.delegate addAlarmViewController:self didFinishAddingItem:item];
+        [self.delegate alarmDetailViewController:self didFinishAddingItem:item];
+    }
+    else {
+        self.alarmToEdit.text = self.textField.text;
+        [self.delegate alarmDetailViewController:self didFinishEditingItem:self.alarmToEdit];
+    }
 }
 
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
