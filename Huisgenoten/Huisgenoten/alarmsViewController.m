@@ -8,14 +8,13 @@
 
 #import "alarmsViewController.h"
 #import "AlarmItem.h"
+#import "Alarm.h"
 
 @interface alarmsViewController ()
 
 @end
 
-@implementation alarmsViewController{
-    NSMutableArray *alarms;
-}
+@implementation alarmsViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -26,55 +25,10 @@
     return self;
 }
 
-- (NSString *)documentsDirectory
-{
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    return documentsDirectory;
-}
-
-- (NSString *)dataFilePath
-{
-    return [[self documentsDirectory] stringByAppendingPathComponent:@"Alarms.plist"];
-}
-
-- (void)saveAlarmItems
-{
-    NSMutableData *data = [[NSMutableData alloc] init];
-    NSKeyedArchiver *archiver = [[NSKeyedArchiver alloc] initForWritingWithMutableData:data];
-    [archiver encodeObject:alarms forKey:@"AlarmItems"];
-    [archiver finishEncoding];
-    [data writeToFile:[self dataFilePath] atomically:YES];
-}
-
-- (void)loadAlarmItems
-{
-    NSString *path = [self dataFilePath];
-    if ([[NSFileManager defaultManager] fileExistsAtPath:path])
-    {
-        NSData *data = [[NSData alloc] initWithContentsOfFile:path];
-        NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];
-        alarms = [unarchiver decodeObjectForKey:@"AlarmItems"];
-        [unarchiver finishDecoding];
-    }
-    else
-    {
-        alarms = [[NSMutableArray alloc] initWithCapacity:20];
-    }
-}
-
-- (id)initWithCoder:(NSCoder *)aDecoder
-{
-    if ((self = [super initWithCoder:aDecoder])) {
-        [self loadAlarmItems];
-    }
-    
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title  =self.alarm.name;
 }
 
 - (void)didReceiveMemoryWarning
@@ -94,7 +48,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [alarms count];
+    return [self.alarm.items count];
 }
 
 - (void)configureCheckmarkForCell:(UITableViewCell *)cell withAlarmItem:(AlarmItem *)item
@@ -119,7 +73,7 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AlarmItem"];
     
-    AlarmItem *item = [alarms objectAtIndex:indexPath.row];
+    AlarmItem *item = [self.alarm.items objectAtIndex:indexPath.row];
         
     [self configureTextForCell:cell withAlarmItem:item];
     [self configureCheckmarkForCell:cell withAlarmItem:item];
@@ -133,29 +87,25 @@
 {
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     
-    AlarmItem *item = [alarms objectAtIndex:indexPath.row];
+    AlarmItem *item = [self.alarm.items objectAtIndex:indexPath.row];
     [item toggleChecked];
     
     [self configureCheckmarkForCell:cell withAlarmItem:item];
-    
-    [self saveAlarmItems];
-    
+        
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [alarms removeObjectAtIndex:indexPath.row];
-    
-    [self saveAlarmItems];
-    
+    [self.alarm.items removeObjectAtIndex:indexPath.row];
+        
     NSArray *indexPaths = [NSArray arrayWithObject:indexPath];
     [tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
 {
-    AlarmItem *item = [alarms objectAtIndex:indexPath.row];
+    AlarmItem *item = [self.alarm.items objectAtIndex:indexPath.row];
     [self performSegueWithIdentifier:@"EditAlarm" sender:item];
 }
 
@@ -166,15 +116,13 @@
 
 - (void)alarmDetailViewController:(AlarmDetailViewController *)controller didFinishAddingItem:(AlarmItem *)item
 {
-    int newRowIndex = [alarms count];
-    [alarms addObject:item];
+    int newRowIndex = [self.alarm.items count];
+    [self.alarm.items addObject:item];
     
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:newRowIndex inSection:0];
     NSArray *indexPaths = [NSArray arrayWithObject:indexPath];
     [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
-    
-    [self saveAlarmItems];
-    
+        
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -195,13 +143,11 @@
 
 - (void)alarmDetailViewController:(AlarmDetailViewController *)controller didFinishEditingItem:(AlarmItem *)item
 {
-    int index = [alarms indexOfObject:item];
+    int index = [self.alarm.items indexOfObject:item];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
     UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
     [self configureTextForCell:cell withAlarmItem:item];
-    
-    [self saveAlarmItems];
-    
+        
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

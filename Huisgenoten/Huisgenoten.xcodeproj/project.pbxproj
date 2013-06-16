@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49756A75176DE96200DF090E /* AllAlarmsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49756A74176DE96200DF090E /* AllAlarmsViewController.m */; };
+		49756A76176DE96200DF090E /* AllAlarmsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49756A74176DE96200DF090E /* AllAlarmsViewController.m */; };
+		49756A79176DED3200DF090E /* Alarm.m in Sources */ = {isa = PBXBuildFile; fileRef = 49756A78176DED3200DF090E /* Alarm.m */; };
+		49756A7A176DED3200DF090E /* Alarm.m in Sources */ = {isa = PBXBuildFile; fileRef = 49756A78176DED3200DF090E /* Alarm.m */; };
+		49756A81176DF85700DF090E /* ListDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49756A80176DF85700DF090E /* ListDetailViewController.m */; };
+		49756A82176DF85700DF090E /* ListDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49756A80176DF85700DF090E /* ListDetailViewController.m */; };
+		49756A85176E44BF00DF090E /* AlarmsDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49756A84176E44BF00DF090E /* AlarmsDataModel.m */; };
+		49756A86176E44BF00DF090E /* AlarmsDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49756A84176E44BF00DF090E /* AlarmsDataModel.m */; };
 		49EB97691769E5CB009B2627 /* alertsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB97681769E5CB009B2627 /* alertsViewController.m */; };
 		49EB976C1769E641009B2627 /* Alarms.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB976B1769E641009B2627 /* Alarms.m */; };
 		49EB9868176A1CF6009B2627 /* NSCalendar+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB9836176A1CF6009B2627 /* NSCalendar+Components.m */; };
@@ -76,6 +84,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49756A73176DE96200DF090E /* AllAlarmsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllAlarmsViewController.h; sourceTree = "<group>"; };
+		49756A74176DE96200DF090E /* AllAlarmsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllAlarmsViewController.m; sourceTree = "<group>"; };
+		49756A77176DED3200DF090E /* Alarm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alarm.h; sourceTree = "<group>"; };
+		49756A78176DED3200DF090E /* Alarm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alarm.m; sourceTree = "<group>"; };
+		49756A7F176DF85700DF090E /* ListDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListDetailViewController.h; sourceTree = "<group>"; };
+		49756A80176DF85700DF090E /* ListDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListDetailViewController.m; sourceTree = "<group>"; };
+		49756A83176E44BF00DF090E /* AlarmsDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmsDataModel.h; sourceTree = "<group>"; };
+		49756A84176E44BF00DF090E /* AlarmsDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmsDataModel.m; sourceTree = "<group>"; };
 		49EB97671769E5CB009B2627 /* alertsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = alertsViewController.h; sourceTree = "<group>"; };
 		49EB97681769E5CB009B2627 /* alertsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = alertsViewController.m; sourceTree = "<group>"; };
 		49EB976A1769E641009B2627 /* Alarms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alarms.h; sourceTree = "<group>"; };
@@ -347,6 +363,10 @@
 				49EB9882176B5DC0009B2627 /* alarmsViewController.m */,
 				49EB9889176C7140009B2627 /* AlarmDetailViewController.h */,
 				49EB988A176C7140009B2627 /* AlarmDetailViewController.m */,
+				49756A73176DE96200DF090E /* AllAlarmsViewController.h */,
+				49756A74176DE96200DF090E /* AllAlarmsViewController.m */,
+				49756A7F176DF85700DF090E /* ListDetailViewController.h */,
+				49756A80176DF85700DF090E /* ListDetailViewController.m */,
 				B1BF4852176750DC0046BD19 /* financesViewController.h */,
 				B1BF4853176750DC0046BD19 /* financesViewController.m */,
 				B1BF484F176750800046BD19 /* roommatesViewController.h */,
@@ -370,8 +390,12 @@
 			children = (
 				49EB9885176B9474009B2627 /* AlarmItem.h */,
 				49EB9886176B9474009B2627 /* AlarmItem.m */,
+				49756A77176DED3200DF090E /* Alarm.h */,
+				49756A78176DED3200DF090E /* Alarm.m */,
 				49EB976A1769E641009B2627 /* Alarms.h */,
 				49EB976B1769E641009B2627 /* Alarms.m */,
+				49756A83176E44BF00DF090E /* AlarmsDataModel.h */,
+				49756A84176E44BF00DF090E /* AlarmsDataModel.m */,
 				B12EBBD217679FCE00A68C17 /* Roommates.h */,
 				B12EBBD317679FCE00A68C17 /* Roommates.m */,
 				B12EBBD817679FF300A68C17 /* Alerts.h */,
@@ -614,6 +638,10 @@
 				49EB9883176B5DC0009B2627 /* alarmsViewController.m in Sources */,
 				49EB9887176B9474009B2627 /* AlarmItem.m in Sources */,
 				49EB988B176C7140009B2627 /* AlarmDetailViewController.m in Sources */,
+				49756A75176DE96200DF090E /* AllAlarmsViewController.m in Sources */,
+				49756A79176DED3200DF090E /* Alarm.m in Sources */,
+				49756A81176DF85700DF090E /* ListDetailViewController.m in Sources */,
+				49756A85176E44BF00DF090E /* AlarmsDataModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,6 +653,10 @@
 				49EB9884176B5DC0009B2627 /* alarmsViewController.m in Sources */,
 				49EB9888176B9474009B2627 /* AlarmItem.m in Sources */,
 				49EB988C176C7140009B2627 /* AlarmDetailViewController.m in Sources */,
+				49756A76176DE96200DF090E /* AllAlarmsViewController.m in Sources */,
+				49756A7A176DED3200DF090E /* Alarm.m in Sources */,
+				49756A82176DF85700DF090E /* ListDetailViewController.m in Sources */,
+				49756A86176E44BF00DF090E /* AlarmsDataModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

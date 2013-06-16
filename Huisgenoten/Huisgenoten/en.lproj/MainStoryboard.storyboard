@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller - Welcome-->
         <scene sceneID="x32-h3-9qU">
             <objects>
                 <viewController id="gnN-Qn-YPh" sceneMemberID="viewController">
@@ -57,10 +57,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Welcome" id="XNf-pv-C8o"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p4B-GW-B4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1185" y="-521"/>
+            <point key="canvasLocation" x="-133" y="-521"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="UQM-WL-e6x">
@@ -167,9 +168,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SGx-jN-rBY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-787" y="-521"/>
+            <point key="canvasLocation" x="265" y="-521"/>
         </scene>
-        <!--Alarms View Controller - Alarms-->
+        <!--Alarms View Controller - Alarm Naam-->
         <scene sceneID="Yre-xe-L7S">
             <objects>
                 <tableViewController id="reb-FL-DYs" customClass="alarmsViewController" sceneMemberID="viewController">
@@ -209,7 +210,7 @@
                             <outlet property="delegate" destination="reb-FL-DYs" id="8v4-ai-F0v"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Alarms" id="8bP-zq-ZyX">
+                    <navigationItem key="navigationItem" title="Alarm Naam" id="8bP-zq-ZyX">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="gYG-Ko-VEn">
                             <connections>
                                 <segue destination="tR3-mz-XaL" kind="modal" identifier="AddAlarm" id="g2T-Gb-nI6"/>
@@ -222,7 +223,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nuK-Rn-glQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="158" y="-1562"/>
+            <point key="canvasLocation" x="1554" y="-2130"/>
         </scene>
         <!--Alarm Detail View Controller - Voeg alarm toe-->
         <scene sceneID="oyi-Kr-nrk">
@@ -283,7 +284,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gLA-rQ-xKx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1120" y="-1562"/>
+            <point key="canvasLocation" x="2468" y="-2130"/>
         </scene>
         <!--Shoppinglist View Controller-->
         <scene sceneID="fuW-fV-Uc5">
@@ -328,7 +329,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jY0-hw-9Bj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="-884"/>
+            <point key="canvasLocation" x="1127" y="-884"/>
         </scene>
         <!--Roommates View Controller-->
         <scene sceneID="gop-Ey-2xX">
@@ -360,7 +361,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oR1-Ba-1tU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="481" y="-521"/>
+            <point key="canvasLocation" x="1533" y="-521"/>
         </scene>
         <!--Finances View Controller-->
         <scene sceneID="0Fj-sI-ogd">
@@ -391,7 +392,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KM2-un-9nD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="-161"/>
+            <point key="canvasLocation" x="1127" y="-161"/>
+        </scene>
+        <!--All Alarms View Controller - Alarm groepen-->
+        <scene sceneID="THS-Hf-MgT">
+            <objects>
+                <tableViewController id="eZA-o2-UEi" customClass="AllAlarmsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="BAd-Ch-9BN">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="eZA-o2-UEi" id="Dcg-Ee-g0I"/>
+                            <outlet property="delegate" destination="eZA-o2-UEi" id="wmp-4g-8Ex"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Alarm groepen" id="j11-03-bu1">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="cpV-bN-V2V">
+                            <connections>
+                                <action selector="backAction:" destination="eZA-o2-UEi" id="qob-vj-sGA"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ImG-dG-YMk">
+                            <connections>
+                                <segue destination="9pu-KB-yjQ" kind="modal" identifier="AddList" id="b3a-iI-ot5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="reb-FL-DYs" kind="push" identifier="ShowAlarm" id="4Hm-cL-zef"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VUm-hv-LcZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1104" y="-2130"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pZC-ob-fTI">
@@ -404,12 +438,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="reb-FL-DYs" kind="relationship" relationship="rootViewController" id="3nv-Dx-YMz"/>
+                        <segue destination="eZA-o2-UEi" kind="relationship" relationship="rootViewController" id="DXj-xZ-dc4"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZSr-gS-GSF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-338" y="-1562"/>
+            <point key="canvasLocation" x="658" y="-2130"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5p9-kP-0WG">
@@ -427,12 +461,112 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gPG-zO-vYV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="638" y="-1562"/>
+            <point key="canvasLocation" x="2026" y="-2130"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5LF-bZ-h3f">
+            <objects>
+                <navigationController storyboardIdentifier="ListNavigationController" definesPresentationContext="YES" id="9pu-KB-yjQ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WCy-9f-JUa">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="uCY-Yl-Vnl" kind="relationship" relationship="rootViewController" id="0Ez-Gx-hD6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4WA-C1-YxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1554" y="-1436"/>
+        </scene>
+        <!--List Detail View Controller - Voeg groep toe-->
+        <scene sceneID="Z00-FT-5GO">
+            <objects>
+                <tableViewController id="uCY-Yl-Vnl" customClass="ListDetailViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="gOW-rk-qQ4">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="AEF-tp-iTI">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ce2-JW-feE">
+                                        <rect key="frame" x="0.0" y="10" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Naam van groep" adjustsFontSizeToFit="NO" minimumFontSize="17" id="Qdg-Li-JId">
+                                                    <rect key="frame" x="8" y="7" width="284" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                                    <connections>
+                                                        <action selector="done" destination="uCY-Yl-Vnl" eventType="editingDidEndOnExit" id="P1T-Pp-aMR"/>
+                                                        <outlet property="delegate" destination="uCY-Yl-Vnl" id="kCD-Ha-ZWk"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="uCY-Yl-Vnl" id="akX-Xd-E8f"/>
+                            <outlet property="delegate" destination="uCY-Yl-Vnl" id="wR7-Ib-N5e"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Voeg groep toe" id="xhw-EY-jIJ">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="OQB-7x-ooR">
+                            <connections>
+                                <action selector="cancel" destination="uCY-Yl-Vnl" id="Def-UT-D1H"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="done" id="9Ny-EO-meV">
+                            <connections>
+                                <action selector="done" destination="uCY-Yl-Vnl" id="hm9-6N-SbG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="doneBarButton" destination="9Ny-EO-meV" id="tfb-go-r2L"/>
+                        <outlet property="textField" destination="Qdg-Li-JId" id="4ce-qp-L9V"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="35H-go-HFu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2026" y="-1436"/>
         </scene>
     </scenes>
     <classes>
+        <class className="AlarmDetailViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AlarmDetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel"/>
+                <relationship kind="action" name="done"/>
+                <relationship kind="outlet" name="doneBarButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="textField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="AllAlarmsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AllAlarmsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backAction:"/>
+            </relationships>
+        </class>
         <class className="CKCalendarViewController" superclassName="UINavigationController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CKCalendarViewController.h"/>
+        </class>
+        <class className="ListDetailViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ListDetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel"/>
+                <relationship kind="action" name="done"/>
+                <relationship kind="outlet" name="doneBarButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="textField" candidateClass="UITextField"/>
+            </relationships>
         </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>

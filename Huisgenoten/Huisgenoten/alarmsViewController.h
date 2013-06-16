@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "AlarmDetailViewController.h"
 
+@class Alarm;
+
 @interface alarmsViewController : UITableViewController <AlarmDetailViewControllerDelegate>
+
+@property (nonatomic, strong) Alarm *alarm;
 
 @end
