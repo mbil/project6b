@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AlarmsDataModel.h"
 
-@interface facebookViewController : UIViewController
+@interface loginViewController : UIViewController
+
+@property (nonatomic, strong) AlarmsDataModel *dataModel;
 
 @end

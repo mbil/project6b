@@ -49,7 +49,7 @@
 		B12EBBD717679FE800A68C17 /* Finances.m in Sources */ = {isa = PBXBuildFile; fileRef = B12EBBD617679FE800A68C17 /* Finances.m */; };
 		B12EBBDA17679FF300A68C17 /* Alerts.m in Sources */ = {isa = PBXBuildFile; fileRef = B12EBBD917679FF300A68C17 /* Alerts.m */; };
 		B12EBBE01767A00B00A68C17 /* Shoppinglist.m in Sources */ = {isa = PBXBuildFile; fileRef = B12EBBDF1767A00B00A68C17 /* Shoppinglist.m */; };
-		B12EBBE71767B33500A68C17 /* facebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B12EBBE61767B33400A68C17 /* facebookViewController.m */; };
+		B12EBBE71767B33500A68C17 /* loginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B12EBBE61767B33400A68C17 /* loginViewController.m */; };
 		B12EBBEA1767B36000A68C17 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = B12EBBE91767B36000A68C17 /* Login.m */; };
 		B19A6DE117671DF00026D06C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19A6DE017671DF00026D06C /* UIKit.framework */; };
 		B19A6DE317671DF00026D06C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19A6DE217671DF00026D06C /* Foundation.framework */; };
@@ -160,8 +160,8 @@
 		B12EBBD917679FF300A68C17 /* Alerts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alerts.m; sourceTree = "<group>"; };
 		B12EBBDE1767A00B00A68C17 /* Shoppinglist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shoppinglist.h; sourceTree = "<group>"; };
 		B12EBBDF1767A00B00A68C17 /* Shoppinglist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shoppinglist.m; sourceTree = "<group>"; };
-		B12EBBE51767B33400A68C17 /* facebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = facebookViewController.h; sourceTree = "<group>"; };
-		B12EBBE61767B33400A68C17 /* facebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = facebookViewController.m; sourceTree = "<group>"; };
+		B12EBBE51767B33400A68C17 /* loginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginViewController.h; sourceTree = "<group>"; };
+		B12EBBE61767B33400A68C17 /* loginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginViewController.m; sourceTree = "<group>"; };
 		B12EBBE81767B36000A68C17 /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
 		B12EBBE91767B36000A68C17 /* Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
 		B19A6DDD17671DF00026D06C /* Huisgenoten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Huisgenoten.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -377,8 +377,8 @@
 				B1BF484A17674EC20046BD19 /* calendarViewController.m */,
 				B19A6DFB17671DF00026D06C /* ViewController.h */,
 				B19A6DFC17671DF00026D06C /* ViewController.m */,
-				B12EBBE51767B33400A68C17 /* facebookViewController.h */,
-				B12EBBE61767B33400A68C17 /* facebookViewController.m */,
+				B12EBBE51767B33400A68C17 /* loginViewController.h */,
+				B12EBBE61767B33400A68C17 /* loginViewController.m */,
 				49EB97671769E5CB009B2627 /* alertsViewController.h */,
 				49EB97681769E5CB009B2627 /* alertsViewController.m */,
 			);
@@ -612,7 +612,7 @@
 				B12EBBD717679FE800A68C17 /* Finances.m in Sources */,
 				B12EBBDA17679FF300A68C17 /* Alerts.m in Sources */,
 				B12EBBE01767A00B00A68C17 /* Shoppinglist.m in Sources */,
-				B12EBBE71767B33500A68C17 /* facebookViewController.m in Sources */,
+				B12EBBE71767B33500A68C17 /* loginViewController.m in Sources */,
 				B12EBBEA1767B36000A68C17 /* Login.m in Sources */,
 				49EB97691769E5CB009B2627 /* alertsViewController.m in Sources */,
 				49EB976C1769E641009B2627 /* Alarms.m in Sources */,

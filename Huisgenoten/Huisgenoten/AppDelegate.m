@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "AllAlarmsViewController.h"
-#import "ViewController.h"
+#import "loginViewController.h"
+#import "AlarmsDataModel.h"
 
 @implementation AppDelegate
 
@@ -24,17 +24,16 @@
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 }
 
-- (void)saveData
-{
-    //UIViewController *viewController = (UIViewController *)self.window.rootViewController;
-    //UINavigationController *navigationController = (UINavigationController *)[viewController.viewControllers objectAtIndex:0];
-    //AllAlarmsViewController *controller = (AllAlarmsViewController *)[viewController.viewControllers objectAtIndex:0];
-    //[controller.dataModel saveAlarms];
-}
+//- (void)saveData
+//{
+//    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+//    loginViewController *controller = (loginViewController *)[navigationController.viewControllers objectAtIndex:0];
+//    [controller.dataModel saveAlarms];
+//}
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    [self saveData];
+    //[self.dataModel saveAlarms];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -49,7 +48,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-    [self saveData];
+    //[self saveData];
 }
 
 @end

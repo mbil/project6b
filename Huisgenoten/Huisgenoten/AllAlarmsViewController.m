@@ -10,6 +10,7 @@
 #import "Alarm.h"
 #import "alarmsViewController.h"
 #import "AlarmItem.h"
+#import "AlarmsDataModel.h"
 
 @interface AllAlarmsViewController ()
 
@@ -105,7 +106,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)listDetailViewController:(ListDetailViewController *)controller didFinishAddingChecklist:(Alarm *)alarm
+- (void)listDetailViewController:(ListDetailViewController *)controller didFinishAddingAlarm:(Alarm *)alarm
 {
     int newRowIndex = [self.dataModel.lists count];
     [self.dataModel.lists addObject:alarm];
@@ -113,16 +114,18 @@
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:newRowIndex inSection:0];
     NSArray *indexPaths = [NSArray arrayWithObject:indexPath];
     [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
-    
+    [self.dataModel saveAlarms];
+
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)listDetailViewController:(ListDetailViewController *)controller didFinishEditingChecklist:(Alarm *)alarm
+- (void)listDetailViewController:(ListDetailViewController *)controller didFinishEditingAlarm:(Alarm *)alarm
 {
     int index = [self.dataModel.lists indexOfObject:alarm];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
     UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
     cell.textLabel.text = alarm.name;
+    [self.dataModel saveAlarms];
     
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -130,7 +133,7 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self.dataModel.lists removeObjectAtIndex:indexPath.row];
-    
+
     NSArray *indexPaths = [NSArray arrayWithObject:indexPath];
     [tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
 }
