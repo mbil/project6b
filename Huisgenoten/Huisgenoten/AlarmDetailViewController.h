@@ -29,7 +29,6 @@
 @property (nonatomic, weak) id <AlarmDetailViewControllerDelegate> delegate;
 @property (nonatomic, strong) AlarmItem *alarmToEdit;
 
-
 - (IBAction)cancel;
 - (IBAction)done;
 

@@ -53,8 +53,6 @@
                                 [NSNumber numberWithInt:0], @"AlarmItemId",
                                 nil];
     
-//    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInt:-1], @"AlarmIndex", [NSNumber numberWithBool:YES], @"FirstTime", nil];
-    
     [[NSUserDefaults standardUserDefaults] registerDefaults:dictionary];
 }
 

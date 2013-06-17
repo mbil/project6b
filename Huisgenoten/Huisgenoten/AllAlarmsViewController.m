@@ -46,6 +46,8 @@
     
     self.navigationController.delegate = self;
     
+    [self.dataModel saveAlarms];
+
     int index = [self.dataModel indexOfSelectedAlarm];
     if (index >= 0 && index < [self.dataModel.lists count]) {
         Alarm *alarm = [self.dataModel.lists objectAtIndex:index];
@@ -167,8 +169,6 @@
 }
 
 - (IBAction)backAction:(id)sender {
-    [self.dataModel saveAlarms];
-
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
