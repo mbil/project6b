@@ -33,6 +33,19 @@
 
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    self.navigationController.delegate = self;
+    
+    int index = [self.dataModel indexOfSelectedAlarm];
+    if (index >= 0 && index < [self.dataModel.lists count]) {
+        Alarm *alarm = [self.dataModel.lists objectAtIndex:index];
+        [self performSegueWithIdentifier:@"ShowAlarm" sender:alarm];
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -60,6 +73,7 @@
     
     cell.textLabel.text = alarm.name;
     cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%d Resterend", [alarm countUncheckedItems]];
     
     return cell;
 }
@@ -68,6 +82,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [self.dataModel setIndexOfSelectedAlarm:indexPath.row];
+    
     Alarm *alarm = [self.dataModel.lists objectAtIndex:indexPath.row];
     
     [self performSegueWithIdentifier:@"ShowAlarm" sender:alarm];
@@ -139,7 +155,15 @@
 }
 
 - (IBAction)backAction:(id)sender {
+    [self.dataModel saveAlarms];
+
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    if (viewController == self) {
+        [self.dataModel setIndexOfSelectedAlarm:-1];
+    }
+}
 @end

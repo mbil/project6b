@@ -8,7 +8,6 @@
 
 #import "ListDetailViewController.h"
 #import "Alarm.h"
-#import "AlarmsDataModel.h"
 
 @interface ListDetailViewController ()
 
@@ -24,15 +23,6 @@
     }
     return self;
 }
-
-//- (id)initWithCoder:(NSCoder *)aDecoder
-//{
-//    if ((self = [super initWithCoder:aDecoder])) {
-//        self.dataModel = [[AlarmsDataModel alloc] init];
-//    }
-//    
-//    return self;
-//}
 
 - (void)viewDidLoad
 {
@@ -68,13 +58,11 @@
     if (self.listToEdit == nil) {
         Alarm *alarm = [[Alarm alloc] init];
         alarm.name = self.textField.text;
-        //[self.dataModel saveAlarms];
 
         [self.delegate listDetailViewController:self didFinishAddingAlarm:alarm];
     } else {
         self.listToEdit.name = self.textField.text;
         
-        //[self.dataModel saveAlarms];
         [self.delegate listDetailViewController:self didFinishEditingAlarm:self.listToEdit];
 
     }

@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import "AlarmsDataModel.h"
 
 @class ListDetailViewController;
 @class Alarm;
@@ -24,7 +23,6 @@
 @property (nonatomic, strong) IBOutlet UIBarButtonItem *doneBarButton;
 @property (nonatomic, weak) id <ListDetailViewControllerDelegate> delegate;
 @property (nonatomic, strong) Alarm *listToEdit;
-//@property (nonatomic, strong) AlarmsDataModel *dataModel;
 
 
 - (IBAction)cancel;

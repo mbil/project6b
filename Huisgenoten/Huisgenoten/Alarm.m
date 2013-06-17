@@ -7,6 +7,7 @@
 //
 
 #import "Alarm.h"
+#import "AlarmItem.h"
 
 @implementation Alarm
 
@@ -31,6 +32,17 @@
 {
     [aCoder encodeObject:self.name forKey:@"Name"];
     [aCoder encodeObject:self.items forKey:@"Items"];
+}
+
+- (int)countUncheckedItems
+{
+    int count = 0;
+    for (AlarmItem *item in self.items) {
+        if (!item.checked) {
+            count += 1;
+        }
+    }
+    return count;
 }
 
 @end

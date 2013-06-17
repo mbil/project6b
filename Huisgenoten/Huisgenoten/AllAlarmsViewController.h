@@ -10,7 +10,7 @@
 #import "ListDetailViewController.h"
 #import "AlarmsDataModel.h"
 
-@interface AllAlarmsViewController : UITableViewController <ListDetailViewControllerDelegate>
+@interface AllAlarmsViewController : UITableViewController <ListDetailViewControllerDelegate, UINavigationControllerDelegate>
 
 @property (nonatomic, strong) AlarmsDataModel *dataModel;
 

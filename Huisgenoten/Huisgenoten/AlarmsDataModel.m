@@ -7,6 +7,7 @@
 //
 
 #import "AlarmsDataModel.h"
+#import "Alarm.h"
 
 @implementation AlarmsDataModel
 
@@ -44,13 +45,44 @@
     }
 }
 
+- (void)registerDefaults
+{
+    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInt:-1], @"AlarmIndex", [NSNumber numberWithBool:YES], @"FirstTime", nil];
+    
+    [[NSUserDefaults standardUserDefaults] registerDefaults:dictionary];
+}
+
+- (void)handleFirstTime
+{
+    BOOL firstTime = [[NSUserDefaults standardUserDefaults] boolForKey:@"FirstTime"];
+    if (firstTime) {
+        Alarm *alarm = [[Alarm alloc] init];
+        alarm.name = @"List";
+        [self.lists addObject:alarm];
+        [self setIndexOfSelectedAlarm:0];
+        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"FirstTime"];
+    }
+}
+
 -(id)init
 {
     if ((self = [super init])) {
         [self loadAlarms];
+        [self registerDefaults];
+        [self handleFirstTime];
     }
     
     return self;
+}
+
+- (int)indexOfSelectedAlarm
+{
+    return [[NSUserDefaults standardUserDefaults] integerForKey:@"AlarmIndex"];
+}
+
+- (void)setIndexOfSelectedAlarm:(int)index
+{
+    [[NSUserDefaults standardUserDefaults] setInteger:index forKey:@"AlarmIndex"];
 }
 
 @end

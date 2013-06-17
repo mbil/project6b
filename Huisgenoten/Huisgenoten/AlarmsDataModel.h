@@ -12,6 +12,8 @@
 
 @property (nonatomic, strong) NSMutableArray *lists;
 
--(void)saveAlarms;
+- (void)saveAlarms;
+- (int)indexOfSelectedAlarm;
+- (void)setIndexOfSelectedAlarm:(int)index;
 
 @end

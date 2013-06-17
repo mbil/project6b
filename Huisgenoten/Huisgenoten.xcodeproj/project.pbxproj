@@ -16,7 +16,6 @@
 		49756A85176E44BF00DF090E /* AlarmsDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49756A84176E44BF00DF090E /* AlarmsDataModel.m */; };
 		49756A86176E44BF00DF090E /* AlarmsDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49756A84176E44BF00DF090E /* AlarmsDataModel.m */; };
 		49EB97691769E5CB009B2627 /* alertsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB97681769E5CB009B2627 /* alertsViewController.m */; };
-		49EB976C1769E641009B2627 /* Alarms.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB976B1769E641009B2627 /* Alarms.m */; };
 		49EB9868176A1CF6009B2627 /* NSCalendar+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB9836176A1CF6009B2627 /* NSCalendar+Components.m */; };
 		49EB9869176A1CF6009B2627 /* NSCalendar+DateComparison.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB9838176A1CF6009B2627 /* NSCalendar+DateComparison.m */; };
 		49EB986A176A1CF6009B2627 /* NSCalendar+DateManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB983A176A1CF6009B2627 /* NSCalendar+DateManipulation.m */; };
@@ -94,8 +93,6 @@
 		49756A84176E44BF00DF090E /* AlarmsDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmsDataModel.m; sourceTree = "<group>"; };
 		49EB97671769E5CB009B2627 /* alertsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = alertsViewController.h; sourceTree = "<group>"; };
 		49EB97681769E5CB009B2627 /* alertsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = alertsViewController.m; sourceTree = "<group>"; };
-		49EB976A1769E641009B2627 /* Alarms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alarms.h; sourceTree = "<group>"; };
-		49EB976B1769E641009B2627 /* Alarms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alarms.m; sourceTree = "<group>"; };
 		49EB9831176A1CF6009B2627 /* CalendarKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarKit.h; sourceTree = "<group>"; };
 		49EB9835176A1CF6009B2627 /* NSCalendar+Components.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+Components.h"; sourceTree = "<group>"; };
 		49EB9836176A1CF6009B2627 /* NSCalendar+Components.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+Components.m"; sourceTree = "<group>"; };
@@ -392,8 +389,6 @@
 				49EB9886176B9474009B2627 /* AlarmItem.m */,
 				49756A77176DED3200DF090E /* Alarm.h */,
 				49756A78176DED3200DF090E /* Alarm.m */,
-				49EB976A1769E641009B2627 /* Alarms.h */,
-				49EB976B1769E641009B2627 /* Alarms.m */,
 				49756A83176E44BF00DF090E /* AlarmsDataModel.h */,
 				49756A84176E44BF00DF090E /* AlarmsDataModel.m */,
 				B12EBBD217679FCE00A68C17 /* Roommates.h */,
@@ -615,7 +610,6 @@
 				B12EBBE71767B33500A68C17 /* loginViewController.m in Sources */,
 				B12EBBEA1767B36000A68C17 /* Login.m in Sources */,
 				49EB97691769E5CB009B2627 /* alertsViewController.m in Sources */,
-				49EB976C1769E641009B2627 /* Alarms.m in Sources */,
 				49EB9868176A1CF6009B2627 /* NSCalendar+Components.m in Sources */,
 				49EB9869176A1CF6009B2627 /* NSCalendar+DateComparison.m in Sources */,
 				49EB986A176A1CF6009B2627 /* NSCalendar+DateManipulation.m in Sources */,
