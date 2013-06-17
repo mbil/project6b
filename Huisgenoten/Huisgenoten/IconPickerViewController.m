@@ -17,30 +17,20 @@
     NSArray *icons;
 }
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
     icons = [NSArray arrayWithObjects:
-             @"No Icon",
-             @"Appointments",
-             @"Birthdays",
-             @"Chores",
-             @"Drinks",
+             @"Geen Afbeelding",
+             @"Afspraken",
+             @"Verjaardagen",
+             @"Klusjes",
+             @"Drankjes",
              @"Folder",
-             @"Groceries",
              @"Inbox",
-             @"Photos",
-             @"Trips",
+             @"Foto's",
+             @"Uitjes",
              nil];
 }
 

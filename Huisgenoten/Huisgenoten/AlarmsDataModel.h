@@ -16,5 +16,6 @@
 - (int)indexOfSelectedAlarm;
 - (void)setIndexOfSelectedAlarm:(int)index;
 - (void)sortAlarms;
++ (int)nextAlarmItemId;
 
 @end

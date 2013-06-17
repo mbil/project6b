@@ -32,7 +32,7 @@
     [super viewDidLoad];
 
     if (self.listToEdit != nil) {
-        self.title = @"Edit Groep";
+        self.title = @"Wijzig Groep";
         self.textField.text = self.listToEdit.name;
         self.doneBarButton.enabled = YES;
         iconName = self.listToEdit.iconName;

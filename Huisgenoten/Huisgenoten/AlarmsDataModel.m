@@ -47,7 +47,13 @@
 
 - (void)registerDefaults
 {
-    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInt:-1], @"AlarmIndex", [NSNumber numberWithBool:YES], @"FirstTime", nil];
+    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:
+                                [NSNumber numberWithInt:-1], @"AlarmIndex",
+                                [NSNumber numberWithBool:YES], @"FirstTime",
+                                [NSNumber numberWithInt:0], @"AlarmItemId",
+                                nil];
+    
+//    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInt:-1], @"AlarmIndex", [NSNumber numberWithBool:YES], @"FirstTime", nil];
     
     [[NSUserDefaults standardUserDefaults] registerDefaults:dictionary];
 }
@@ -57,7 +63,7 @@
     BOOL firstTime = [[NSUserDefaults standardUserDefaults] boolForKey:@"FirstTime"];
     if (firstTime) {
         Alarm *alarm = [[Alarm alloc] init];
-        alarm.name = @"List";
+        alarm.name = @"Groep";
         [self.lists addObject:alarm];
         [self setIndexOfSelectedAlarm:0];
         [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"FirstTime"];
@@ -88,6 +94,15 @@
 - (void)sortAlarms
 {
     [self.lists sortUsingSelector:@selector(compare:)];
+}
+
++ (int)nextAlarmItemId
+{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    int itemId = [userDefaults integerForKey:@"AlarmItemId"];
+    [userDefaults setInteger:itemId + 1 forKey:@"AlarmItemId"];
+    [userDefaults synchronize];
+    return itemId;
 }
 
 @end

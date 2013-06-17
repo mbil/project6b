@@ -13,8 +13,7 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    // Override point for customization after application launch.
+{  
     return YES;
 }
 							
@@ -24,16 +23,9 @@
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 }
 
-//- (void)saveData
-//{
-//    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-//    loginViewController *controller = (loginViewController *)[navigationController.viewControllers objectAtIndex:0];
-//    [controller.dataModel saveAlarms];
-//}
-
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    //[self.dataModel saveAlarms];
+    //
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -48,7 +40,12 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-    //[self saveData];
+    //
+}
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    NSLog(@"didReceiveLocalNotification: %@", notification);
 }
 
 @end

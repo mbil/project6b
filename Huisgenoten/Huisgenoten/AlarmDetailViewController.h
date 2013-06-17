@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DatePickerViewController.h"
 
 @class AlarmDetailViewController;
 @class AlarmItem;
@@ -19,12 +20,15 @@
 
 @end
 
-@interface AlarmDetailViewController : UITableViewController <UITextFieldDelegate>
+@interface AlarmDetailViewController : UITableViewController <UITextFieldDelegate, DatePickerViewControllerDelegate>
 
-@property (strong, nonatomic) IBOutlet UITextField *textField;
-@property (nonatomic, strong) IBOutlet UIBarButtonItem *doneBarButton;
+@property (nonatomic, weak) IBOutlet UITextField *textField;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem *doneBarButton;
+@property (nonatomic, weak) IBOutlet UISwitch *switchControl;
+@property (nonatomic, weak) IBOutlet UILabel *dueDateLabel;
 @property (nonatomic, weak) id <AlarmDetailViewControllerDelegate> delegate;
 @property (nonatomic, strong) AlarmItem *alarmToEdit;
+
 
 - (IBAction)cancel;
 - (IBAction)done;
