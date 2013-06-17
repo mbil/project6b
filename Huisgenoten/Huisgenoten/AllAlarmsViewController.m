@@ -33,6 +33,13 @@
 
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self.tableView reloadData];
+}
+
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
@@ -66,14 +73,24 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
     Alarm *alarm = [self.dataModel.lists objectAtIndex:indexPath.row];
     
     cell.textLabel.text = alarm.name;
     cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%d Resterend", [alarm countUncheckedItems]];
+    
+    int count = [alarm countUncheckedItems];
+    if ([alarm.items count] == 0) {
+        cell.detailTextLabel.text = @"(Geen Items)";
+    } else if (count == 0) {
+        cell.detailTextLabel.text = @"Allemaal voltooid!";
+    } else {
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"%d Resterend", count];
+    }
+    
+    cell.imageView.image = [UIImage imageNamed:alarm.iconName];
     
     return cell;
 }
@@ -124,12 +141,9 @@
 
 - (void)listDetailViewController:(ListDetailViewController *)controller didFinishAddingAlarm:(Alarm *)alarm
 {
-    int newRowIndex = [self.dataModel.lists count];
     [self.dataModel.lists addObject:alarm];
-    
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:newRowIndex inSection:0];
-    NSArray *indexPaths = [NSArray arrayWithObject:indexPath];
-    [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
+    [self.dataModel sortAlarms];
+    [self.tableView reloadData];
     [self.dataModel saveAlarms];
 
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -137,10 +151,8 @@
 
 - (void)listDetailViewController:(ListDetailViewController *)controller didFinishEditingAlarm:(Alarm *)alarm
 {
-    int index = [self.dataModel.lists indexOfObject:alarm];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
-    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-    cell.textLabel.text = alarm.name;
+    [self.dataModel sortAlarms];
+    [self.tableView reloadData];
     [self.dataModel saveAlarms];
     
     [self dismissViewControllerAnimated:YES completion:nil];

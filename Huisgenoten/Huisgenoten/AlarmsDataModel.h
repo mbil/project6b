@@ -15,5 +15,6 @@
 - (void)saveAlarms;
 - (int)indexOfSelectedAlarm;
 - (void)setIndexOfSelectedAlarm:(int)index;
+- (void)sortAlarms;
 
 @end

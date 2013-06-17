@@ -14,13 +14,16 @@
 @end
 
 @implementation ListDetailViewController
-
-- (id)initWithStyle:(UITableViewStyle)style
 {
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
+    NSString *iconName;
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    if ((self = [super initWithCoder:aDecoder])) {
+        iconName = @"Folder";
     }
+    
     return self;
 }
 
@@ -32,7 +35,10 @@
         self.title = @"Edit Groep";
         self.textField.text = self.listToEdit.name;
         self.doneBarButton.enabled = YES;
+        iconName = self.listToEdit.iconName;
     }
+    
+    self.iconImageView.image = [UIImage imageNamed:iconName];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -58,10 +64,12 @@
     if (self.listToEdit == nil) {
         Alarm *alarm = [[Alarm alloc] init];
         alarm.name = self.textField.text;
-
+        alarm.iconName = iconName;
+        
         [self.delegate listDetailViewController:self didFinishAddingAlarm:alarm];
     } else {
         self.listToEdit.name = self.textField.text;
+        self.listToEdit.iconName = iconName;
         
         [self.delegate listDetailViewController:self didFinishEditingAlarm:self.listToEdit];
 
@@ -70,7 +78,11 @@
 
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return nil;
+    if (indexPath.row == 1) {
+        return indexPath;
+    } else {
+        return nil;
+    }
 }
 
 - (BOOL)textField:(UITextField *)theTextField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
@@ -78,6 +90,21 @@
     NSString *newText = [theTextField.text stringByReplacingCharactersInRange:range withString:string];
     self.doneBarButton.enabled = ([newText length] > 0);
     return YES;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"PickIcon"]) {
+        IconPickerViewController *controller = segue.destinationViewController;
+        controller.delegate = self;
+    }
+}
+
+- (void)iconPicker:(IconPickerViewController *)picker didPickIcon:(NSString *)theIconName
+{
+    iconName = theIconName;
+    self.iconImageView.image = [UIImage imageNamed:iconName];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

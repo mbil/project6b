@@ -491,7 +491,7 @@
                             <tableViewSection id="AEF-tp-iTI">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ce2-JW-feE">
-                                        <rect key="frame" x="0.0" y="10" width="320" height="46"/>
+                                        <rect key="frame" x="0.0" y="10" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="1" width="300" height="43"/>
@@ -510,6 +510,31 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" id="weA-NN-fsm">
+                                        <rect key="frame" x="0.0" y="55" width="320" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Afbeelding" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="raX-Ve-h0Z">
+                                                    <rect key="frame" x="20" y="11" width="93" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="bb2-yr-pJP">
+                                                    <rect key="frame" x="224" y="4" width="36" height="36"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="j1n-5F-53i" kind="push" identifier="PickIcon" id="n2E-ar-9Od"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -533,12 +558,52 @@
                     </navigationItem>
                     <connections>
                         <outlet property="doneBarButton" destination="9Ny-EO-meV" id="tfb-go-r2L"/>
+                        <outlet property="iconImageView" destination="bb2-yr-pJP" id="EFH-P6-qvK"/>
                         <outlet property="textField" destination="Qdg-Li-JId" id="4ce-qp-L9V"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="35H-go-HFu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2414" y="-716"/>
+        </scene>
+        <!--Icon Picker View Controller - Kies afbeelding-->
+        <scene sceneID="eYe-sd-z3G">
+            <objects>
+                <tableViewController id="j1n-5F-53i" customClass="IconPickerViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ijr-cl-QVe">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="IconCell" textLabel="ocC-4i-3r5" style="IBUITableViewCellStyleDefault" id="Bc1-cE-dzS">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ocC-4i-3r5">
+                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="j1n-5F-53i" id="ulH-Hs-rL7"/>
+                            <outlet property="delegate" destination="j1n-5F-53i" id="bRj-2x-BuZ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Kies afbeelding" id="RMu-Zc-ru4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pBl-nQ-D6G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2856" y="-716"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Wch-ZH-NgT">

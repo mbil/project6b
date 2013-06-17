@@ -85,4 +85,9 @@
     [[NSUserDefaults standardUserDefaults] setInteger:index forKey:@"AlarmIndex"];
 }
 
+- (void)sortAlarms
+{
+    [self.lists sortUsingSelector:@selector(compare:)];
+}
+
 @end
