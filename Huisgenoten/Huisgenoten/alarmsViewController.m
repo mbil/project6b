@@ -60,14 +60,25 @@
     label.text = item.text;
 }
 
+//- (void)configureDueDateForCell:(UITableViewCell *)cell withAlarmItem:(AlarmItem *)item
+//{
+//    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", item.dueDate];
+//}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AlarmItem"];
     
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AlarmItem"];
+//    if (cell == nil) {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"AlarmItem"];
+//    }
+    
     AlarmItem *item = [self.alarm.items objectAtIndex:indexPath.row];
-        
+
     [self configureTextForCell:cell withAlarmItem:item];
     [self configureCheckmarkForCell:cell withAlarmItem:item];
+    //[self configureDueDateForCell:cell withAlarmItem:item];
     
     return cell;
 }

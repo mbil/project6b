@@ -7,45 +7,50 @@
 //
 
 #import "AppDelegate.h"
-#import "loginViewController.h"
-#import "AlarmsDataModel.h"
+#import "LoginViewController.h"
+#import "SubclassConfigViewController.h"
 
 @implementation AppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{  
+#pragma mark - UIApplicationDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    // ****************************************************************************
+    // Fill in with your Parse and Twitter credentials. Don't forget to add your
+    // Facebook id in Info.plist:
+    // ****************************************************************************
+    [Parse setApplicationId:@"r2zaUDtxWicSkoo6wBUjFQCprvbGaoyaqICRBTaS" clientKey:@"iLS0xLQQJw1X2mqRHcblBqeQ4BNi5pDhxjeTgxht"];
+    [PFFacebookUtils initializeFacebook];
+    [PFTwitterUtils initializeWithConsumerKey:@"1g9Xk0YYw1x2p7pu1HQ3sQ" consumerSecret:@"J7mr7f2BYIQ7VsZ1Z6xPhJ8M51QsggSS1M5pAQ4"];
+    
+    // Set default ACLs
+    PFACL *defaultACL = [PFACL ACL];
+    [defaultACL setPublicReadAccess:YES];
+    [PFACL setDefaultACL:defaultACL withAccessForCurrentUser:YES];
+    
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[SubclassConfigViewController alloc] init]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
-							
-- (void)applicationWillResignActive:(UIApplication *)application
-{
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+
+// Facebook oauth callback
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return [PFFacebookUtils handleOpenURL:url];
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
-{
-    //
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    return [PFFacebookUtils handleOpenURL:url];
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-}
-
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
-
-- (void)applicationWillTerminate:(UIApplication *)application
-{
-    //
-}
-
-- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
-{
-    NSLog(@"didReceiveLocalNotification: %@", notification);
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    // Handle an interruption during the authorization flow, such as the user clicking the home button.
+    [FBSession.activeSession handleDidBecomeActive];
 }
 
 @end

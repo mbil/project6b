@@ -62,6 +62,7 @@
     if (firstTime) {
         Alarm *alarm = [[Alarm alloc] init];
         alarm.name = @"Groep";
+        alarm.iconName = @"Afspraken";
         [self.lists addObject:alarm];
         [self setIndexOfSelectedAlarm:0];
         [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"FirstTime"];

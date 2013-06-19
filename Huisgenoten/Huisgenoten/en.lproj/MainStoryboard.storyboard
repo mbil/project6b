@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="gJY-hp-46Z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="gnN-Qn-YPh">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller - Welkom-->
+        <!--Subclass Config View Controller - Welkom-->
         <scene sceneID="x32-h3-9qU">
             <objects>
-                <viewController id="gnN-Qn-YPh" customClass="loginViewController" sceneMemberID="viewController">
+                <viewController id="gnN-Qn-YPh" customClass="SubclassConfigViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VkD-LP-bnM">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UMa-cx-N4V">
-                                <rect key="frame" x="114" y="294" width="168" height="44"/>
+                                <rect key="frame" x="76" y="359" width="168" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Sign in">
+                                <state key="normal" title="Uitloggen">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -23,37 +23,23 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="logOutButtonTapAction:" destination="gnN-Qn-YPh" eventType="touchUpInside" id="pU2-vu-86K"/>
                                     <segue destination="u0L-L1-cpB" kind="modal" id="coa-d8-iOh"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="UA8-JQ-WKd">
-                                <rect key="frame" x="114" y="214" width="168" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="pbv-FA-ewY">
-                                <rect key="frame" x="114" y="249" width="168" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Inloggen met Facebook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rvg-tq-isv">
-                                <rect key="frame" x="62" y="166" width="178" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="emailadres" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lbp-be-c0x">
-                                <rect key="frame" x="22" y="217" width="84" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="wachtwoord" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Egh-fX-YIf">
-                                <rect key="frame" x="15" y="253" width="91" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <navigationBar contentMode="scaleToFill" id="QLt-JU-CYN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Bye!" id="Ce5-2d-0Sl">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="c6g-qm-eNG">
+                                            <connections>
+                                                <action selector="cancel:" destination="gnN-Qn-YPh" id="ed8-XS-Skc"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -61,12 +47,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p4B-GW-B4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="393" y="-521"/>
+            <point key="canvasLocation" x="859" y="-521"/>
         </scene>
         <!--View Controller - Huisgenoten-->
         <scene sceneID="UQM-WL-e6x">
             <objects>
-                <viewController id="zpa-Hh-aQK" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeScreen" id="zpa-Hh-aQK" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wek-I7-8pv">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -85,22 +71,8 @@
                                     <segue destination="XMz-jT-A5r" kind="modal" id="iCa-Tw-28N"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="35d-Ll-UdF">
-                                <rect key="frame" x="20" y="157" width="89" height="44"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Calendar">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Czg-Of-Gd9" kind="modal" identifier="Calendar" modalTransitionStyle="crossDissolve" animates="NO" id="2Hp-Hb-vrL"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xGB-Ve-0of">
-                                <rect key="frame" x="190" y="157" width="110" height="44"/>
+                                <rect key="frame" x="12" y="153" width="110" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Roommates">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -114,7 +86,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UU4-oP-nTI">
-                                <rect key="frame" x="103" y="230" width="115" height="44"/>
+                                <rect key="frame" x="185" y="240" width="115" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Shoppinglist">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -150,14 +122,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Huisgenoten" id="Tu8-r8-XlK"/>
+                    <navigationItem key="navigationItem" title="Huisgenoten" id="Tu8-r8-XlK">
+                        <barButtonItem key="leftBarButtonItem" title="Uitloggen" id="Bca-WL-NFt">
+                            <connections>
+                                <segue destination="gnN-Qn-YPh" kind="modal" id="szD-iq-UKW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="outcome" destination="MqQ-3x-eZE" id="o4Z-gT-wfn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SGx-jN-rBY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1317" y="-521"/>
+            <point key="canvasLocation" x="1825" y="-521"/>
         </scene>
         <!--Alarms View Controller - Alarm Naam-->
         <scene sceneID="Yre-xe-L7S">
@@ -445,7 +423,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="backAction:" destination="Czg-Of-Gd9" eventType="touchUpInside" id="blK-Wo-KZx"/>
                                     <action selector="backAction:" destination="Tpt-Nv-J6N" eventType="touchUpInside" id="ece-GF-Zai"/>
                                 </connections>
                             </button>
@@ -456,20 +433,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Qb-cu-zXc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2750" y="1745"/>
-        </scene>
-        <!--Calendar View Controller-->
-        <scene sceneID="72O-et-Ayq">
-            <objects>
-                <viewController id="Czg-Of-Gd9" customClass="calendarViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="iZS-q4-EZq">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jY0-hw-9Bj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2750" y="-512"/>
         </scene>
         <!--Roommates View Controller-->
         <scene sceneID="gop-Ey-2xX">
@@ -492,7 +455,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <connections>
                                     <action selector="backAction:" destination="Tpt-Nv-J6N" eventType="touchUpInside" id="1ab-8e-ww1"/>
                                     <action selector="backAction:" destination="eSm-hy-xOn" eventType="touchUpInside" id="P5I-GG-cw6"/>
-                                    <action selector="backAction:" destination="Czg-Of-Gd9" eventType="touchUpInside" id="eEg-VC-cAt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -523,7 +485,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </state>
                                 <connections>
                                     <action selector="backAction:" destination="mmC-TE-IeV" eventType="touchUpInside" id="Bnq-zn-3qk"/>
-                                    <action selector="backAction:" destination="Czg-Of-Gd9" eventType="touchUpInside" id="Mfl-18-aw3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -745,24 +706,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <point key="canvasLocation" x="3664" y="-1236"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="Wch-ZH-NgT">
-            <objects>
-                <navigationController id="gJY-hp-46Z" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vhv-Kx-Lkw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="gnN-Qn-YPh" kind="relationship" relationship="rootViewController" id="eGg-WA-oiL"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Wuh-NO-Vhz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-133" y="-521"/>
-        </scene>
-        <!--Navigation Controller-->
         <scene sceneID="gfF-U6-t6X">
             <objects>
                 <navigationController id="u0L-L1-cpB" sceneMemberID="viewController">
@@ -778,7 +721,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gGj-yG-oFV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="791" y="-521"/>
+            <point key="canvasLocation" x="1317" y="-521"/>
         </scene>
     </scenes>
     <classes>
@@ -798,9 +741,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <relationships>
                 <relationship kind="action" name="backAction:"/>
             </relationships>
-        </class>
-        <class className="CKCalendarViewController" superclassName="UINavigationController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CKCalendarViewController.h"/>
         </class>
         <class className="DatePickerViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DatePickerViewController.h"/>
@@ -825,6 +765,14 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <relationship kind="outlet" name="textField" candidateClass="UITextField"/>
             </relationships>
         </class>
+        <class className="SubclassConfigViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SubclassConfigViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="logOutButtonTapAction:"/>
+                <relationship kind="outlet" name="welcomeLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
@@ -834,20 +782,11 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <class className="alarmsViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/alarmsViewController.h"/>
         </class>
-        <class className="calendarViewController" superclassName="CKCalendarViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/calendarViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="backAction:"/>
-            </relationships>
-        </class>
         <class className="financesViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/financesViewController.h"/>
             <relationships>
                 <relationship kind="action" name="backAction:"/>
             </relationships>
-        </class>
-        <class className="loginViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/loginViewController.h"/>
         </class>
         <class className="roommatesViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/roommatesViewController.h"/>
