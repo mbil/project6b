@@ -10,8 +10,8 @@ Alerts instellen voor bijv. huisvuil buiten zetten/huur betalen
 * Boodschappenlijst
 * Huisrekening:
 Voor het bijhouden van de financiele balans
-*Inloggen
-*Huis aanmaken
+* Inloggen
+* Huis aanmaken
 
 
 ### Toegang
