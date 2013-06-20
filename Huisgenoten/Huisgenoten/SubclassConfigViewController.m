@@ -60,12 +60,15 @@
 
 // Sent to the delegate when a PFUser is logged in.
 - (void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user {
-    
+
+    [self dismissViewControllerAnimated:YES completion:^{
+
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
     UINavigationController *home = [storyboard instantiateViewControllerWithIdentifier:@"HomeScreen"];
     [self.navigationController pushViewController:home animated:YES];
+    }];
     
-    [self dismissViewControllerAnimated:YES completion:NULL];
+//    [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 // Sent to the delegate when the log in attempt fails.
@@ -76,7 +79,7 @@
 // Sent to the delegate when the log in screen is dismissed.
 - (void)logInViewControllerDidCancelLogIn:(PFLogInViewController *)logInController {
     
-    [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController popViewControllerAnimated:NO];
 }
 
 
@@ -124,7 +127,10 @@
 
 - (IBAction)logOutButtonTapAction:(id)sender {
     [PFUser logOut];
-    [self.navigationController popViewControllerAnimated:YES];
+    SubclassConfigViewController *logInViewController = [[SubclassConfigViewController alloc] init];
+    [self presentViewController:logInViewController animated:YES completion:NULL];
+
+    //[self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction)cancel:(id)sender {

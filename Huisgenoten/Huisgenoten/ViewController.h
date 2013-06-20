@@ -13,4 +13,6 @@
 
 @property (nonatomic, weak) IBOutlet UILabel *outcome;
 
+-(IBAction)logout:(id)sender;
+
 @end

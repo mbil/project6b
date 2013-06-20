@@ -60,24 +60,27 @@
     label.text = item.text;
 }
 
-//- (void)configureDueDateForCell:(UITableViewCell *)cell withAlarmItem:(AlarmItem *)item
-//{
-//    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", item.dueDate];
-//}
+- (void)configureDueDateForCell:(UITableViewCell *)cell withAlarmItem:(AlarmItem *)item
+{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"dd-MM-yyyy"];
+    NSString *date = [dateFormatter stringFromDate:item.dueDate];
+    
+    UILabel *label = (UILabel *)[cell viewWithTag:1002];
+    label.text = [NSString stringWithFormat:@"%@", date];
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AlarmItem"];
     
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"AlarmItem"];
-//    if (cell == nil) {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"AlarmItem"];
-//    }
-    
     AlarmItem *item = [self.alarm.items objectAtIndex:indexPath.row];
 
     [self configureTextForCell:cell withAlarmItem:item];
     [self configureCheckmarkForCell:cell withAlarmItem:item];
+    if (item.shouldRemind == YES) {
+        [self configureDueDateForCell:cell withAlarmItem:item];
+    }
     //[self configureDueDateForCell:cell withAlarmItem:item];
     
     return cell;
@@ -125,6 +128,8 @@
     NSArray *indexPaths = [NSArray arrayWithObject:indexPath];
     [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
     
+    [self.tableView reloadData];
+
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -149,7 +154,9 @@
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
     UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
     [self configureTextForCell:cell withAlarmItem:item];
-        
+    
+    [self.tableView reloadData];
+    
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

@@ -59,4 +59,10 @@
     }
 }
 
+//- (IBAction)logout:(id)sender {
+//    [self.navigationController popViewControllerAnimated:YES];
+//    //[self presentViewController: animated:<#(BOOL)#> completion:<#^(void)completion#>
+//    [self dismissViewControllerAnimated:YES completion:nil];
+//}
+
 @end
