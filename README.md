@@ -7,24 +7,25 @@ Dit is een applicatie waarin huisgenoten de huishoudelijke poespas kunnen regele
 ### Onderdelen
 * Wekker:
 Alerts instellen voor bijv. huisvuil buiten zetten/huur betalen
-* Kalender:
-Huisavondjes plannen
 * Boodschappenlijst
 * Huisrekening:
 Voor het bijhouden van de financiele balans
+*Inloggen
+*Huis aanmaken
 
 
 ### Toegang
-Inloggen m.b.v. Facebook. Huis aanmaken en huisgenoten uitnodigen.
+Inloggen,  Huis aanmaken en huisgenoten uitnodigen.
 ### Frameworks
 Cocao
+Parse
 ### Libraries
 Unknown
 ### Other technologies
-Facebook API
+
 
 ### Werkzaamheden
-Miguel gaat zich bezighouden met de inlog van Facebook. Myrthe zorgt dat er een overzichtelijke interface komt. Het boodschappengedeelte zal in elkaar worden gezet door Myrthe. Miguel ontfermt zich over de kalender en de alerts. Het berichtencentrum is een mogelijke extra feature.
+Miguel gaat zich bezighouden met de inloggen. Myrthe zorgt dat er een overzichtelijke interface komt. Het boodschappengedeelte en finance zal in elkaar worden gezet door Myrthe. Miguel ontfermt zich over de groepen en de alerts.
 
 ### UI Sketches
 ![GitHub Logo](https://github.com/mbil/project6b/blob/master/doc/UIsketch.jpg?raw=true)
