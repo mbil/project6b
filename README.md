@@ -17,8 +17,7 @@ Voor het bijhouden van de financiele balans
 ### Toegang
 Inloggen,  Huis aanmaken en huisgenoten uitnodigen.
 ### Frameworks
-* Cocao
-* Parse
+Cocao en Parse
 ### Libraries
 Unknown
 ### Other technologies
