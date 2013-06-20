@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		492A154E1770859D0009BA44 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492A154D1770859D0009BA44 /* Parse.framework */; };
-		492A154F1770859E0009BA44 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492A154D1770859D0009BA44 /* Parse.framework */; };
 		492A1551177085E80009BA44 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492A1550177085E80009BA44 /* AudioToolbox.framework */; };
 		492A1553177085EF0009BA44 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492A1552177085EF0009BA44 /* CFNetwork.framework */; };
 		492A1555177086060009BA44 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492A1554177086060009BA44 /* CoreLocation.framework */; };
@@ -22,30 +20,6 @@
 		492A156F1771DC170009BA44 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492A156D1771DC170009BA44 /* SignUpViewController.m */; };
 		492A15721771DC440009BA44 /* SubclassConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492A15711771DC440009BA44 /* SubclassConfigViewController.m */; };
 		492A15731771DC440009BA44 /* SubclassConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 492A15711771DC440009BA44 /* SubclassConfigViewController.m */; };
-		492A15811771E02F0009BA44 /* Exit.png in Resources */ = {isa = PBXBuildFile; fileRef = 492A15751771E02F0009BA44 /* Exit.png */; };
-		492A15821771E02F0009BA44 /* Exit.png in Resources */ = {isa = PBXBuildFile; fileRef = 492A15751771E02F0009BA44 /* Exit.png */; };
-		492A15831771E02F0009BA44 /* ExitDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 492A15761771E02F0009BA44 /* ExitDown.png */; };
-		492A15841771E02F0009BA44 /* ExitDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 492A15761771E02F0009BA44 /* ExitDown.png */; };
-		492A15851771E02F0009BA44 /* Facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 492A15771771E02F0009BA44 /* Facebook.png */; };
-		492A15861771E02F0009BA44 /* Facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 492A15771771E02F0009BA44 /* Facebook.png */; };
-		492A15871771E02F0009BA44 /* FacebookDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 492A15781771E02F0009BA44 /* FacebookDown.png */; };
-		492A15881771E02F0009BA44 /* FacebookDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 492A15781771E02F0009BA44 /* FacebookDown.png */; };
-		492A15891771E02F0009BA44 /* LoginFieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 492A15791771E02F0009BA44 /* LoginFieldBG.png */; };
-		492A158A1771E02F0009BA44 /* LoginFieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 492A15791771E02F0009BA44 /* LoginFieldBG.png */; };
-		492A158B1771E02F0009BA44 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492A157A1771E02F0009BA44 /* Logo.png */; };
-		492A158C1771E02F0009BA44 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 492A157A1771E02F0009BA44 /* Logo.png */; };
-		492A158D1771E02F0009BA44 /* MainBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 492A157B1771E02F0009BA44 /* MainBG.png */; };
-		492A158E1771E02F0009BA44 /* MainBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 492A157B1771E02F0009BA44 /* MainBG.png */; };
-		492A158F1771E02F0009BA44 /* SignUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 492A157C1771E02F0009BA44 /* SignUp.png */; };
-		492A15901771E02F0009BA44 /* SignUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 492A157C1771E02F0009BA44 /* SignUp.png */; };
-		492A15911771E02F0009BA44 /* SignUpDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 492A157D1771E02F0009BA44 /* SignUpDown.png */; };
-		492A15921771E02F0009BA44 /* SignUpDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 492A157D1771E02F0009BA44 /* SignUpDown.png */; };
-		492A15931771E02F0009BA44 /* SignUpFieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 492A157E1771E02F0009BA44 /* SignUpFieldBG.png */; };
-		492A15941771E02F0009BA44 /* SignUpFieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 492A157E1771E02F0009BA44 /* SignUpFieldBG.png */; };
-		492A15951771E02F0009BA44 /* Twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 492A157F1771E02F0009BA44 /* Twitter.png */; };
-		492A15961771E02F0009BA44 /* Twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 492A157F1771E02F0009BA44 /* Twitter.png */; };
-		492A15971771E02F0009BA44 /* TwitterDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 492A15801771E02F0009BA44 /* TwitterDown.png */; };
-		492A15981771E02F0009BA44 /* TwitterDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 492A15801771E02F0009BA44 /* TwitterDown.png */; };
 		492A159A1771E8330009BA44 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492A15991771E8330009BA44 /* FacebookSDK.framework */; };
 		492A159B1771E8330009BA44 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492A15991771E8330009BA44 /* FacebookSDK.framework */; };
 		492A159D1771E87A0009BA44 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 492A159C1771E87A0009BA44 /* FacebookSDKResources.bundle */; };
@@ -62,6 +36,16 @@
 		49756A82176DF85700DF090E /* ListDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49756A80176DF85700DF090E /* ListDetailViewController.m */; };
 		49756A85176E44BF00DF090E /* AlarmsDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49756A84176E44BF00DF090E /* AlarmsDataModel.m */; };
 		49756A86176E44BF00DF090E /* AlarmsDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49756A84176E44BF00DF090E /* AlarmsDataModel.m */; };
+		497CE6DD177310C7003B7B4F /* Exit.png in Resources */ = {isa = PBXBuildFile; fileRef = 497CE6CD177310C7003B7B4F /* Exit.png */; };
+		497CE6DE177310C7003B7B4F /* ExitDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 497CE6CE177310C7003B7B4F /* ExitDown.png */; };
+		497CE6E1177310C7003B7B4F /* LoginFieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 497CE6D1177310C7003B7B4F /* LoginFieldBG.png */; };
+		497CE6E2177310C7003B7B4F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 497CE6D2177310C7003B7B4F /* logo.png */; };
+		497CE6E5177310C7003B7B4F /* MainBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 497CE6D5177310C7003B7B4F /* MainBG.png */; };
+		497CE6E7177310C7003B7B4F /* SignUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 497CE6D7177310C7003B7B4F /* SignUp.png */; };
+		497CE6E9177310C7003B7B4F /* SignUpDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 497CE6D9177310C7003B7B4F /* SignUpDown.png */; };
+		497CE6EA177310C7003B7B4F /* SignUpFieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 497CE6DA177310C7003B7B4F /* SignUpFieldBG.png */; };
+		497CE6F117731552003B7B4F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497CE6F017731552003B7B4F /* Parse.framework */; };
+		497CE6F217731552003B7B4F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497CE6F017731552003B7B4F /* Parse.framework */; };
 		49B5AF99176F3F8500BC2076 /* Afspraken.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF76176F3F8500BC2076 /* Afspraken.png */; };
 		49B5AF9A176F3F8500BC2076 /* Afspraken.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF76176F3F8500BC2076 /* Afspraken.png */; };
 		49B5AF9B176F3F8500BC2076 /* Afspraken@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF77176F3F8500BC2076 /* Afspraken@2x.png */; };
@@ -149,7 +133,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		492A154D1770859D0009BA44 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = Huisgenoten/Parse.framework; sourceTree = "<group>"; };
 		492A1550177085E80009BA44 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		492A1552177085EF0009BA44 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		492A1554177086060009BA44 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -163,18 +146,6 @@
 		492A156D1771DC170009BA44 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		492A15701771DC440009BA44 /* SubclassConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubclassConfigViewController.h; sourceTree = "<group>"; };
 		492A15711771DC440009BA44 /* SubclassConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubclassConfigViewController.m; sourceTree = "<group>"; };
-		492A15751771E02F0009BA44 /* Exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Exit.png; sourceTree = "<group>"; };
-		492A15761771E02F0009BA44 /* ExitDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ExitDown.png; sourceTree = "<group>"; };
-		492A15771771E02F0009BA44 /* Facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Facebook.png; sourceTree = "<group>"; };
-		492A15781771E02F0009BA44 /* FacebookDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FacebookDown.png; sourceTree = "<group>"; };
-		492A15791771E02F0009BA44 /* LoginFieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginFieldBG.png; sourceTree = "<group>"; };
-		492A157A1771E02F0009BA44 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
-		492A157B1771E02F0009BA44 /* MainBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainBG.png; sourceTree = "<group>"; };
-		492A157C1771E02F0009BA44 /* SignUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SignUp.png; sourceTree = "<group>"; };
-		492A157D1771E02F0009BA44 /* SignUpDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SignUpDown.png; sourceTree = "<group>"; };
-		492A157E1771E02F0009BA44 /* SignUpFieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SignUpFieldBG.png; sourceTree = "<group>"; };
-		492A157F1771E02F0009BA44 /* Twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Twitter.png; sourceTree = "<group>"; };
-		492A15801771E02F0009BA44 /* TwitterDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwitterDown.png; sourceTree = "<group>"; };
 		492A15991771E8330009BA44 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../FacebookSDK.framework; sourceTree = "<group>"; };
 		492A159C1771E87A0009BA44 /* FacebookSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FacebookSDKResources.bundle; path = ../../FacebookSDK.framework/Versions/A/Resources/FacebookSDKResources.bundle; sourceTree = "<group>"; };
 		492A159F1771E89D0009BA44 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -189,6 +160,15 @@
 		49756A80176DF85700DF090E /* ListDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListDetailViewController.m; sourceTree = "<group>"; };
 		49756A83176E44BF00DF090E /* AlarmsDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmsDataModel.h; sourceTree = "<group>"; };
 		49756A84176E44BF00DF090E /* AlarmsDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmsDataModel.m; sourceTree = "<group>"; };
+		497CE6CD177310C7003B7B4F /* Exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Exit.png; sourceTree = "<group>"; };
+		497CE6CE177310C7003B7B4F /* ExitDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ExitDown.png; sourceTree = "<group>"; };
+		497CE6D1177310C7003B7B4F /* LoginFieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginFieldBG.png; sourceTree = "<group>"; };
+		497CE6D2177310C7003B7B4F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		497CE6D5177310C7003B7B4F /* MainBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainBG.png; sourceTree = "<group>"; };
+		497CE6D7177310C7003B7B4F /* SignUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SignUp.png; sourceTree = "<group>"; };
+		497CE6D9177310C7003B7B4F /* SignUpDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SignUpDown.png; sourceTree = "<group>"; };
+		497CE6DA177310C7003B7B4F /* SignUpFieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SignUpFieldBG.png; sourceTree = "<group>"; };
+		497CE6F017731552003B7B4F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../Parse.framework; sourceTree = "<group>"; };
 		49B5AF76176F3F8500BC2076 /* Afspraken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Afspraken.png; sourceTree = "<group>"; };
 		49B5AF77176F3F8500BC2076 /* Afspraken@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Afspraken@2x.png"; sourceTree = "<group>"; };
 		49B5AF78176F3F8500BC2076 /* Verjaardagen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Verjaardagen.png; sourceTree = "<group>"; };
@@ -286,8 +266,8 @@
 				B19A6DE117671DF00026D06C /* UIKit.framework in Frameworks */,
 				B19A6DE317671DF00026D06C /* Foundation.framework in Frameworks */,
 				B19A6DE517671DF00026D06C /* CoreGraphics.framework in Frameworks */,
-				492A154E1770859D0009BA44 /* Parse.framework in Frameworks */,
 				492A159A1771E8330009BA44 /* FacebookSDK.framework in Frameworks */,
+				497CE6F117731552003B7B4F /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,8 +278,8 @@
 				B19A6E0517671DF00026D06C /* SenTestingKit.framework in Frameworks */,
 				B19A6E0617671DF00026D06C /* UIKit.framework in Frameworks */,
 				B19A6E0717671DF00026D06C /* Foundation.framework in Frameworks */,
-				492A154F1770859E0009BA44 /* Parse.framework in Frameworks */,
 				492A159B1771E8330009BA44 /* FacebookSDK.framework in Frameworks */,
+				497CE6F217731552003B7B4F /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,24 +367,21 @@
 			name = Alerts;
 			sourceTree = "<group>";
 		};
-		492A15741771DFF60009BA44 /* Login */ = {
+		497CE6CC177310C7003B7B4F /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				492A15751771E02F0009BA44 /* Exit.png */,
-				492A15761771E02F0009BA44 /* ExitDown.png */,
-				492A15771771E02F0009BA44 /* Facebook.png */,
-				492A15781771E02F0009BA44 /* FacebookDown.png */,
-				492A15791771E02F0009BA44 /* LoginFieldBG.png */,
-				492A157A1771E02F0009BA44 /* Logo.png */,
-				492A157B1771E02F0009BA44 /* MainBG.png */,
-				492A157C1771E02F0009BA44 /* SignUp.png */,
-				492A157D1771E02F0009BA44 /* SignUpDown.png */,
-				492A157E1771E02F0009BA44 /* SignUpFieldBG.png */,
-				492A157F1771E02F0009BA44 /* Twitter.png */,
-				492A15801771E02F0009BA44 /* TwitterDown.png */,
+				497CE6CD177310C7003B7B4F /* Exit.png */,
+				497CE6CE177310C7003B7B4F /* ExitDown.png */,
+				497CE6D1177310C7003B7B4F /* LoginFieldBG.png */,
+				497CE6D2177310C7003B7B4F /* logo.png */,
+				497CE6D5177310C7003B7B4F /* MainBG.png */,
+				497CE6D7177310C7003B7B4F /* SignUp.png */,
+				497CE6D9177310C7003B7B4F /* SignUpDown.png */,
+				497CE6DA177310C7003B7B4F /* SignUpFieldBG.png */,
 			);
 			name = Login;
-			sourceTree = "<group>";
+			path = Resources/Login;
+			sourceTree = SOURCE_ROOT;
 		};
 		49B5AF75176F3F8500BC2076 /* Alarms Icons */ = {
 			isa = PBXGroup;
@@ -495,6 +472,7 @@
 		B19A6DDF17671DF00026D06C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				497CE6F017731552003B7B4F /* Parse.framework */,
 				492A15A51771E8C50009BA44 /* AdSupport.framework */,
 				492A15A31771E8B70009BA44 /* libsqlite3.dylib */,
 				492A15A11771E8A70009BA44 /* Accounts.framework */,
@@ -510,7 +488,6 @@
 				492A1554177086060009BA44 /* CoreLocation.framework */,
 				492A1552177085EF0009BA44 /* CFNetwork.framework */,
 				492A1550177085E80009BA44 /* AudioToolbox.framework */,
-				492A154D1770859D0009BA44 /* Parse.framework */,
 				49EB987D176B51A2009B2627 /* EventKit.framework */,
 				49EB987E176B51A2009B2627 /* EventKitUI.framework */,
 				B19A6DE017671DF00026D06C /* UIKit.framework */,
@@ -537,7 +514,7 @@
 		B19A6DE717671DF00026D06C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				492A15741771DFF60009BA44 /* Login */,
+				497CE6CC177310C7003B7B4F /* Login */,
 				49B5AF75176F3F8500BC2076 /* Alarms Icons */,
 				B19A6DE817671DF00026D06C /* Huisgenoten-Info.plist */,
 				B19A6DE917671DF00026D06C /* InfoPlist.strings */,
@@ -662,19 +639,15 @@
 				49B5AFBB176F3F8500BC2076 /* Foto's@2x.png in Resources */,
 				49B5AFBD176F3F8500BC2076 /* Uitjes.png in Resources */,
 				49B5AFBF176F3F8500BC2076 /* Uitjes@2x.png in Resources */,
-				492A15811771E02F0009BA44 /* Exit.png in Resources */,
-				492A15831771E02F0009BA44 /* ExitDown.png in Resources */,
-				492A15851771E02F0009BA44 /* Facebook.png in Resources */,
-				492A15871771E02F0009BA44 /* FacebookDown.png in Resources */,
-				492A15891771E02F0009BA44 /* LoginFieldBG.png in Resources */,
-				492A158B1771E02F0009BA44 /* Logo.png in Resources */,
-				492A158D1771E02F0009BA44 /* MainBG.png in Resources */,
-				492A158F1771E02F0009BA44 /* SignUp.png in Resources */,
-				492A15911771E02F0009BA44 /* SignUpDown.png in Resources */,
-				492A15931771E02F0009BA44 /* SignUpFieldBG.png in Resources */,
-				492A15951771E02F0009BA44 /* Twitter.png in Resources */,
-				492A15971771E02F0009BA44 /* TwitterDown.png in Resources */,
 				492A159D1771E87A0009BA44 /* FacebookSDKResources.bundle in Resources */,
+				497CE6DD177310C7003B7B4F /* Exit.png in Resources */,
+				497CE6DE177310C7003B7B4F /* ExitDown.png in Resources */,
+				497CE6E1177310C7003B7B4F /* LoginFieldBG.png in Resources */,
+				497CE6E2177310C7003B7B4F /* logo.png in Resources */,
+				497CE6E5177310C7003B7B4F /* MainBG.png in Resources */,
+				497CE6E7177310C7003B7B4F /* SignUp.png in Resources */,
+				497CE6E9177310C7003B7B4F /* SignUpDown.png in Resources */,
+				497CE6EA177310C7003B7B4F /* SignUpFieldBG.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -701,18 +674,6 @@
 				49B5AFBC176F3F8500BC2076 /* Foto's@2x.png in Resources */,
 				49B5AFBE176F3F8500BC2076 /* Uitjes.png in Resources */,
 				49B5AFC0176F3F8500BC2076 /* Uitjes@2x.png in Resources */,
-				492A15821771E02F0009BA44 /* Exit.png in Resources */,
-				492A15841771E02F0009BA44 /* ExitDown.png in Resources */,
-				492A15861771E02F0009BA44 /* Facebook.png in Resources */,
-				492A15881771E02F0009BA44 /* FacebookDown.png in Resources */,
-				492A158A1771E02F0009BA44 /* LoginFieldBG.png in Resources */,
-				492A158C1771E02F0009BA44 /* Logo.png in Resources */,
-				492A158E1771E02F0009BA44 /* MainBG.png in Resources */,
-				492A15901771E02F0009BA44 /* SignUp.png in Resources */,
-				492A15921771E02F0009BA44 /* SignUpDown.png in Resources */,
-				492A15941771E02F0009BA44 /* SignUpFieldBG.png in Resources */,
-				492A15961771E02F0009BA44 /* Twitter.png in Resources */,
-				492A15981771E02F0009BA44 /* TwitterDown.png in Resources */,
 				492A159E1771E87A0009BA44 /* FacebookSDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,7 +18,7 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    //self.navigationItem.hidesBackButton = YES;
+    [self.navigationController setNavigationBarHidden:YES];
 }
 
 - (void)viewDidLoad
@@ -58,11 +58,5 @@
             break;
     }
 }
-
-//- (IBAction)logout:(id)sender {
-//    [self.navigationController popViewControllerAnimated:YES];
-//    //[self presentViewController: animated:<#(BOOL)#> completion:<#^(void)completion#>
-//    [self dismissViewControllerAnimated:YES completion:nil];
-//}
 
 @end

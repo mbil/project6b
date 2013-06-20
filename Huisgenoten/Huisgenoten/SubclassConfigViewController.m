@@ -31,8 +31,7 @@
         // Customize the Log In View Controller
         LoginViewController *logInViewController = [[LoginViewController alloc] init];
         logInViewController.delegate = self;
-        logInViewController.facebookPermissions = @[@"basic_info"];
-        logInViewController.fields = PFLogInFieldsUsernameAndPassword | PFLogInFieldsTwitter | PFLogInFieldsFacebook | PFLogInFieldsSignUpButton | PFLogInFieldsDismissButton;
+        logInViewController.fields = PFLogInFieldsUsernameAndPassword | PFLogInFieldsSignUpButton;
         
         // Customize the Sign Up View Controller
         SignUpViewController *signUpViewController = [[SignUpViewController alloc] init];
@@ -60,28 +59,19 @@
 
 // Sent to the delegate when a PFUser is logged in.
 - (void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user {
-
+    
     [self dismissViewControllerAnimated:YES completion:^{
 
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
     UINavigationController *home = [storyboard instantiateViewControllerWithIdentifier:@"HomeScreen"];
-    [self.navigationController pushViewController:home animated:YES];
+        [self presentViewController:home animated:YES completion:nil];
     }];
-    
-//    [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 // Sent to the delegate when the log in attempt fails.
 - (void)logInViewController:(PFLogInViewController *)logInController didFailToLogInWithError:(NSError *)error {
     NSLog(@"Failed to log in...");
 }
-
-// Sent to the delegate when the log in screen is dismissed.
-- (void)logInViewControllerDidCancelLogIn:(PFLogInViewController *)logInController {
-    
-    [self.navigationController popViewControllerAnimated:NO];
-}
-
 
 #pragma mark - PFSignUpViewControllerDelegate
 
@@ -105,11 +95,12 @@
 
 // Sent to the delegate when a PFUser is signed up.
 - (void)signUpViewController:(PFSignUpViewController *)signUpController didSignUpUser:(PFUser *)user {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
-    UINavigationController *home = [storyboard instantiateViewControllerWithIdentifier:@"HomeScreen"];
-    [self.navigationController pushViewController:home animated:YES];
-    
-    [self dismissViewControllerAnimated:YES completion:NULL];
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+        UINavigationController *home = [storyboard instantiateViewControllerWithIdentifier:@"HomeScreen"];
+        [self presentViewController:home animated:YES completion:nil];
+    }];
 }
 
 // Sent to the delegate when the sign up attempt fails.
@@ -127,10 +118,9 @@
 
 - (IBAction)logOutButtonTapAction:(id)sender {
     [PFUser logOut];
+    
     SubclassConfigViewController *logInViewController = [[SubclassConfigViewController alloc] init];
-    [self presentViewController:logInViewController animated:YES completion:NULL];
-
-    //[self.navigationController popViewControllerAnimated:YES];
+    [self presentViewController:logInViewController animated:YES completion:nil];
 }
 
 - (IBAction)cancel:(id)sender {
