@@ -58,10 +58,10 @@
 		49B5AFA2176F3F8500BC2076 /* Klusjes.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF7A176F3F8500BC2076 /* Klusjes.png */; };
 		49B5AFA3176F3F8500BC2076 /* Klusjes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF7B176F3F8500BC2076 /* Klusjes@2x.png */; };
 		49B5AFA4176F3F8500BC2076 /* Klusjes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF7B176F3F8500BC2076 /* Klusjes@2x.png */; };
-		49B5AFA5176F3F8500BC2076 /* Drankjes.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF7C176F3F8500BC2076 /* Drankjes.png */; };
-		49B5AFA6176F3F8500BC2076 /* Drankjes.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF7C176F3F8500BC2076 /* Drankjes.png */; };
-		49B5AFA7176F3F8500BC2076 /* Drankjes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF7D176F3F8500BC2076 /* Drankjes@2x.png */; };
-		49B5AFA8176F3F8500BC2076 /* Drankjes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF7D176F3F8500BC2076 /* Drankjes@2x.png */; };
+		49B5AFA5176F3F8500BC2076 /* Feestjes.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF7C176F3F8500BC2076 /* Feestjes.png */; };
+		49B5AFA6176F3F8500BC2076 /* Feestjes.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF7C176F3F8500BC2076 /* Feestjes.png */; };
+		49B5AFA7176F3F8500BC2076 /* Feestjes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF7D176F3F8500BC2076 /* Feestjes@2x.png */; };
+		49B5AFA8176F3F8500BC2076 /* Feestjes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF7D176F3F8500BC2076 /* Feestjes@2x.png */; };
 		49B5AFA9176F3F8500BC2076 /* Folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF7E176F3F8500BC2076 /* Folder.png */; };
 		49B5AFAA176F3F8500BC2076 /* Folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF7E176F3F8500BC2076 /* Folder.png */; };
 		49B5AFAB176F3F8500BC2076 /* Folder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF7F176F3F8500BC2076 /* Folder@2x.png */; };
@@ -100,7 +100,6 @@
 		B12EBBDA17679FF300A68C17 /* Alerts.m in Sources */ = {isa = PBXBuildFile; fileRef = B12EBBD917679FF300A68C17 /* Alerts.m */; };
 		B12EBBE01767A00B00A68C17 /* Shoppinglist.m in Sources */ = {isa = PBXBuildFile; fileRef = B12EBBDF1767A00B00A68C17 /* Shoppinglist.m */; };
 		B12EBBE71767B33500A68C17 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B12EBBE61767B33400A68C17 /* LoginViewController.m */; };
-		B12EBBEA1767B36000A68C17 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = B12EBBE91767B36000A68C17 /* Login.m */; };
 		B19A6DE117671DF00026D06C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19A6DE017671DF00026D06C /* UIKit.framework */; };
 		B19A6DE317671DF00026D06C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19A6DE217671DF00026D06C /* Foundation.framework */; };
 		B19A6DE517671DF00026D06C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19A6DE417671DF00026D06C /* CoreGraphics.framework */; };
@@ -175,8 +174,8 @@
 		49B5AF79176F3F8500BC2076 /* Verjaardagen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Verjaardagen@2x.png"; sourceTree = "<group>"; };
 		49B5AF7A176F3F8500BC2076 /* Klusjes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Klusjes.png; sourceTree = "<group>"; };
 		49B5AF7B176F3F8500BC2076 /* Klusjes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Klusjes@2x.png"; sourceTree = "<group>"; };
-		49B5AF7C176F3F8500BC2076 /* Drankjes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Drankjes.png; sourceTree = "<group>"; };
-		49B5AF7D176F3F8500BC2076 /* Drankjes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Drankjes@2x.png"; sourceTree = "<group>"; };
+		49B5AF7C176F3F8500BC2076 /* Feestjes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Feestjes.png; sourceTree = "<group>"; };
+		49B5AF7D176F3F8500BC2076 /* Feestjes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Feestjes@2x.png"; sourceTree = "<group>"; };
 		49B5AF7E176F3F8500BC2076 /* Folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Folder.png; sourceTree = "<group>"; };
 		49B5AF7F176F3F8500BC2076 /* Folder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Folder@2x.png"; sourceTree = "<group>"; };
 		49B5AF82176F3F8500BC2076 /* Inbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Inbox.png; sourceTree = "<group>"; };
@@ -211,8 +210,6 @@
 		B12EBBDF1767A00B00A68C17 /* Shoppinglist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shoppinglist.m; sourceTree = "<group>"; };
 		B12EBBE51767B33400A68C17 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		B12EBBE61767B33400A68C17 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		B12EBBE81767B36000A68C17 /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
-		B12EBBE91767B36000A68C17 /* Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
 		B19A6DDD17671DF00026D06C /* Huisgenoten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Huisgenoten.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B19A6DE017671DF00026D06C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B19A6DE217671DF00026D06C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -383,6 +380,51 @@
 			path = Resources/Login;
 			sourceTree = SOURCE_ROOT;
 		};
+		497CE6F317747F8F003B7B4F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B19A6DFB17671DF00026D06C /* ViewController.h */,
+				B19A6DFC17671DF00026D06C /* ViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		497CE6F417748025003B7B4F /* Roommates */ = {
+			isa = PBXGroup;
+			children = (
+				B12EBBD217679FCE00A68C17 /* Roommates.h */,
+				B12EBBD317679FCE00A68C17 /* Roommates.m */,
+			);
+			name = Roommates;
+			sourceTree = "<group>";
+		};
+		497CE6F51774802E003B7B4F /* Shoppinglist */ = {
+			isa = PBXGroup;
+			children = (
+				B12EBBDE1767A00B00A68C17 /* Shoppinglist.h */,
+				B12EBBDF1767A00B00A68C17 /* Shoppinglist.m */,
+			);
+			name = Shoppinglist;
+			sourceTree = "<group>";
+		};
+		497CE6F617748035003B7B4F /* Finances */ = {
+			isa = PBXGroup;
+			children = (
+				B12EBBD517679FE800A68C17 /* Finances.h */,
+				B12EBBD617679FE800A68C17 /* Finances.m */,
+			);
+			name = Finances;
+			sourceTree = "<group>";
+		};
+		497CE6F717748060003B7B4F /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				B12EBBD817679FF300A68C17 /* Alerts.h */,
+				B12EBBD917679FF300A68C17 /* Alerts.m */,
+			);
+			name = Alerts;
+			sourceTree = "<group>";
+		};
 		49B5AF75176F3F8500BC2076 /* Alarms Icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -392,8 +434,8 @@
 				49B5AF79176F3F8500BC2076 /* Verjaardagen@2x.png */,
 				49B5AF7A176F3F8500BC2076 /* Klusjes.png */,
 				49B5AF7B176F3F8500BC2076 /* Klusjes@2x.png */,
-				49B5AF7C176F3F8500BC2076 /* Drankjes.png */,
-				49B5AF7D176F3F8500BC2076 /* Drankjes@2x.png */,
+				49B5AF7C176F3F8500BC2076 /* Feestjes.png */,
+				49B5AF7D176F3F8500BC2076 /* Feestjes@2x.png */,
 				49B5AF7E176F3F8500BC2076 /* Folder.png */,
 				49B5AF7F176F3F8500BC2076 /* Folder@2x.png */,
 				49B5AF82176F3F8500BC2076 /* Inbox.png */,
@@ -420,14 +462,13 @@
 		B12EBBE21767A03F00A68C17 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				497CE6F317747F8F003B7B4F /* Home */,
 				492A15671771D36E0009BA44 /* Alerts */,
 				492A15661771D3610009BA44 /* Roomies */,
 				492A15651771D3400009BA44 /* Shopping */,
 				492A15631771D3280009BA44 /* Finances */,
 				492A15621771D3180009BA44 /* Login */,
 				492A1549176F830F0009BA44 /* Alarms */,
-				B19A6DFB17671DF00026D06C /* ViewController.h */,
-				B19A6DFC17671DF00026D06C /* ViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -435,17 +476,11 @@
 		B12EBBE41767A05C00A68C17 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				497CE6F717748060003B7B4F /* Alerts */,
+				497CE6F617748035003B7B4F /* Finances */,
+				497CE6F51774802E003B7B4F /* Shoppinglist */,
+				497CE6F417748025003B7B4F /* Roommates */,
 				492A1548176F82EB0009BA44 /* Alarms */,
-				B12EBBD217679FCE00A68C17 /* Roommates.h */,
-				B12EBBD317679FCE00A68C17 /* Roommates.m */,
-				B12EBBD817679FF300A68C17 /* Alerts.h */,
-				B12EBBD917679FF300A68C17 /* Alerts.m */,
-				B12EBBDE1767A00B00A68C17 /* Shoppinglist.h */,
-				B12EBBDF1767A00B00A68C17 /* Shoppinglist.m */,
-				B12EBBD517679FE800A68C17 /* Finances.h */,
-				B12EBBD617679FE800A68C17 /* Finances.m */,
-				B12EBBE81767B36000A68C17 /* Login.h */,
-				B12EBBE91767B36000A68C17 /* Login.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -627,8 +662,8 @@
 				49B5AF9F176F3F8500BC2076 /* Verjaardagen@2x.png in Resources */,
 				49B5AFA1176F3F8500BC2076 /* Klusjes.png in Resources */,
 				49B5AFA3176F3F8500BC2076 /* Klusjes@2x.png in Resources */,
-				49B5AFA5176F3F8500BC2076 /* Drankjes.png in Resources */,
-				49B5AFA7176F3F8500BC2076 /* Drankjes@2x.png in Resources */,
+				49B5AFA5176F3F8500BC2076 /* Feestjes.png in Resources */,
+				49B5AFA7176F3F8500BC2076 /* Feestjes@2x.png in Resources */,
 				49B5AFA9176F3F8500BC2076 /* Folder.png in Resources */,
 				49B5AFAB176F3F8500BC2076 /* Folder@2x.png in Resources */,
 				49B5AFB1176F3F8500BC2076 /* Inbox.png in Resources */,
@@ -662,8 +697,8 @@
 				49B5AFA0176F3F8500BC2076 /* Verjaardagen@2x.png in Resources */,
 				49B5AFA2176F3F8500BC2076 /* Klusjes.png in Resources */,
 				49B5AFA4176F3F8500BC2076 /* Klusjes@2x.png in Resources */,
-				49B5AFA6176F3F8500BC2076 /* Drankjes.png in Resources */,
-				49B5AFA8176F3F8500BC2076 /* Drankjes@2x.png in Resources */,
+				49B5AFA6176F3F8500BC2076 /* Feestjes.png in Resources */,
+				49B5AFA8176F3F8500BC2076 /* Feestjes@2x.png in Resources */,
 				49B5AFAA176F3F8500BC2076 /* Folder.png in Resources */,
 				49B5AFAC176F3F8500BC2076 /* Folder@2x.png in Resources */,
 				49B5AFB2176F3F8500BC2076 /* Inbox.png in Resources */,
@@ -712,7 +747,6 @@
 				B12EBBDA17679FF300A68C17 /* Alerts.m in Sources */,
 				B12EBBE01767A00B00A68C17 /* Shoppinglist.m in Sources */,
 				B12EBBE71767B33500A68C17 /* LoginViewController.m in Sources */,
-				B12EBBEA1767B36000A68C17 /* Login.m in Sources */,
 				49EB97691769E5CB009B2627 /* alertsViewController.m in Sources */,
 				49EB9883176B5DC0009B2627 /* alarmsViewController.m in Sources */,
 				49EB9887176B9474009B2627 /* AlarmItem.m in Sources */,

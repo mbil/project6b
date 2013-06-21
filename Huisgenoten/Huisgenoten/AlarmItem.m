@@ -19,6 +19,7 @@
     return self;
 }
 
+// Load
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
     if ((self = [super init])) {
@@ -32,6 +33,7 @@
     return self;
 }
 
+// Save
 - (void)encodeWithCoder:(NSCoder *)aCoder
 {
 
@@ -78,6 +80,7 @@
     }
 }
 
+// Cancel notification
 - (void)dealloc
 {
     UILocalNotification *existingNotification = [self notificationForThisItem];

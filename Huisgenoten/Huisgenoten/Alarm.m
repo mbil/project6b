@@ -20,6 +20,7 @@
     return self;
 }
 
+// Load alarm groups
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
     if ((self = [super init])) {
@@ -31,6 +32,7 @@
     return self;
 }
 
+// Save alarm groups
 - (void)encodeWithCoder:(NSCoder *)aCoder
 {
     [aCoder encodeObject:self.name forKey:@"Name"];

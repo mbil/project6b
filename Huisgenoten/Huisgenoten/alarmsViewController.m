@@ -62,6 +62,7 @@
 
 - (void)configureDueDateForCell:(UITableViewCell *)cell withAlarmItem:(AlarmItem *)item
 {
+    // Format date
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"dd-MM-yyyy"];
     NSString *date = [dateFormatter stringFromDate:item.dueDate];
@@ -78,28 +79,30 @@
 
     [self configureTextForCell:cell withAlarmItem:item];
     [self configureCheckmarkForCell:cell withAlarmItem:item];
+    // Display date, only when reminder is set
     if (item.shouldRemind == YES) {
         [self configureDueDateForCell:cell withAlarmItem:item];
     }
-    //[self configureDueDateForCell:cell withAlarmItem:item];
     
     return cell;
 }
 
 #pragma mark - Table view delegate
 
+// Toggle checkmark
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     
     AlarmItem *item = [self.alarm.items objectAtIndex:indexPath.row];
-    [item toggleChecked];
     
+    [item toggleChecked];
     [self configureCheckmarkForCell:cell withAlarmItem:item];
         
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
+// Remove alarm
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self.alarm.items removeObjectAtIndex:indexPath.row];
@@ -108,6 +111,7 @@
     [tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
+// Accessory Button
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath
 {
     AlarmItem *item = [self.alarm.items objectAtIndex:indexPath.row];
@@ -119,6 +123,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+// Add alarm
 - (void)alarmDetailViewController:(AlarmDetailViewController *)controller didFinishAddingItem:(AlarmItem *)item
 {
     int newRowIndex = [self.alarm.items count];
@@ -148,6 +153,7 @@
     }
 }
 
+// Edit alarm
 - (void)alarmDetailViewController:(AlarmDetailViewController *)controller didFinishEditingItem:(AlarmItem *)item
 {
     int index = [self.alarm.items indexOfObject:item];

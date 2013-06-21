@@ -26,7 +26,7 @@
              @"Afspraken",
              @"Verjaardagen",
              @"Klusjes",
-             @"Drankjes",
+             @"Feestjes",
              @"Folder",
              @"Inbox",
              @"Foto's",

@@ -11,6 +11,4 @@
 
 @interface ViewController : UIViewController
 
-@property (nonatomic, weak) IBOutlet UILabel *outcome;
-
 @end

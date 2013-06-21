@@ -48,6 +48,7 @@
     
     [self.dataModel saveAlarms];
 
+    // Directly make new alarm, when none are present
     int index = [self.dataModel indexOfSelectedAlarm];
     if (index >= 0 && index < [self.dataModel.lists count]) {
         Alarm *alarm = [self.dataModel.lists objectAtIndex:index];
@@ -69,6 +70,7 @@
     return [self.dataModel.lists count];
 }
 
+// Cell layout
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
@@ -141,6 +143,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+// Add alarm group
 - (void)listDetailViewController:(ListDetailViewController *)controller didFinishAddingAlarm:(Alarm *)alarm
 {
     [self.dataModel.lists addObject:alarm];
@@ -151,6 +154,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+// Edit alarm group
 - (void)listDetailViewController:(ListDetailViewController *)controller didFinishEditingAlarm:(Alarm *)alarm
 {
     [self.dataModel sortAlarms];
@@ -160,6 +164,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+// Remove alarm group
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self.dataModel.lists removeObjectAtIndex:indexPath.row];

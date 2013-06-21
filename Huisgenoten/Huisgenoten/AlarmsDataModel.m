@@ -23,6 +23,7 @@
     return [[self documentsDirectory] stringByAppendingPathComponent:@"Alarms.plist"];
 }
 
+// Save in plist
 - (void)saveAlarms
 {
     NSMutableData *data = [[NSMutableData alloc] init];
@@ -32,6 +33,7 @@
     [data writeToFile:[self dataFilePath] atomically:YES];
 }
 
+// Load out of plist
 - (void)loadAlarms
 {
     NSString *path = [self dataFilePath];
@@ -60,10 +62,10 @@
 {
     BOOL firstTime = [[NSUserDefaults standardUserDefaults] boolForKey:@"FirstTime"];
     if (firstTime) {
-        Alarm *alarm = [[Alarm alloc] init];
-        alarm.name = @"Groep";
-        alarm.iconName = @"Afspraken";
-        [self.lists addObject:alarm];
+        Alarm *alarmGroup = [[Alarm alloc] init];
+        alarmGroup.name = @"Je eerste map";
+        alarmGroup.iconName = @"Afspraken";
+        [self.lists addObject:alarmGroup];
         [self setIndexOfSelectedAlarm:0];
         [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"FirstTime"];
     }

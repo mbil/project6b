@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "LoginViewController.h"
 #import "SubclassConfigViewController.h"
+#import "ViewController.h"
 
 @implementation AppDelegate
 
@@ -18,8 +19,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     // ****************************************************************************
-    // Fill in with your Parse and Twitter credentials. Don't forget to add your
-    // Facebook id in Info.plist:
+    // Fill in with your Parse credentials.
     // ****************************************************************************
     [Parse setApplicationId:@"r2zaUDtxWicSkoo6wBUjFQCprvbGaoyaqICRBTaS" clientKey:@"iLS0xLQQJw1X2mqRHcblBqeQ4BNi5pDhxjeTgxht"];
     
@@ -42,7 +42,8 @@
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Handle an interruption during the authorization flow, such as the user clicking the home button.
+    //ViewController *viewController = [[ViewController alloc] init];
+    //[self  presentViewController:viewController animated:YES completion:nil];
 }
 
 @end

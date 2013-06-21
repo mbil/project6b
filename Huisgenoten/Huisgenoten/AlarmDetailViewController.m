@@ -101,6 +101,7 @@
     }
 }
 
+// Enable done button when text is entered
 - (BOOL)textField:(UITextField *)theTextField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
     NSString *newText = [theTextField.text stringByReplacingCharactersInRange:range withString:string];
