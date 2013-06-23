@@ -24,18 +24,6 @@
     [self.logInView setLogo:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Logo.png"]]];
     
     // Set buttons appearance
-    [self.logInView.facebookButton setImage:nil forState:UIControlStateNormal];
-    [self.logInView.facebookButton setImage:nil forState:UIControlStateHighlighted];
-
-    [self.logInView.facebookButton setTitle:@"" forState:UIControlStateNormal];
-    [self.logInView.facebookButton setTitle:@"" forState:UIControlStateHighlighted];
-    
-    [self.logInView.twitterButton setImage:nil forState:UIControlStateNormal];
-    [self.logInView.twitterButton setImage:nil forState:UIControlStateHighlighted];
-
-    [self.logInView.twitterButton setTitle:@"" forState:UIControlStateNormal];
-    [self.logInView.twitterButton setTitle:@"" forState:UIControlStateHighlighted];
-    
     [self.logInView.signUpButton setBackgroundImage:[UIImage imageNamed:@"SignUp.png"] forState:UIControlStateNormal];
     [self.logInView.signUpButton setBackgroundImage:[UIImage imageNamed:@"SignUpDown.png"] forState:UIControlStateHighlighted];
     [self.logInView.signUpButton setTitle:@"" forState:UIControlStateNormal];
