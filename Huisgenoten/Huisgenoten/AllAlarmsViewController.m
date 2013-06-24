@@ -8,7 +8,7 @@
 
 #import "AllAlarmsViewController.h"
 #import "Alarm.h"
-#import "alarmsViewController.h"
+#import "AlarmsViewController.h"
 #import "AlarmItem.h"
 #import "AlarmsDataModel.h"
 
@@ -25,12 +25,6 @@
     }
     
     return self;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -54,12 +48,6 @@
         Alarm *alarm = [self.dataModel.lists objectAtIndex:index];
         [self performSegueWithIdentifier:@"ShowAlarm" sender:alarm];
     }
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
@@ -126,7 +114,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"ShowAlarm"]) {
-        alarmsViewController *controller = segue.destinationViewController;
+        AlarmsViewController *controller = segue.destinationViewController;
         controller.alarm = sender;
     }
     else if ([segue.identifier isEqualToString:@"AddList"])

@@ -1,5 +1,5 @@
 //
-//  alarmsViewController.h
+//  AlarmsViewController.h
 //  Huisgenoten
 //
 //  Created by Miguel Pruijssers on 14-06-13.
@@ -11,7 +11,7 @@
 
 @class Alarm;
 
-@interface alarmsViewController : UITableViewController <AlarmDetailViewControllerDelegate>
+@interface AlarmsViewController : UITableViewController <AlarmDetailViewControllerDelegate>
 
 @property (nonatomic, strong) Alarm *alarm;
 

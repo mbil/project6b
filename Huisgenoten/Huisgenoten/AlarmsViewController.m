@@ -1,31 +1,25 @@
 //
-//  alarmsViewController.m
+//  AlarmsViewController.m
 //  Huisgenoten
 //
 //  Created by Miguel Pruijssers on 14-06-13.
 //
 //
 
-#import "alarmsViewController.h"
+#import "AlarmsViewController.h"
 #import "AlarmItem.h"
 #import "Alarm.h"
 
-@interface alarmsViewController ()
+@interface AlarmsViewController ()
 
 @end
 
-@implementation alarmsViewController
+@implementation AlarmsViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.title  =self.alarm.name;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source

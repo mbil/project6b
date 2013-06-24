@@ -89,8 +89,8 @@
 		49EB97691769E5CB009B2627 /* alertsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB97681769E5CB009B2627 /* alertsViewController.m */; };
 		49EB987F176B51A2009B2627 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EB987D176B51A2009B2627 /* EventKit.framework */; };
 		49EB9880176B51A2009B2627 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EB987E176B51A2009B2627 /* EventKitUI.framework */; };
-		49EB9883176B5DC0009B2627 /* alarmsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB9882176B5DC0009B2627 /* alarmsViewController.m */; };
-		49EB9884176B5DC0009B2627 /* alarmsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB9882176B5DC0009B2627 /* alarmsViewController.m */; };
+		49EB9883176B5DC0009B2627 /* AlarmsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB9882176B5DC0009B2627 /* AlarmsViewController.m */; };
+		49EB9884176B5DC0009B2627 /* AlarmsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB9882176B5DC0009B2627 /* AlarmsViewController.m */; };
 		49EB9887176B9474009B2627 /* AlarmItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB9886176B9474009B2627 /* AlarmItem.m */; };
 		49EB9888176B9474009B2627 /* AlarmItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB9886176B9474009B2627 /* AlarmItem.m */; };
 		49EB988B176C7140009B2627 /* AlarmDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB988A176C7140009B2627 /* AlarmDetailViewController.m */; };
@@ -194,8 +194,8 @@
 		49EB97681769E5CB009B2627 /* alertsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = alertsViewController.m; sourceTree = "<group>"; };
 		49EB987D176B51A2009B2627 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		49EB987E176B51A2009B2627 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
-		49EB9881176B5DC0009B2627 /* alarmsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = alarmsViewController.h; sourceTree = "<group>"; };
-		49EB9882176B5DC0009B2627 /* alarmsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = alarmsViewController.m; sourceTree = "<group>"; };
+		49EB9881176B5DC0009B2627 /* AlarmsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmsViewController.h; sourceTree = "<group>"; };
+		49EB9882176B5DC0009B2627 /* AlarmsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmsViewController.m; sourceTree = "<group>"; };
 		49EB9885176B9474009B2627 /* AlarmItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmItem.h; sourceTree = "<group>"; };
 		49EB9886176B9474009B2627 /* AlarmItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmItem.m; sourceTree = "<group>"; };
 		49EB9889176C7140009B2627 /* AlarmDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmDetailViewController.h; sourceTree = "<group>"; };
@@ -299,8 +299,8 @@
 		492A1549176F830F0009BA44 /* Alarms */ = {
 			isa = PBXGroup;
 			children = (
-				49EB9881176B5DC0009B2627 /* alarmsViewController.h */,
-				49EB9882176B5DC0009B2627 /* alarmsViewController.m */,
+				49EB9881176B5DC0009B2627 /* AlarmsViewController.h */,
+				49EB9882176B5DC0009B2627 /* AlarmsViewController.m */,
 				49EB9889176C7140009B2627 /* AlarmDetailViewController.h */,
 				49EB988A176C7140009B2627 /* AlarmDetailViewController.m */,
 				49756A73176DE96200DF090E /* AllAlarmsViewController.h */,
@@ -337,22 +337,22 @@
 			name = Finances;
 			sourceTree = "<group>";
 		};
-		492A15651771D3400009BA44 /* Shopping */ = {
+		492A15651771D3400009BA44 /* Shoppinglist */ = {
 			isa = PBXGroup;
 			children = (
 				B1BF484C176750300046BD19 /* shoppinglistViewController.h */,
 				B1BF484D176750300046BD19 /* shoppinglistViewController.m */,
 			);
-			name = Shopping;
+			name = Shoppinglist;
 			sourceTree = "<group>";
 		};
-		492A15661771D3610009BA44 /* Roomies */ = {
+		492A15661771D3610009BA44 /* Roommates */ = {
 			isa = PBXGroup;
 			children = (
 				B1BF484F176750800046BD19 /* roommatesViewController.h */,
 				B1BF4850176750800046BD19 /* roommatesViewController.m */,
 			);
-			name = Roomies;
+			name = Roommates;
 			sourceTree = "<group>";
 		};
 		492A15671771D36E0009BA44 /* Alerts */ = {
@@ -464,8 +464,8 @@
 			children = (
 				497CE6F317747F8F003B7B4F /* Home */,
 				492A15671771D36E0009BA44 /* Alerts */,
-				492A15661771D3610009BA44 /* Roomies */,
-				492A15651771D3400009BA44 /* Shopping */,
+				492A15661771D3610009BA44 /* Roommates */,
+				492A15651771D3400009BA44 /* Shoppinglist */,
 				492A15631771D3280009BA44 /* Finances */,
 				492A15621771D3180009BA44 /* Login */,
 				492A1549176F830F0009BA44 /* Alarms */,
@@ -748,7 +748,7 @@
 				B12EBBE01767A00B00A68C17 /* Shoppinglist.m in Sources */,
 				B12EBBE71767B33500A68C17 /* LoginViewController.m in Sources */,
 				49EB97691769E5CB009B2627 /* alertsViewController.m in Sources */,
-				49EB9883176B5DC0009B2627 /* alarmsViewController.m in Sources */,
+				49EB9883176B5DC0009B2627 /* AlarmsViewController.m in Sources */,
 				49EB9887176B9474009B2627 /* AlarmItem.m in Sources */,
 				49EB988B176C7140009B2627 /* AlarmDetailViewController.m in Sources */,
 				49756A75176DE96200DF090E /* AllAlarmsViewController.m in Sources */,
@@ -767,7 +767,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B19A6E1217671DF00026D06C /* HuisgenotenTests.m in Sources */,
-				49EB9884176B5DC0009B2627 /* alarmsViewController.m in Sources */,
+				49EB9884176B5DC0009B2627 /* AlarmsViewController.m in Sources */,
 				49EB9888176B9474009B2627 /* AlarmItem.m in Sources */,
 				49EB988C176C7140009B2627 /* AlarmDetailViewController.m in Sources */,
 				49756A76176DE96200DF090E /* AllAlarmsViewController.m in Sources */,

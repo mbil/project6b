@@ -48,12 +48,6 @@
     [self.textField becomeFirstResponder];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (IBAction)cancel
 {
     [self.delegate listDetailViewControllerDidCancel:self];
