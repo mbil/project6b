@@ -31,6 +31,7 @@
 {
     [super viewWillAppear:animated];
     
+    [self.dataModel saveAlarms];
     [self.tableView reloadData];
 }
 
@@ -40,12 +41,10 @@
     
     self.navigationController.delegate = self;
     
-    [self.dataModel saveAlarms];
-
     // Directly make new alarm, when none are present
     int index = [self.dataModel indexOfSelectedAlarm];
     if (index >= 0 && index < [self.dataModel.lists count]) {
-        Alarm *alarm = [self.dataModel.lists objectAtIndex:index];
+        AlarmsDataModel *alarm = [self.dataModel.lists objectAtIndex:index];
         [self performSegueWithIdentifier:@"ShowAlarm" sender:alarm];
     }
 }
@@ -93,7 +92,7 @@
 {
     [self.dataModel setIndexOfSelectedAlarm:indexPath.row];
     
-    Alarm *alarm = [self.dataModel.lists objectAtIndex:indexPath.row];
+    AlarmsDataModel *alarm = [self.dataModel.lists objectAtIndex:indexPath.row];
     
     [self performSegueWithIdentifier:@"ShowAlarm" sender:alarm];
 }

@@ -8,6 +8,7 @@
 
 #import "AlarmsDataModel.h"
 #import "Alarm.h"
+#import "AlarmItem.h"
 
 @implementation AlarmsDataModel
 
@@ -62,6 +63,7 @@
 {
     BOOL firstTime = [[NSUserDefaults standardUserDefaults] boolForKey:@"FirstTime"];
     if (firstTime) {
+        
         Alarm *alarmGroup = [[Alarm alloc] init];
         alarmGroup.name = @"Je eerste map";
         alarmGroup.iconName = @"Afspraken";

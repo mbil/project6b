@@ -58,7 +58,7 @@
 {
     // Format date
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"dd-MM-yyyy"];
+    [dateFormatter setDateFormat:@"d MMMM yyyy, hh:mm"];
     NSString *date = [dateFormatter stringFromDate:item.dueDate];
     
     UILabel *label = (UILabel *)[cell viewWithTag:1002];
@@ -80,6 +80,12 @@
     
     return cell;
 }
+
+//- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    cell.backgroundColor = (indexPath.row%2)
+//    ? [UIColor lightGrayColor] : [UIColor darkGrayColor];
+//}
 
 #pragma mark - Table view delegate
 

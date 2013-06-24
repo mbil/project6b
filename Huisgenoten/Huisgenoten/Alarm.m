@@ -55,4 +55,5 @@
 {
     return [self.name localizedStandardCompare:otherAlarm.name];
 }
+
 @end
