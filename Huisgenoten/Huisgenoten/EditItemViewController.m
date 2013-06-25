@@ -130,9 +130,7 @@
 
 // pricefield check
 -(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
-    NSLog(@"in shouldChangeCharactersInRange");
-    
-    
+   
     if([string length]==0){
         return YES;
     }
