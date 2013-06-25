@@ -8,7 +8,6 @@
 
 #import "AddItemViewController.h"
 #import "ShoppinglistViewController.h"
-#import "Shoppinglist.h"
 
 @interface AddItemViewController ()
 

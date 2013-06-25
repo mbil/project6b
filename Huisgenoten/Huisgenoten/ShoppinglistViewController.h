@@ -13,7 +13,6 @@
 
 @property (nonatomic, strong) NSMutableArray *items;
 
-- (IBAction)editButtonPressed:(id)sender;
 - (IBAction)backAction:(id)sender;
 
 @end

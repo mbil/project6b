@@ -7,7 +7,6 @@
 //
 
 #import "EditItemViewController.h"
-#import "Shoppinglist.h"
 
 @interface EditItemViewController ()
 
@@ -153,7 +152,6 @@
             if (newTextLength > 5) {
                 return NO;
             }
-            NSLog(@"sep: %@ count: %d" ,sep,[sep count]);
             if([sep count]==2) {
                 NSString *sepStr=[NSString stringWithFormat:@"%@",[sep objectAtIndex:1]];
                 return !([sepStr length]>2);

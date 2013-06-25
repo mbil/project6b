@@ -19,6 +19,7 @@
 @synthesize purchases=_purchases;
 @synthesize selectedCellText=_selectedCellText;
 @synthesize price=_price;
+@synthesize moneySpendLabel=_moneySpendLabel;
 
 #pragma mark -
 #pragma mark Initialization
