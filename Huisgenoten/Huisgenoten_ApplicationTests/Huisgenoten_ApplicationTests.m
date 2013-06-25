@@ -30,7 +30,7 @@
 - (void)setUp
 {
     [super setUp];
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Mainstoryboard" bundle:nil];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
     self.controller = [storyboard instantiateViewControllerWithIdentifier:@"AddItem"];
     [self.controller performSelectorOnMainThread:@selector(loadView) withObject:nil waitUntilDone:YES];
     self.appDelegate = [[UIApplication sharedApplication] delegate];
