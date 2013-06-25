@@ -39,12 +39,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // delegate for the pricefield check
+    UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
+    [self.tableView addGestureRecognizer:gestureRecognizer];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+
+- (void) hideKeyboard {
+    [_nameField resignFirstResponder];
 }
 
 #pragma mark - IBActions
