@@ -16,7 +16,7 @@
 
 //private properties
 @property (nonatomic, readwrite, weak) AppDelegate *appDelegate;
-@property (strong, nonatomic) AddItemViewController *controller;
+@property (strong, nonatomic) AddItemViewController *addItemController;
 @property (nonatomic, readwrite, weak) UIWindow *window;
 
 @end
@@ -24,15 +24,15 @@
 @implementation Huisgenoten_ApplicationTests
 
 @synthesize appDelegate=_appDelegate;
-@synthesize controller=_controller;
+@synthesize addItemController=_addItemController;
 @synthesize window=_window;
 
 - (void)setUp
 {
     [super setUp];
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
-    self.controller = [storyboard instantiateViewControllerWithIdentifier:@"AddItem"];
-    [self.controller performSelectorOnMainThread:@selector(loadView) withObject:nil waitUntilDone:YES];
+    self.addItemController = [storyboard instantiateViewControllerWithIdentifier:@"AddItem"];
+    [self.addItemController performSelectorOnMainThread:@selector(loadView) withObject:nil waitUntilDone:YES];
     self.appDelegate = [[UIApplication sharedApplication] delegate];
     
 }
@@ -43,7 +43,8 @@
 }
 
 -(void) testAddItem {
-    [self.controller.nameField performSelectorOnMainThread:@selector(setText:) withObject:@"foo" waitUntilDone:YES];
+    [self.addItemController.nameField performSelectorOnMainThread:@selector(setText:) withObject:@"foo" waitUntilDone:YES];
+    STAssertTrue([[self.addItemController.nameField text] isEqualToString:@"foo"], @"Name should be foo");
 }
 
 @end
