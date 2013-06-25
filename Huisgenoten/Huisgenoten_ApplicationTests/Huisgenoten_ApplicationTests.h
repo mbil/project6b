@@ -8,13 +8,6 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-// Test-subject headers.
-#import "AppDelegate.h"
-#import "EditItemViewController.h"
-
-
-@interface Huisgenoten_ApplicationTests : SenTestCase 
-
-@property (strong, nonatomic) ViewController *controller;
+@interface Huisgenoten_ApplicationTests : SenTestCase
 
 @end
