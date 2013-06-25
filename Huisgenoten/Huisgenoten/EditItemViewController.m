@@ -64,11 +64,6 @@
 }
 
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-}
-
 #pragma mark - IBActions
 - (void)itemDataChanged:(id)sender {
     

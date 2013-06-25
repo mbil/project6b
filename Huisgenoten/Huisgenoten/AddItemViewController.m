@@ -43,10 +43,6 @@
     [self.tableView addGestureRecognizer:gestureRecognizer];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-}
 
 - (void) hideKeyboard {
     [_nameField resignFirstResponder];

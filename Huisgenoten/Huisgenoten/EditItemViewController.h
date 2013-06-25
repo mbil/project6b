@@ -20,7 +20,6 @@
 @property (nonatomic, readwrite, strong) Finances *finances;
 @property (assign, nonatomic, readwrite) float price;
 
-
 - (IBAction)itemDataChanged:(id)sender;
 - (IBAction)itemBought:(id)sender;
 - (IBAction)addToFinances:(id)sender;

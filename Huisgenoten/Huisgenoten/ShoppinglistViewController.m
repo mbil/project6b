@@ -43,14 +43,6 @@
 
 #pragma mark -
 #pragma mark View Life Cycle
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewDidAppear:animated];
@@ -60,11 +52,6 @@
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Item"];
     self.items = [[managedObjectContext executeFetchRequest:fetchRequest error:nil] mutableCopy];
     [self.tableView reloadData];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-
 }
 
 #pragma mark -
@@ -162,6 +149,7 @@
 - (void)editButtonPressed:(id)sender {
     self.editing = !self.editing;
 }
+
 - (IBAction)backAction:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }

@@ -1,19 +1,19 @@
 //
-//  financesViewController.m
+//  FinancesViewController.m
 //  Huisgenoten
 //
 //  Created by Myrthe Bil on 6/20/13.
 //
 //
 
-#import "financesViewController.h"
+#import "FinancesViewController.h"
 #import "AppDelegate.h"
 
-@interface financesViewController ()
+@interface FinancesViewController ()
 
 @end
 
-@implementation financesViewController
+@implementation FinancesViewController
 
 @synthesize finances=_finances;
 @synthesize purchases=_purchases;
@@ -55,9 +55,6 @@
 
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewDidAppear:animated];

@@ -12,11 +12,10 @@
 
 @interface AddItemViewController : UITableViewController <UITextFieldDelegate>
 
+@property (nonatomic, weak) IBOutlet UITextField *nameField;
+@property (nonatomic, strong) ShoppinglistViewController *itemListViewController;
+
 - (IBAction)cancelButtonPressed:(id)sender;
 - (IBAction)doneButtonPressed:(id)sender;
-
-@property (nonatomic, weak) IBOutlet UITextField *nameField;
-
-@property (nonatomic, strong) ShoppinglistViewController *itemListViewController;
 
 @end

@@ -101,7 +101,7 @@
 		B1E113081779E12E001B22CE /* AddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E113071779E12E001B22CE /* AddItemViewController.m */; };
 		B1E1130B1779E17E001B22CE /* EditItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E1130A1779E17E001B22CE /* EditItemViewController.m */; };
 		B1E1130E1779E18D001B22CE /* ShoppinglistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E1130D1779E18D001B22CE /* ShoppinglistViewController.m */; };
-		B1E113111779E1BD001B22CE /* financesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E113101779E1BD001B22CE /* financesViewController.m */; };
+		B1E113111779E1BD001B22CE /* FinancesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E113101779E1BD001B22CE /* FinancesViewController.m */; };
 		B1E113141779E1F1001B22CE /* Finances.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E113131779E1F1001B22CE /* Finances.m */; };
 		B1E113171779E210001B22CE /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1E113151779E210001B22CE /* Model.xcdatamodeld */; };
 		B1E113191779E2D9001B22CE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E113181779E2D9001B22CE /* CoreData.framework */; };
@@ -202,8 +202,8 @@
 		B1E1130A1779E17E001B22CE /* EditItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditItemViewController.m; sourceTree = "<group>"; };
 		B1E1130C1779E18D001B22CE /* ShoppinglistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppinglistViewController.h; sourceTree = "<group>"; };
 		B1E1130D1779E18D001B22CE /* ShoppinglistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppinglistViewController.m; sourceTree = "<group>"; };
-		B1E1130F1779E1BD001B22CE /* financesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = financesViewController.h; sourceTree = "<group>"; };
-		B1E113101779E1BD001B22CE /* financesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = financesViewController.m; sourceTree = "<group>"; };
+		B1E1130F1779E1BD001B22CE /* FinancesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinancesViewController.h; sourceTree = "<group>"; };
+		B1E113101779E1BD001B22CE /* FinancesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinancesViewController.m; sourceTree = "<group>"; };
 		B1E113121779E1F1001B22CE /* Finances.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Finances.h; sourceTree = "<group>"; };
 		B1E113131779E1F1001B22CE /* Finances.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Finances.m; sourceTree = "<group>"; };
 		B1E113161779E210001B22CE /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -287,8 +287,8 @@
 		492A15631771D3280009BA44 /* Finances */ = {
 			isa = PBXGroup;
 			children = (
-				B1E1130F1779E1BD001B22CE /* financesViewController.h */,
-				B1E113101779E1BD001B22CE /* financesViewController.m */,
+				B1E1130F1779E1BD001B22CE /* FinancesViewController.h */,
+				B1E113101779E1BD001B22CE /* FinancesViewController.m */,
 			);
 			name = Finances;
 			sourceTree = "<group>";
@@ -658,7 +658,7 @@
 				B1E113081779E12E001B22CE /* AddItemViewController.m in Sources */,
 				B1E1130B1779E17E001B22CE /* EditItemViewController.m in Sources */,
 				B1E1130E1779E18D001B22CE /* ShoppinglistViewController.m in Sources */,
-				B1E113111779E1BD001B22CE /* financesViewController.m in Sources */,
+				B1E113111779E1BD001B22CE /* FinancesViewController.m in Sources */,
 				B1E113141779E1F1001B22CE /* Finances.m in Sources */,
 				B1E113171779E210001B22CE /* Model.xcdatamodeld in Sources */,
 			);
