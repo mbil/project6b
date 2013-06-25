@@ -34,8 +34,6 @@
 		497CE6E2177310C7003B7B4F /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 497CE6D2177310C7003B7B4F /* Logo.png */; };
 		497CE6E5177310C7003B7B4F /* MainBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 497CE6D5177310C7003B7B4F /* MainBG.png */; };
 		497CE6F217731552003B7B4F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497CE6F017731552003B7B4F /* Parse.framework */; };
-		497CE70D1778D948003B7B4F /* StartUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 497CE70C1778D948003B7B4F /* StartUpViewController.m */; };
-		497CE70E1778D948003B7B4F /* StartUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 497CE70C1778D948003B7B4F /* StartUpViewController.m */; };
 		49B5AF99176F3F8500BC2076 /* Afspraken.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF76176F3F8500BC2076 /* Afspraken.png */; };
 		49B5AF9A176F3F8500BC2076 /* Afspraken.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF76176F3F8500BC2076 /* Afspraken.png */; };
 		49B5AF9B176F3F8500BC2076 /* Afspraken@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF77176F3F8500BC2076 /* Afspraken@2x.png */; };
@@ -84,7 +82,6 @@
 		49EB9888176B9474009B2627 /* AlarmItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB9886176B9474009B2627 /* AlarmItem.m */; };
 		49EB988B176C7140009B2627 /* AlarmDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB988A176C7140009B2627 /* AlarmDetailViewController.m */; };
 		49EB988C176C7140009B2627 /* AlarmDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB988A176C7140009B2627 /* AlarmDetailViewController.m */; };
-		B12EBBD417679FCE00A68C17 /* Roommates.m in Sources */ = {isa = PBXBuildFile; fileRef = B12EBBD317679FCE00A68C17 /* Roommates.m */; };
 		B12EBBD717679FE800A68C17 /* Finances.m in Sources */ = {isa = PBXBuildFile; fileRef = B12EBBD617679FE800A68C17 /* Finances.m */; };
 		B12EBBE01767A00B00A68C17 /* Shoppinglist.m in Sources */ = {isa = PBXBuildFile; fileRef = B12EBBDF1767A00B00A68C17 /* Shoppinglist.m */; };
 		B19A6DE117671DF00026D06C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19A6DE017671DF00026D06C /* UIKit.framework */; };
@@ -104,7 +101,6 @@
 		B19A6E0F17671DF00026D06C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B19A6E0D17671DF00026D06C /* InfoPlist.strings */; };
 		B19A6E1217671DF00026D06C /* HuisgenotenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B19A6E1117671DF00026D06C /* HuisgenotenTests.m */; };
 		B1BF484E176750300046BD19 /* shoppinglistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1BF484D176750300046BD19 /* shoppinglistViewController.m */; };
-		B1BF4851176750800046BD19 /* roommatesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1BF4850176750800046BD19 /* roommatesViewController.m */; };
 		B1BF4854176750DD0046BD19 /* financesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1BF4853176750DC0046BD19 /* financesViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -145,8 +141,6 @@
 		497CE6D2177310C7003B7B4F /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 		497CE6D5177310C7003B7B4F /* MainBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainBG.png; sourceTree = "<group>"; };
 		497CE6F017731552003B7B4F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../Parse.framework; sourceTree = "<group>"; };
-		497CE70B1778D948003B7B4F /* StartUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartUpViewController.h; sourceTree = "<group>"; };
-		497CE70C1778D948003B7B4F /* StartUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartUpViewController.m; sourceTree = "<group>"; };
 		49B5AF76176F3F8500BC2076 /* Afspraken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Afspraken.png; sourceTree = "<group>"; };
 		49B5AF77176F3F8500BC2076 /* Afspraken@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Afspraken@2x.png"; sourceTree = "<group>"; };
 		49B5AF78176F3F8500BC2076 /* Verjaardagen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Verjaardagen.png; sourceTree = "<group>"; };
@@ -177,8 +171,6 @@
 		49EB9886176B9474009B2627 /* AlarmItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmItem.m; sourceTree = "<group>"; };
 		49EB9889176C7140009B2627 /* AlarmDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmDetailViewController.h; sourceTree = "<group>"; };
 		49EB988A176C7140009B2627 /* AlarmDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmDetailViewController.m; sourceTree = "<group>"; };
-		B12EBBD217679FCE00A68C17 /* Roommates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Roommates.h; sourceTree = "<group>"; };
-		B12EBBD317679FCE00A68C17 /* Roommates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Roommates.m; sourceTree = "<group>"; };
 		B12EBBD517679FE800A68C17 /* Finances.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Finances.h; sourceTree = "<group>"; };
 		B12EBBD617679FE800A68C17 /* Finances.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Finances.m; sourceTree = "<group>"; };
 		B12EBBDE1767A00B00A68C17 /* Shoppinglist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shoppinglist.h; sourceTree = "<group>"; };
@@ -207,8 +199,6 @@
 		B19A6E1117671DF00026D06C /* HuisgenotenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HuisgenotenTests.m; sourceTree = "<group>"; };
 		B1BF484C176750300046BD19 /* shoppinglistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shoppinglistViewController.h; sourceTree = "<group>"; };
 		B1BF484D176750300046BD19 /* shoppinglistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shoppinglistViewController.m; sourceTree = "<group>"; };
-		B1BF484F176750800046BD19 /* roommatesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = roommatesViewController.h; sourceTree = "<group>"; };
-		B1BF4850176750800046BD19 /* roommatesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = roommatesViewController.m; sourceTree = "<group>"; };
 		B1BF4852176750DC0046BD19 /* financesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = financesViewController.h; sourceTree = "<group>"; };
 		B1BF4853176750DC0046BD19 /* financesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = financesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -304,15 +294,6 @@
 			name = Shoppinglist;
 			sourceTree = "<group>";
 		};
-		492A15661771D3610009BA44 /* Roommates */ = {
-			isa = PBXGroup;
-			children = (
-				B1BF484F176750800046BD19 /* roommatesViewController.h */,
-				B1BF4850176750800046BD19 /* roommatesViewController.m */,
-			);
-			name = Roommates;
-			sourceTree = "<group>";
-		};
 		497CE6CC177310C7003B7B4F /* StartUp */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,19 +309,8 @@
 			children = (
 				B19A6DFB17671DF00026D06C /* ViewController.h */,
 				B19A6DFC17671DF00026D06C /* ViewController.m */,
-				497CE70B1778D948003B7B4F /* StartUpViewController.h */,
-				497CE70C1778D948003B7B4F /* StartUpViewController.m */,
 			);
 			name = Home;
-			sourceTree = "<group>";
-		};
-		497CE6F417748025003B7B4F /* Roommates */ = {
-			isa = PBXGroup;
-			children = (
-				B12EBBD217679FCE00A68C17 /* Roommates.h */,
-				B12EBBD317679FCE00A68C17 /* Roommates.m */,
-			);
-			name = Roommates;
 			sourceTree = "<group>";
 		};
 		497CE6F51774802E003B7B4F /* Shoppinglist */ = {
@@ -399,7 +369,6 @@
 			isa = PBXGroup;
 			children = (
 				497CE6F317747F8F003B7B4F /* Home */,
-				492A15661771D3610009BA44 /* Roommates */,
 				492A15651771D3400009BA44 /* Shoppinglist */,
 				492A15631771D3280009BA44 /* Finances */,
 				492A1549176F830F0009BA44 /* Alarms */,
@@ -412,7 +381,6 @@
 			children = (
 				497CE6F617748035003B7B4F /* Finances */,
 				497CE6F51774802E003B7B4F /* Shoppinglist */,
-				497CE6F417748025003B7B4F /* Roommates */,
 				492A1548176F82EB0009BA44 /* Alarms */,
 			);
 			name = Models;
@@ -667,9 +635,7 @@
 				B19A6DF117671DF00026D06C /* AppDelegate.m in Sources */,
 				B19A6DFD17671DF00026D06C /* ViewController.m in Sources */,
 				B1BF484E176750300046BD19 /* shoppinglistViewController.m in Sources */,
-				B1BF4851176750800046BD19 /* roommatesViewController.m in Sources */,
 				B1BF4854176750DD0046BD19 /* financesViewController.m in Sources */,
-				B12EBBD417679FCE00A68C17 /* Roommates.m in Sources */,
 				B12EBBD717679FE800A68C17 /* Finances.m in Sources */,
 				B12EBBE01767A00B00A68C17 /* Shoppinglist.m in Sources */,
 				49EB9883176B5DC0009B2627 /* AlarmsViewController.m in Sources */,
@@ -681,7 +647,6 @@
 				49756A85176E44BF00DF090E /* AlarmsDataModel.m in Sources */,
 				49B5AFDB176F411400BC2076 /* IconPickerViewController.m in Sources */,
 				49B5AFDF176F57A700BC2076 /* DatePickerViewController.m in Sources */,
-				497CE70D1778D948003B7B4F /* StartUpViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,7 +664,6 @@
 				49756A86176E44BF00DF090E /* AlarmsDataModel.m in Sources */,
 				49B5AFDC176F411400BC2076 /* IconPickerViewController.m in Sources */,
 				49B5AFE0176F57A700BC2076 /* DatePickerViewController.m in Sources */,
-				497CE70E1778D948003B7B4F /* StartUpViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

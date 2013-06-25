@@ -170,4 +170,5 @@
         [self.dataModel setIndexOfSelectedAlarm:-1];
     }
 }
+
 @end
