@@ -16,72 +16,42 @@
 		492A155D1770862A0009BA44 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492A155C1770862A0009BA44 /* Security.framework */; };
 		492A155F177086330009BA44 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492A155E177086330009BA44 /* StoreKit.framework */; };
 		492A15611770863D0009BA44 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492A15601770863D0009BA44 /* SystemConfiguration.framework */; };
-		492A159B1771E8330009BA44 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492A15991771E8330009BA44 /* FacebookSDK.framework */; };
 		492A159D1771E87A0009BA44 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 492A159C1771E87A0009BA44 /* FacebookSDKResources.bundle */; };
-		492A159E1771E87A0009BA44 /* FacebookSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 492A159C1771E87A0009BA44 /* FacebookSDKResources.bundle */; };
 		492A15A01771E89D0009BA44 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492A159F1771E89D0009BA44 /* Social.framework */; };
 		492A15A21771E8A80009BA44 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492A15A11771E8A70009BA44 /* Accounts.framework */; };
 		492A15A41771E8B70009BA44 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 492A15A31771E8B70009BA44 /* libsqlite3.dylib */; };
 		492A15A61771E8C50009BA44 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492A15A51771E8C50009BA44 /* AdSupport.framework */; };
 		49756A75176DE96200DF090E /* AllAlarmsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49756A74176DE96200DF090E /* AllAlarmsViewController.m */; };
-		49756A76176DE96200DF090E /* AllAlarmsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49756A74176DE96200DF090E /* AllAlarmsViewController.m */; };
 		49756A79176DED3200DF090E /* Alarm.m in Sources */ = {isa = PBXBuildFile; fileRef = 49756A78176DED3200DF090E /* Alarm.m */; };
-		49756A7A176DED3200DF090E /* Alarm.m in Sources */ = {isa = PBXBuildFile; fileRef = 49756A78176DED3200DF090E /* Alarm.m */; };
 		49756A81176DF85700DF090E /* ListDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49756A80176DF85700DF090E /* ListDetailViewController.m */; };
-		49756A82176DF85700DF090E /* ListDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49756A80176DF85700DF090E /* ListDetailViewController.m */; };
 		49756A85176E44BF00DF090E /* AlarmsDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49756A84176E44BF00DF090E /* AlarmsDataModel.m */; };
-		49756A86176E44BF00DF090E /* AlarmsDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49756A84176E44BF00DF090E /* AlarmsDataModel.m */; };
 		497CE6E2177310C7003B7B4F /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 497CE6D2177310C7003B7B4F /* Logo.png */; };
 		497CE6E5177310C7003B7B4F /* MainBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 497CE6D5177310C7003B7B4F /* MainBG.png */; };
-		497CE6F217731552003B7B4F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497CE6F017731552003B7B4F /* Parse.framework */; };
 		49B5AF99176F3F8500BC2076 /* Afspraken.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF76176F3F8500BC2076 /* Afspraken.png */; };
-		49B5AF9A176F3F8500BC2076 /* Afspraken.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF76176F3F8500BC2076 /* Afspraken.png */; };
 		49B5AF9B176F3F8500BC2076 /* Afspraken@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF77176F3F8500BC2076 /* Afspraken@2x.png */; };
-		49B5AF9C176F3F8500BC2076 /* Afspraken@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF77176F3F8500BC2076 /* Afspraken@2x.png */; };
 		49B5AF9D176F3F8500BC2076 /* Verjaardagen.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF78176F3F8500BC2076 /* Verjaardagen.png */; };
-		49B5AF9E176F3F8500BC2076 /* Verjaardagen.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF78176F3F8500BC2076 /* Verjaardagen.png */; };
 		49B5AF9F176F3F8500BC2076 /* Verjaardagen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF79176F3F8500BC2076 /* Verjaardagen@2x.png */; };
-		49B5AFA0176F3F8500BC2076 /* Verjaardagen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF79176F3F8500BC2076 /* Verjaardagen@2x.png */; };
 		49B5AFA1176F3F8500BC2076 /* Klusjes.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF7A176F3F8500BC2076 /* Klusjes.png */; };
-		49B5AFA2176F3F8500BC2076 /* Klusjes.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF7A176F3F8500BC2076 /* Klusjes.png */; };
 		49B5AFA3176F3F8500BC2076 /* Klusjes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF7B176F3F8500BC2076 /* Klusjes@2x.png */; };
-		49B5AFA4176F3F8500BC2076 /* Klusjes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF7B176F3F8500BC2076 /* Klusjes@2x.png */; };
 		49B5AFA5176F3F8500BC2076 /* Feestjes.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF7C176F3F8500BC2076 /* Feestjes.png */; };
-		49B5AFA6176F3F8500BC2076 /* Feestjes.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF7C176F3F8500BC2076 /* Feestjes.png */; };
 		49B5AFA7176F3F8500BC2076 /* Feestjes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF7D176F3F8500BC2076 /* Feestjes@2x.png */; };
-		49B5AFA8176F3F8500BC2076 /* Feestjes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF7D176F3F8500BC2076 /* Feestjes@2x.png */; };
 		49B5AFA9176F3F8500BC2076 /* Folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF7E176F3F8500BC2076 /* Folder.png */; };
-		49B5AFAA176F3F8500BC2076 /* Folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF7E176F3F8500BC2076 /* Folder.png */; };
 		49B5AFAB176F3F8500BC2076 /* Folder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF7F176F3F8500BC2076 /* Folder@2x.png */; };
-		49B5AFAC176F3F8500BC2076 /* Folder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF7F176F3F8500BC2076 /* Folder@2x.png */; };
 		49B5AFB1176F3F8500BC2076 /* Inbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF82176F3F8500BC2076 /* Inbox.png */; };
-		49B5AFB2176F3F8500BC2076 /* Inbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF82176F3F8500BC2076 /* Inbox.png */; };
 		49B5AFB3176F3F8500BC2076 /* Inbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF83176F3F8500BC2076 /* Inbox@2x.png */; };
-		49B5AFB4176F3F8500BC2076 /* Inbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF83176F3F8500BC2076 /* Inbox@2x.png */; };
 		49B5AFB5176F3F8500BC2076 /* Geen Afbeelding.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF84176F3F8500BC2076 /* Geen Afbeelding.png */; };
-		49B5AFB6176F3F8500BC2076 /* Geen Afbeelding.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF84176F3F8500BC2076 /* Geen Afbeelding.png */; };
 		49B5AFB7176F3F8500BC2076 /* Geen Afbeelding@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF85176F3F8500BC2076 /* Geen Afbeelding@2x.png */; };
-		49B5AFB8176F3F8500BC2076 /* Geen Afbeelding@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF85176F3F8500BC2076 /* Geen Afbeelding@2x.png */; };
 		49B5AFB9176F3F8500BC2076 /* Foto's.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF86176F3F8500BC2076 /* Foto's.png */; };
-		49B5AFBA176F3F8500BC2076 /* Foto's.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF86176F3F8500BC2076 /* Foto's.png */; };
 		49B5AFBB176F3F8500BC2076 /* Foto's@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF87176F3F8500BC2076 /* Foto's@2x.png */; };
-		49B5AFBC176F3F8500BC2076 /* Foto's@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF87176F3F8500BC2076 /* Foto's@2x.png */; };
 		49B5AFBD176F3F8500BC2076 /* Uitjes.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF88176F3F8500BC2076 /* Uitjes.png */; };
-		49B5AFBE176F3F8500BC2076 /* Uitjes.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF88176F3F8500BC2076 /* Uitjes.png */; };
 		49B5AFBF176F3F8500BC2076 /* Uitjes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF89176F3F8500BC2076 /* Uitjes@2x.png */; };
-		49B5AFC0176F3F8500BC2076 /* Uitjes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF89176F3F8500BC2076 /* Uitjes@2x.png */; };
 		49B5AFDB176F411400BC2076 /* IconPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B5AFDA176F411400BC2076 /* IconPickerViewController.m */; };
-		49B5AFDC176F411400BC2076 /* IconPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B5AFDA176F411400BC2076 /* IconPickerViewController.m */; };
 		49B5AFDF176F57A700BC2076 /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B5AFDE176F57A700BC2076 /* DatePickerViewController.m */; };
-		49B5AFE0176F57A700BC2076 /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B5AFDE176F57A700BC2076 /* DatePickerViewController.m */; };
 		49EB987F176B51A2009B2627 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EB987D176B51A2009B2627 /* EventKit.framework */; };
 		49EB9880176B51A2009B2627 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EB987E176B51A2009B2627 /* EventKitUI.framework */; };
 		49EB9883176B5DC0009B2627 /* AlarmsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB9882176B5DC0009B2627 /* AlarmsViewController.m */; };
-		49EB9884176B5DC0009B2627 /* AlarmsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB9882176B5DC0009B2627 /* AlarmsViewController.m */; };
 		49EB9887176B9474009B2627 /* AlarmItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB9886176B9474009B2627 /* AlarmItem.m */; };
-		49EB9888176B9474009B2627 /* AlarmItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB9886176B9474009B2627 /* AlarmItem.m */; };
 		49EB988B176C7140009B2627 /* AlarmDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB988A176C7140009B2627 /* AlarmDetailViewController.m */; };
-		49EB988C176C7140009B2627 /* AlarmDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB988A176C7140009B2627 /* AlarmDetailViewController.m */; };
 		B19A6DE117671DF00026D06C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19A6DE017671DF00026D06C /* UIKit.framework */; };
 		B19A6DE317671DF00026D06C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19A6DE217671DF00026D06C /* Foundation.framework */; };
 		B19A6DE517671DF00026D06C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19A6DE417671DF00026D06C /* CoreGraphics.framework */; };
@@ -93,11 +63,6 @@
 		B19A6DF717671DF00026D06C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B19A6DF617671DF00026D06C /* Default-568h@2x.png */; };
 		B19A6DFA17671DF00026D06C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B19A6DF817671DF00026D06C /* MainStoryboard.storyboard */; };
 		B19A6DFD17671DF00026D06C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B19A6DFC17671DF00026D06C /* ViewController.m */; };
-		B19A6E0517671DF00026D06C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19A6E0417671DF00026D06C /* SenTestingKit.framework */; };
-		B19A6E0617671DF00026D06C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19A6DE017671DF00026D06C /* UIKit.framework */; };
-		B19A6E0717671DF00026D06C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19A6DE217671DF00026D06C /* Foundation.framework */; };
-		B19A6E0F17671DF00026D06C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B19A6E0D17671DF00026D06C /* InfoPlist.strings */; };
-		B19A6E1217671DF00026D06C /* HuisgenotenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B19A6E1117671DF00026D06C /* HuisgenotenTests.m */; };
 		B1E113081779E12E001B22CE /* AddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E113071779E12E001B22CE /* AddItemViewController.m */; };
 		B1E1130B1779E17E001B22CE /* EditItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E1130A1779E17E001B22CE /* EditItemViewController.m */; };
 		B1E1130E1779E18D001B22CE /* ShoppinglistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E1130D1779E18D001B22CE /* ShoppinglistViewController.m */; };
@@ -105,17 +70,17 @@
 		B1E113141779E1F1001B22CE /* Finances.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E113131779E1F1001B22CE /* Finances.m */; };
 		B1E113171779E210001B22CE /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1E113151779E210001B22CE /* Model.xcdatamodeld */; };
 		B1E113191779E2D9001B22CE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E113181779E2D9001B22CE /* CoreData.framework */; };
+		B1E11386177A1062001B22CE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19A6E0417671DF00026D06C /* SenTestingKit.framework */; };
+		B1E11387177A1062001B22CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19A6DE017671DF00026D06C /* UIKit.framework */; };
+		B1E11388177A1062001B22CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19A6DE217671DF00026D06C /* Foundation.framework */; };
+		B1E1138E177A1063001B22CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1E1138C177A1063001B22CE /* InfoPlist.strings */; };
+		B1E11391177A1063001B22CE /* Huisgenoten_ApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E11390177A1063001B22CE /* Huisgenoten_ApplicationTests.m */; };
+		B1E1139C177A1074001B22CE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19A6E0417671DF00026D06C /* SenTestingKit.framework */; };
+		B1E1139D177A1074001B22CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19A6DE017671DF00026D06C /* UIKit.framework */; };
+		B1E1139E177A1074001B22CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19A6DE217671DF00026D06C /* Foundation.framework */; };
+		B1E113A4177A1074001B22CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1E113A2177A1074001B22CE /* InfoPlist.strings */; };
+		B1E113A7177A1074001B22CE /* Huisgenoten_LogicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E113A6177A1074001B22CE /* Huisgenoten_LogicTests.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B19A6E0817671DF00026D06C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B19A6DD517671DF00026D06C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B19A6DDC17671DF00026D06C;
-			remoteInfo = Huisgenoten;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		492A1550177085E80009BA44 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -190,12 +155,7 @@
 		B19A6DF917671DF00026D06C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		B19A6DFB17671DF00026D06C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B19A6DFC17671DF00026D06C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B19A6E0317671DF00026D06C /* HuisgenotenTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuisgenotenTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B19A6E0417671DF00026D06C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		B19A6E0C17671DF00026D06C /* HuisgenotenTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HuisgenotenTests-Info.plist"; sourceTree = "<group>"; };
-		B19A6E0E17671DF00026D06C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B19A6E1017671DF00026D06C /* HuisgenotenTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HuisgenotenTests.h; sourceTree = "<group>"; };
-		B19A6E1117671DF00026D06C /* HuisgenotenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HuisgenotenTests.m; sourceTree = "<group>"; };
 		B1E113061779E12E001B22CE /* AddItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddItemViewController.h; sourceTree = "<group>"; };
 		B1E113071779E12E001B22CE /* AddItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddItemViewController.m; sourceTree = "<group>"; };
 		B1E113091779E17E001B22CE /* EditItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditItemViewController.h; sourceTree = "<group>"; };
@@ -208,6 +168,18 @@
 		B1E113131779E1F1001B22CE /* Finances.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Finances.m; sourceTree = "<group>"; };
 		B1E113161779E210001B22CE /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		B1E113181779E2D9001B22CE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B1E11385177A1062001B22CE /* Huisgenoten_ApplicationTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Huisgenoten_ApplicationTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E1138B177A1063001B22CE /* Huisgenoten_ApplicationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Huisgenoten_ApplicationTests-Info.plist"; sourceTree = "<group>"; };
+		B1E1138D177A1063001B22CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B1E1138F177A1063001B22CE /* Huisgenoten_ApplicationTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Huisgenoten_ApplicationTests.h; sourceTree = "<group>"; };
+		B1E11390177A1063001B22CE /* Huisgenoten_ApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Huisgenoten_ApplicationTests.m; sourceTree = "<group>"; };
+		B1E11392177A1063001B22CE /* Huisgenoten_ApplicationTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Huisgenoten_ApplicationTests-Prefix.pch"; sourceTree = "<group>"; };
+		B1E1139B177A1074001B22CE /* Huisgenoten_LogicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Huisgenoten_LogicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E113A1177A1074001B22CE /* Huisgenoten_LogicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Huisgenoten_LogicTests-Info.plist"; sourceTree = "<group>"; };
+		B1E113A3177A1074001B22CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B1E113A5177A1074001B22CE /* Huisgenoten_LogicTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Huisgenoten_LogicTests.h; sourceTree = "<group>"; };
+		B1E113A6177A1074001B22CE /* Huisgenoten_LogicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Huisgenoten_LogicTests.m; sourceTree = "<group>"; };
+		B1E113A8177A1074001B22CE /* Huisgenoten_LogicTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Huisgenoten_LogicTests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,15 +209,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B19A6DFF17671DF00026D06C /* Frameworks */ = {
+		B1E11381177A1062001B22CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B19A6E0517671DF00026D06C /* SenTestingKit.framework in Frameworks */,
-				B19A6E0617671DF00026D06C /* UIKit.framework in Frameworks */,
-				B19A6E0717671DF00026D06C /* Foundation.framework in Frameworks */,
-				492A159B1771E8330009BA44 /* FacebookSDK.framework in Frameworks */,
-				497CE6F217731552003B7B4F /* Parse.framework in Frameworks */,
+				B1E11386177A1062001B22CE /* SenTestingKit.framework in Frameworks */,
+				B1E11387177A1062001B22CE /* UIKit.framework in Frameworks */,
+				B1E11388177A1062001B22CE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E11397177A1074001B22CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E1139C177A1074001B22CE /* SenTestingKit.framework in Frameworks */,
+				B1E1139D177A1074001B22CE /* UIKit.framework in Frameworks */,
+				B1E1139E177A1074001B22CE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,7 +381,8 @@
 			isa = PBXGroup;
 			children = (
 				B19A6DE617671DF00026D06C /* Huisgenoten */,
-				B19A6E0A17671DF00026D06C /* HuisgenotenTests */,
+				B1E11389177A1062001B22CE /* Huisgenoten_ApplicationTests */,
+				B1E1139F177A1074001B22CE /* Huisgenoten_LogicTests */,
 				B19A6DDF17671DF00026D06C /* Frameworks */,
 				B19A6DDE17671DF00026D06C /* Products */,
 			);
@@ -411,7 +392,8 @@
 			isa = PBXGroup;
 			children = (
 				B19A6DDD17671DF00026D06C /* Huisgenoten.app */,
-				B19A6E0317671DF00026D06C /* HuisgenotenTests.octest */,
+				B1E11385177A1062001B22CE /* Huisgenoten_ApplicationTests.octest */,
+				B1E1139B177A1074001B22CE /* Huisgenoten_LogicTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -475,21 +457,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B19A6E0A17671DF00026D06C /* HuisgenotenTests */ = {
+		B1E11389177A1062001B22CE /* Huisgenoten_ApplicationTests */ = {
 			isa = PBXGroup;
 			children = (
-				B19A6E1017671DF00026D06C /* HuisgenotenTests.h */,
-				B19A6E1117671DF00026D06C /* HuisgenotenTests.m */,
-				B19A6E0B17671DF00026D06C /* Supporting Files */,
+				B1E1138F177A1063001B22CE /* Huisgenoten_ApplicationTests.h */,
+				B1E11390177A1063001B22CE /* Huisgenoten_ApplicationTests.m */,
+				B1E1138A177A1063001B22CE /* Supporting Files */,
 			);
-			path = HuisgenotenTests;
+			path = Huisgenoten_ApplicationTests;
 			sourceTree = "<group>";
 		};
-		B19A6E0B17671DF00026D06C /* Supporting Files */ = {
+		B1E1138A177A1063001B22CE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B19A6E0C17671DF00026D06C /* HuisgenotenTests-Info.plist */,
-				B19A6E0D17671DF00026D06C /* InfoPlist.strings */,
+				B1E1138B177A1063001B22CE /* Huisgenoten_ApplicationTests-Info.plist */,
+				B1E1138C177A1063001B22CE /* InfoPlist.strings */,
+				B1E11392177A1063001B22CE /* Huisgenoten_ApplicationTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1E1139F177A1074001B22CE /* Huisgenoten_LogicTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1E113A5177A1074001B22CE /* Huisgenoten_LogicTests.h */,
+				B1E113A6177A1074001B22CE /* Huisgenoten_LogicTests.m */,
+				B1E113A0177A1074001B22CE /* Supporting Files */,
+			);
+			path = Huisgenoten_LogicTests;
+			sourceTree = "<group>";
+		};
+		B1E113A0177A1074001B22CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1E113A1177A1074001B22CE /* Huisgenoten_LogicTests-Info.plist */,
+				B1E113A2177A1074001B22CE /* InfoPlist.strings */,
+				B1E113A8177A1074001B22CE /* Huisgenoten_LogicTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -514,23 +517,40 @@
 			productReference = B19A6DDD17671DF00026D06C /* Huisgenoten.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B19A6E0217671DF00026D06C /* HuisgenotenTests */ = {
+		B1E11384177A1062001B22CE /* Huisgenoten_ApplicationTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B19A6E1817671DF00026D06C /* Build configuration list for PBXNativeTarget "HuisgenotenTests" */;
+			buildConfigurationList = B1E11393177A1063001B22CE /* Build configuration list for PBXNativeTarget "Huisgenoten_ApplicationTests" */;
 			buildPhases = (
-				B19A6DFE17671DF00026D06C /* Sources */,
-				B19A6DFF17671DF00026D06C /* Frameworks */,
-				B19A6E0017671DF00026D06C /* Resources */,
-				B19A6E0117671DF00026D06C /* ShellScript */,
+				B1E11380177A1062001B22CE /* Sources */,
+				B1E11381177A1062001B22CE /* Frameworks */,
+				B1E11382177A1062001B22CE /* Resources */,
+				B1E11383177A1062001B22CE /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B19A6E0917671DF00026D06C /* PBXTargetDependency */,
 			);
-			name = HuisgenotenTests;
-			productName = HuisgenotenTests;
-			productReference = B19A6E0317671DF00026D06C /* HuisgenotenTests.octest */;
+			name = Huisgenoten_ApplicationTests;
+			productName = Huisgenoten_ApplicationTests;
+			productReference = B1E11385177A1062001B22CE /* Huisgenoten_ApplicationTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		B1E1139A177A1074001B22CE /* Huisgenoten_LogicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1E113A9177A1074001B22CE /* Build configuration list for PBXNativeTarget "Huisgenoten_LogicTests" */;
+			buildPhases = (
+				B1E11396177A1074001B22CE /* Sources */,
+				B1E11397177A1074001B22CE /* Frameworks */,
+				B1E11398177A1074001B22CE /* Resources */,
+				B1E11399177A1074001B22CE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Huisgenoten_LogicTests;
+			productName = Huisgenoten_LogicTests;
+			productReference = B1E1139B177A1074001B22CE /* Huisgenoten_LogicTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -554,7 +574,8 @@
 			projectRoot = "";
 			targets = (
 				B19A6DDC17671DF00026D06C /* Huisgenoten */,
-				B19A6E0217671DF00026D06C /* HuisgenotenTests */,
+				B1E11384177A1062001B22CE /* Huisgenoten_ApplicationTests */,
+				B1E1139A177A1074001B22CE /* Huisgenoten_LogicTests */,
 			);
 		};
 /* End PBXProject section */
@@ -593,37 +614,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B19A6E0017671DF00026D06C /* Resources */ = {
+		B1E11382177A1062001B22CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B19A6E0F17671DF00026D06C /* InfoPlist.strings in Resources */,
-				49B5AF9A176F3F8500BC2076 /* Afspraken.png in Resources */,
-				49B5AF9C176F3F8500BC2076 /* Afspraken@2x.png in Resources */,
-				49B5AF9E176F3F8500BC2076 /* Verjaardagen.png in Resources */,
-				49B5AFA0176F3F8500BC2076 /* Verjaardagen@2x.png in Resources */,
-				49B5AFA2176F3F8500BC2076 /* Klusjes.png in Resources */,
-				49B5AFA4176F3F8500BC2076 /* Klusjes@2x.png in Resources */,
-				49B5AFA6176F3F8500BC2076 /* Feestjes.png in Resources */,
-				49B5AFA8176F3F8500BC2076 /* Feestjes@2x.png in Resources */,
-				49B5AFAA176F3F8500BC2076 /* Folder.png in Resources */,
-				49B5AFAC176F3F8500BC2076 /* Folder@2x.png in Resources */,
-				49B5AFB2176F3F8500BC2076 /* Inbox.png in Resources */,
-				49B5AFB4176F3F8500BC2076 /* Inbox@2x.png in Resources */,
-				49B5AFB6176F3F8500BC2076 /* Geen Afbeelding.png in Resources */,
-				49B5AFB8176F3F8500BC2076 /* Geen Afbeelding@2x.png in Resources */,
-				49B5AFBA176F3F8500BC2076 /* Foto's.png in Resources */,
-				49B5AFBC176F3F8500BC2076 /* Foto's@2x.png in Resources */,
-				49B5AFBE176F3F8500BC2076 /* Uitjes.png in Resources */,
-				49B5AFC0176F3F8500BC2076 /* Uitjes@2x.png in Resources */,
-				492A159E1771E87A0009BA44 /* FacebookSDKResources.bundle in Resources */,
+				B1E1138E177A1063001B22CE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E11398177A1074001B22CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E113A4177A1074001B22CE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B19A6E0117671DF00026D06C /* ShellScript */ = {
+		B1E11383177A1062001B22CE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		B1E11399177A1074001B22CE /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -664,32 +687,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B19A6DFE17671DF00026D06C /* Sources */ = {
+		B1E11380177A1062001B22CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B19A6E1217671DF00026D06C /* HuisgenotenTests.m in Sources */,
-				49EB9884176B5DC0009B2627 /* AlarmsViewController.m in Sources */,
-				49EB9888176B9474009B2627 /* AlarmItem.m in Sources */,
-				49EB988C176C7140009B2627 /* AlarmDetailViewController.m in Sources */,
-				49756A76176DE96200DF090E /* AllAlarmsViewController.m in Sources */,
-				49756A7A176DED3200DF090E /* Alarm.m in Sources */,
-				49756A82176DF85700DF090E /* ListDetailViewController.m in Sources */,
-				49756A86176E44BF00DF090E /* AlarmsDataModel.m in Sources */,
-				49B5AFDC176F411400BC2076 /* IconPickerViewController.m in Sources */,
-				49B5AFE0176F57A700BC2076 /* DatePickerViewController.m in Sources */,
+				B1E11391177A1063001B22CE /* Huisgenoten_ApplicationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1E11396177A1074001B22CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E113A7177A1074001B22CE /* Huisgenoten_LogicTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B19A6E0917671DF00026D06C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B19A6DDC17671DF00026D06C /* Huisgenoten */;
-			targetProxy = B19A6E0817671DF00026D06C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B19A6DE917671DF00026D06C /* InfoPlist.strings */ = {
@@ -708,10 +722,18 @@
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
-		B19A6E0D17671DF00026D06C /* InfoPlist.strings */ = {
+		B1E1138C177A1063001B22CE /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B19A6E0E17671DF00026D06C /* en */,
+				B1E1138D177A1063001B22CE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B1E113A2177A1074001B22CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1E113A3177A1074001B22CE /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -807,40 +829,70 @@
 			};
 			name = Release;
 		};
-		B19A6E1917671DF00026D06C /* Debug */ = {
+		B1E11394177A1063001B22CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Huisgenoten.app/Huisgenoten";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-					"\"$(SRCROOT)/../..\"",
-					"\"$(SRCROOT)/Huisgenoten\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Huisgenoten/Huisgenoten-Prefix.pch";
-				INFOPLIST_FILE = "HuisgenotenTests/HuisgenotenTests-Info.plist";
+				GCC_PREFIX_HEADER = "Huisgenoten_ApplicationTests/Huisgenoten_ApplicationTests-Prefix.pch";
+				INFOPLIST_FILE = "Huisgenoten_ApplicationTests/Huisgenoten_ApplicationTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Huisgenoten.app/Huisgenoten";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
-		B19A6E1A17671DF00026D06C /* Release */ = {
+		B1E11395177A1063001B22CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Huisgenoten.app/Huisgenoten";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-					"\"$(SRCROOT)/../..\"",
-					"\"$(SRCROOT)/Huisgenoten\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Huisgenoten/Huisgenoten-Prefix.pch";
-				INFOPLIST_FILE = "HuisgenotenTests/HuisgenotenTests-Info.plist";
+				GCC_PREFIX_HEADER = "Huisgenoten_ApplicationTests/Huisgenoten_ApplicationTests-Prefix.pch";
+				INFOPLIST_FILE = "Huisgenoten_ApplicationTests/Huisgenoten_ApplicationTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Huisgenoten.app/Huisgenoten";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		B1E113AA177A1074001B22CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "build/Debug-iphoneos/Huisgenoten.app/Huisgenoten";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Huisgenoten_LogicTests/Huisgenoten_LogicTests-Prefix.pch";
+				INFOPLIST_FILE = "Huisgenoten_LogicTests/Huisgenoten_LogicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "build/Debug-iphoneos/Huisgenoten.app/Huisgenoten";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B1E113AB177A1074001B22CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "build/Release-iphoneos/Huisgenoten.app/Huisgenoten";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Huisgenoten_LogicTests/Huisgenoten_LogicTests-Prefix.pch";
+				INFOPLIST_FILE = "Huisgenoten_LogicTests/Huisgenoten_LogicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "build/Release-iphoneos/Huisgenoten.app/Huisgenoten";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -866,14 +918,21 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B19A6E1817671DF00026D06C /* Build configuration list for PBXNativeTarget "HuisgenotenTests" */ = {
+		B1E11393177A1063001B22CE /* Build configuration list for PBXNativeTarget "Huisgenoten_ApplicationTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B19A6E1917671DF00026D06C /* Debug */,
-				B19A6E1A17671DF00026D06C /* Release */,
+				B1E11394177A1063001B22CE /* Debug */,
+				B1E11395177A1063001B22CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+		};
+		B1E113A9177A1074001B22CE /* Build configuration list for PBXNativeTarget "Huisgenoten_LogicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1E113AA177A1074001B22CE /* Debug */,
+				B1E113AB177A1074001B22CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
