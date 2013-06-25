@@ -82,6 +82,7 @@
 		B1E113A7177A1074001B22CE /* Huisgenoten_LogicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E113A6177A1074001B22CE /* Huisgenoten_LogicTests.m */; };
 		B1F8629D177A24B600FAD40C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E113181779E2D9001B22CE /* CoreData.framework */; };
 		B1F8629E177A254800FAD40C /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1E113151779E210001B22CE /* Model.xcdatamodeld */; };
+		B1F8629F177A393D00FAD40C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E113181779E2D9001B22CE /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -215,6 +216,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1F8629F177A393D00FAD40C /* CoreData.framework in Frameworks */,
 				B1E11386177A1062001B22CE /* SenTestingKit.framework in Frameworks */,
 				B1E11387177A1062001B22CE /* UIKit.framework in Frameworks */,
 				B1E11388177A1062001B22CE /* Foundation.framework in Frameworks */,
@@ -845,7 +847,7 @@
 				GCC_PREFIX_HEADER = "Huisgenoten_ApplicationTests/Huisgenoten_ApplicationTests-Prefix.pch";
 				INFOPLIST_FILE = "Huisgenoten_ApplicationTests/Huisgenoten_ApplicationTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Huisgenoten.app/Huisgenoten";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -862,7 +864,7 @@
 				GCC_PREFIX_HEADER = "Huisgenoten_ApplicationTests/Huisgenoten_ApplicationTests-Prefix.pch";
 				INFOPLIST_FILE = "Huisgenoten_ApplicationTests/Huisgenoten_ApplicationTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Huisgenoten.app/Huisgenoten";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;

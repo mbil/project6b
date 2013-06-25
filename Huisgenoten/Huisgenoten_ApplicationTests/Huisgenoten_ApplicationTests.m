@@ -11,12 +11,14 @@
 #import "ViewController.h"
 #import "ShoppinglistViewController.h"
 #import "AddItemViewController.h"
+#import "EditItemViewController.h"
 
 @interface Huisgenoten_ApplicationTests ()
 
 //private properties
 @property (nonatomic, readwrite, weak) AppDelegate *appDelegate;
 @property (strong, nonatomic) AddItemViewController *addItemController;
+@property (strong, nonatomic) EditItemViewController *editItemViewController;
 @property (nonatomic, readwrite, weak) UIWindow *window;
 
 @end
@@ -25,6 +27,7 @@
 
 @synthesize appDelegate=_appDelegate;
 @synthesize addItemController=_addItemController;
+@synthesize editItemViewController=_editItemViewController;
 @synthesize window=_window;
 
 - (void)setUp
@@ -32,6 +35,7 @@
     [super setUp];
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
     self.addItemController = [storyboard instantiateViewControllerWithIdentifier:@"AddItem"];
+    self.editItemViewController = [storyboard instantiateViewControllerWithIdentifier:@"EditItem"];
     [self.addItemController performSelectorOnMainThread:@selector(loadView) withObject:nil waitUntilDone:YES];
     self.appDelegate = [[UIApplication sharedApplication] delegate];
     
