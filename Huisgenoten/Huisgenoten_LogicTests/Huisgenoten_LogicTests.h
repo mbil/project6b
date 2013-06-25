@@ -8,6 +8,7 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 #import "Finances.h"
+#import "AlarmItem.h"
 
 @interface Huisgenoten_LogicTests : SenTestCase
 
