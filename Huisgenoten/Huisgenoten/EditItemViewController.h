@@ -19,6 +19,7 @@
 @property (strong) NSManagedObject *purchase;
 @property (nonatomic, readwrite, strong) Finances *finances;
 @property (assign, nonatomic, readwrite) float price;
+@property (assign, nonatomic, readwrite) NSInteger sections;
 
 - (IBAction)itemDataChanged:(id)sender;
 - (IBAction)itemBought:(id)sender;

@@ -21,6 +21,7 @@
 @synthesize item=_item;
 @synthesize finances=_finances;
 @synthesize price=_price;
+@synthesize sections=_sections;
 
 - (NSManagedObjectContext *)managedObjectContext {
     NSManagedObjectContext *context = nil;
@@ -101,9 +102,11 @@
     // Return the number of sections.
     bool bought = [_item valueForKey:@"bought"];
     if (bought == NO) {
-        return 2;
+        self.sections = 2;
+        return self.sections;
     } else {
-        return 4;
+        self.sections = 4;
+        return self.sections;
     }
 }
 
