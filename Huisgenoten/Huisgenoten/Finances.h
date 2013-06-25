@@ -10,4 +10,6 @@
 
 @interface Finances : NSObject
 
+@property (assign, nonatomic, readwrite) NSInteger balance;
+
 @end
