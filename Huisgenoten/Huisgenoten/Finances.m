@@ -17,6 +17,8 @@
     if (self = [super init])
     {
         NSString *key = @"sum";
+        
+        // zet de eerste balance op 0 of verder de waarde van de UserDefault zoals toegekend in EditItemViewController
         self.balance = [[NSUserDefaults standardUserDefaults] integerForKey:key];
     }
     return self;
