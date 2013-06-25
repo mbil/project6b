@@ -875,7 +875,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="8bi-f1-voc">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="aHh-Zx-P24">
+                        <barButtonItem key="leftBarButtonItem" title="Annuleren" id="aHh-Zx-P24">
                             <connections>
                                 <action selector="cancelButtonPressed:" destination="sqE-dO-s5d" id="AII-3C-KfL"/>
                             </connections>
