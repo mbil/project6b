@@ -152,6 +152,47 @@
     NSString *key = @"sum"; // This is a string to identify your number
     [[NSUserDefaults standardUserDefaults] setInteger:myValue forKey:key];
     self.finances.balance = [[NSUserDefaults standardUserDefaults] integerForKey:key];
+
+    
+    NSFetchRequest *allPurchases = [[NSFetchRequest alloc] init];
+    NSFetchRequest *allItems = [[NSFetchRequest alloc] init];
+    NSManagedObjectContext *managedObjectContext = [self managedObjectContext];
+    
+    [allPurchases setEntity:[NSEntityDescription entityForName:@"Purchase" inManagedObjectContext:managedObjectContext]];
+    [allPurchases setIncludesPropertyValues:NO]; //only fetch the managedObjectID
+    
+    [allItems setEntity:[NSEntityDescription entityForName:@"Item" inManagedObjectContext:managedObjectContext]];
+    [allItems setIncludesPropertyValues:YES];
+    
+    NSError *error = nil;
+    NSArray *items = [managedObjectContext executeFetchRequest:allItems error:&error];
+    for (NSManagedObject *item in items) {
+        bool bought = [item valueForKey:@"bought"];
+        if (bought == YES)
+        {
+            [item setValue:NO forKey:@"bought"];
+        }
+    [UIView transitionWithView:self.tableView
+                      duration:0.5f
+                       options:UIViewAnimationOptionTransitionCrossDissolve
+                    animations:^(void) {
+                        [self.tableView reloadData];
+                    } completion:NULL];
+        
+    }
+    
+    
+    NSArray *purchases = [managedObjectContext executeFetchRequest:allPurchases error:&error];
+    //error handling goes here
+    for (NSManagedObject *purchase in purchases) {
+        [managedObjectContext deleteObject:purchase];
+    }
+    NSError *saveError = nil;
+    [managedObjectContext save:&saveError];
+    
+    [self.tableView reloadData];
+    
+    
     [self show];
 }
 
