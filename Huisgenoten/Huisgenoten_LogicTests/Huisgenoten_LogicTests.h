@@ -7,7 +7,9 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
+#import "Finances.h"
 
 @interface Huisgenoten_LogicTests : SenTestCase
+
 
 @end

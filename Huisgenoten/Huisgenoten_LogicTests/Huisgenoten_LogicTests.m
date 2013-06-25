@@ -7,26 +7,40 @@
 //
 
 #import "Huisgenoten_LogicTests.h"
+#import "Finances.h"
+
+@interface Huisgenoten_LogicTests ()
+
+// private property
+
+@property (nonatomic, readwrite, strong) Finances *finances;
+
+@end
+
 
 @implementation Huisgenoten_LogicTests
+
+@synthesize finances=_finances;
 
 - (void)setUp
 {
     [super setUp];
-    
-    // Set-up code here.
+    NSLog(@"setUp");
+    self.finances = [[Finances alloc] init];
+    STAssertNotNil(self.finances, @"Cannot create Finances instance");
+}
+
+- (void)testBalance
+{
+    // balance should be 0 initially
+    STAssertTrue(self.finances.balance == 0, @"Balance is not 0");
 }
 
 - (void)tearDown
 {
     // Tear-down code here.
-    
+    NSLog(@"tearDown");
     [super tearDown];
-}
-
-- (void)testExample
-{
-    STFail(@"Unit tests are not implemented yet in Huisgenoten_LogicTests");
 }
 
 @end

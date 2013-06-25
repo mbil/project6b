@@ -12,8 +12,6 @@
 
 @synthesize balance=_balance;
 
-// TODO use this model
-
 - (id)init
 {
     if (self = [super init])

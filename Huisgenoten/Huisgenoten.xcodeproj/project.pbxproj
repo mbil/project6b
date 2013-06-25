@@ -80,6 +80,8 @@
 		B1E1139E177A1074001B22CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19A6DE217671DF00026D06C /* Foundation.framework */; };
 		B1E113A4177A1074001B22CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1E113A2177A1074001B22CE /* InfoPlist.strings */; };
 		B1E113A7177A1074001B22CE /* Huisgenoten_LogicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E113A6177A1074001B22CE /* Huisgenoten_LogicTests.m */; };
+		B1F8629D177A24B600FAD40C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E113181779E2D9001B22CE /* CoreData.framework */; };
+		B1F8629E177A254800FAD40C /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1E113151779E210001B22CE /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -223,6 +225,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1F8629D177A24B600FAD40C /* CoreData.framework in Frameworks */,
 				B1E1139C177A1074001B22CE /* SenTestingKit.framework in Frameworks */,
 				B1E1139D177A1074001B22CE /* UIKit.framework in Frameworks */,
 				B1E1139E177A1074001B22CE /* Foundation.framework in Frameworks */,
@@ -700,6 +703,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1E113A7177A1074001B22CE /* Huisgenoten_LogicTests.m in Sources */,
+				B1F8629E177A254800FAD40C /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -866,7 +870,7 @@
 		B1E113AA177A1074001B22CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "build/Debug-iphoneos/Huisgenoten.app/Huisgenoten";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Huisgenoten.app/Huisgenoten";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
@@ -875,7 +879,7 @@
 				GCC_PREFIX_HEADER = "Huisgenoten_LogicTests/Huisgenoten_LogicTests-Prefix.pch";
 				INFOPLIST_FILE = "Huisgenoten_LogicTests/Huisgenoten_LogicTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "build/Debug-iphoneos/Huisgenoten.app/Huisgenoten";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Huisgenoten.app/Huisgenoten";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -883,7 +887,7 @@
 		B1E113AB177A1074001B22CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "build/Release-iphoneos/Huisgenoten.app/Huisgenoten";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Huisgenoten.app/Huisgenoten";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
@@ -892,7 +896,7 @@
 				GCC_PREFIX_HEADER = "Huisgenoten_LogicTests/Huisgenoten_LogicTests-Prefix.pch";
 				INFOPLIST_FILE = "Huisgenoten_LogicTests/Huisgenoten_LogicTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "build/Release-iphoneos/Huisgenoten.app/Huisgenoten";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Huisgenoten.app/Huisgenoten";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -925,6 +929,7 @@
 				B1E11395177A1063001B22CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B1E113A9177A1074001B22CE /* Build configuration list for PBXNativeTarget "Huisgenoten_LogicTests" */ = {
 			isa = XCConfigurationList;
@@ -933,6 +938,7 @@
 				B1E113AB177A1074001B22CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
