@@ -92,8 +92,13 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
+    
     // Configure Cell
-    [cell.textLabel setText:[NSString stringWithFormat:@"%@", [purchase valueForKey:@"item"]]];
+    if ([purchase valueForKey:@"item"] != NULL) {
+        [cell.textLabel setText:[NSString stringWithFormat:@"%@", [purchase valueForKey:@"item"]]];
+    } else {
+        [cell.textLabel setText:@""];
+    }
     [cell.detailTextLabel setText:[NSString stringWithFormat:@"€%.2f", [[purchase valueForKey:@"price"] floatValue]]];
     
     return cell;
@@ -191,7 +196,6 @@
     [managedObjectContext save:&saveError];
     
     [self.tableView reloadData];
-    
     
     [self show];
 }

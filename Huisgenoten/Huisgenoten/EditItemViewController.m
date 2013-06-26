@@ -94,8 +94,10 @@
     [newPurchase setValue:self.nameField.text forKey:@"item"];
     [newPurchase setValue:[NSNumber numberWithFloat:[self.priceField.text floatValue]] forKey:@"price"];
     [newPurchase setValue:[NSDate date] forKey:@"date"];
-}
+
+    [self.navigationController popViewControllerAnimated:YES];
     
+}
 
 
 // change number of sections in the view to make the pricefield appear
