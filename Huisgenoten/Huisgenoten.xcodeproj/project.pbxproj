@@ -47,6 +47,14 @@
 		49B5AFBF176F3F8500BC2076 /* Uitjes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B5AF89176F3F8500BC2076 /* Uitjes@2x.png */; };
 		49B5AFDB176F411400BC2076 /* IconPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B5AFDA176F411400BC2076 /* IconPickerViewController.m */; };
 		49B5AFDF176F57A700BC2076 /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B5AFDE176F57A700BC2076 /* DatePickerViewController.m */; };
+		49E3E92B177B18FA001C06C5 /* StartUpBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E3E92A177B18FA001C06C5 /* StartUpBackground.png */; };
+		49E3E92E177B1DEA001C06C5 /* button bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E3E92C177B1DEA001C06C5 /* button bg.png */; };
+		49E3E92F177B1DEA001C06C5 /* button bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E3E92D177B1DEA001C06C5 /* button bg1.png */; };
+		49E3E933177B3DD0001C06C5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E3E930177B3DD0001C06C5 /* Default-568h@2x.png */; };
+		49E3E934177B3DD0001C06C5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E3E931177B3DD0001C06C5 /* Default.png */; };
+		49E3E935177B3DD0001C06C5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E3E932177B3DD0001C06C5 /* Default@2x.png */; };
+		49E3E937177B3E02001C06C5 /* StartUpBackground2.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E3E936177B3E02001C06C5 /* StartUpBackground2.png */; };
+		49E3E939177B3F3D001C06C5 /* StartUpBackground3.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E3E938177B3F3D001C06C5 /* StartUpBackground3.png */; };
 		49EB987F176B51A2009B2627 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EB987D176B51A2009B2627 /* EventKit.framework */; };
 		49EB9880176B51A2009B2627 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EB987E176B51A2009B2627 /* EventKitUI.framework */; };
 		49EB9883176B5DC0009B2627 /* AlarmsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB9882176B5DC0009B2627 /* AlarmsViewController.m */; };
@@ -58,9 +66,9 @@
 		B19A6DEB17671DF00026D06C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B19A6DE917671DF00026D06C /* InfoPlist.strings */; };
 		B19A6DED17671DF00026D06C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B19A6DEC17671DF00026D06C /* main.m */; };
 		B19A6DF117671DF00026D06C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B19A6DF017671DF00026D06C /* AppDelegate.m */; };
-		B19A6DF317671DF00026D06C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B19A6DF217671DF00026D06C /* Default.png */; };
-		B19A6DF517671DF00026D06C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B19A6DF417671DF00026D06C /* Default@2x.png */; };
-		B19A6DF717671DF00026D06C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B19A6DF617671DF00026D06C /* Default-568h@2x.png */; };
+		B19A6DF317671DF00026D06C /* Defaultold.png in Resources */ = {isa = PBXBuildFile; fileRef = B19A6DF217671DF00026D06C /* Defaultold.png */; };
+		B19A6DF517671DF00026D06C /* Default@2xold.png in Resources */ = {isa = PBXBuildFile; fileRef = B19A6DF417671DF00026D06C /* Default@2xold.png */; };
+		B19A6DF717671DF00026D06C /* Default-568h@2xold.png in Resources */ = {isa = PBXBuildFile; fileRef = B19A6DF617671DF00026D06C /* Default-568h@2xold.png */; };
 		B19A6DFA17671DF00026D06C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B19A6DF817671DF00026D06C /* MainStoryboard.storyboard */; };
 		B19A6DFD17671DF00026D06C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B19A6DFC17671DF00026D06C /* ViewController.m */; };
 		B1E113081779E12E001B22CE /* AddItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E113071779E12E001B22CE /* AddItemViewController.m */; };
@@ -134,6 +142,14 @@
 		49B5AFDA176F411400BC2076 /* IconPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconPickerViewController.m; sourceTree = "<group>"; };
 		49B5AFDD176F57A700BC2076 /* DatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerViewController.h; sourceTree = "<group>"; };
 		49B5AFDE176F57A700BC2076 /* DatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerViewController.m; sourceTree = "<group>"; };
+		49E3E92A177B18FA001C06C5 /* StartUpBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = StartUpBackground.png; path = ../../../../../../Dropbox/StartUpBackground.png; sourceTree = "<group>"; };
+		49E3E92C177B1DEA001C06C5 /* button bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button bg.png"; path = "../../../../../../Dropbox/button bg.png"; sourceTree = "<group>"; };
+		49E3E92D177B1DEA001C06C5 /* button bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button bg1.png"; path = "../../../../../../Dropbox/button bg1.png"; sourceTree = "<group>"; };
+		49E3E930177B3DD0001C06C5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../../../../Dropbox/Default-568h@2x.png"; sourceTree = "<group>"; };
+		49E3E931177B3DD0001C06C5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../../../../../Dropbox/Default.png; sourceTree = "<group>"; };
+		49E3E932177B3DD0001C06C5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../../../../../Dropbox/Default@2x.png"; sourceTree = "<group>"; };
+		49E3E936177B3E02001C06C5 /* StartUpBackground2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = StartUpBackground2.png; path = ../../../../../../Dropbox/StartUpBackground2.png; sourceTree = "<group>"; };
+		49E3E938177B3F3D001C06C5 /* StartUpBackground3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = StartUpBackground3.png; path = ../../../../../../Dropbox/StartUpBackground3.png; sourceTree = "<group>"; };
 		49EB987D176B51A2009B2627 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		49EB987E176B51A2009B2627 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		49EB9881176B5DC0009B2627 /* AlarmsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmsViewController.h; sourceTree = "<group>"; };
@@ -152,9 +168,9 @@
 		B19A6DEE17671DF00026D06C /* Huisgenoten-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Huisgenoten-Prefix.pch"; sourceTree = "<group>"; };
 		B19A6DEF17671DF00026D06C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B19A6DF017671DF00026D06C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B19A6DF217671DF00026D06C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		B19A6DF417671DF00026D06C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		B19A6DF617671DF00026D06C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B19A6DF217671DF00026D06C /* Defaultold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Defaultold.png; sourceTree = "<group>"; };
+		B19A6DF417671DF00026D06C /* Default@2xold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2xold.png"; sourceTree = "<group>"; };
+		B19A6DF617671DF00026D06C /* Default-568h@2xold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2xold.png"; sourceTree = "<group>"; };
 		B19A6DF917671DF00026D06C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		B19A6DFB17671DF00026D06C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B19A6DFC17671DF00026D06C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -294,6 +310,11 @@
 		497CE6CC177310C7003B7B4F /* StartUp */ = {
 			isa = PBXGroup;
 			children = (
+				49E3E938177B3F3D001C06C5 /* StartUpBackground3.png */,
+				49E3E92C177B1DEA001C06C5 /* button bg.png */,
+				49E3E92D177B1DEA001C06C5 /* button bg1.png */,
+				49E3E92A177B18FA001C06C5 /* StartUpBackground.png */,
+				49E3E936177B3E02001C06C5 /* StartUpBackground2.png */,
 				497CE6D2177310C7003B7B4F /* Logo.png */,
 				497CE6D5177310C7003B7B4F /* MainBG.png */,
 			);
@@ -455,9 +476,12 @@
 				B19A6DE917671DF00026D06C /* InfoPlist.strings */,
 				B19A6DEC17671DF00026D06C /* main.m */,
 				B19A6DEE17671DF00026D06C /* Huisgenoten-Prefix.pch */,
-				B19A6DF217671DF00026D06C /* Default.png */,
-				B19A6DF417671DF00026D06C /* Default@2x.png */,
-				B19A6DF617671DF00026D06C /* Default-568h@2x.png */,
+				49E3E930177B3DD0001C06C5 /* Default-568h@2x.png */,
+				49E3E931177B3DD0001C06C5 /* Default.png */,
+				49E3E932177B3DD0001C06C5 /* Default@2x.png */,
+				B19A6DF217671DF00026D06C /* Defaultold.png */,
+				B19A6DF417671DF00026D06C /* Default@2xold.png */,
+				B19A6DF617671DF00026D06C /* Default-568h@2xold.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -591,9 +615,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B19A6DEB17671DF00026D06C /* InfoPlist.strings in Resources */,
-				B19A6DF317671DF00026D06C /* Default.png in Resources */,
-				B19A6DF517671DF00026D06C /* Default@2x.png in Resources */,
-				B19A6DF717671DF00026D06C /* Default-568h@2x.png in Resources */,
+				B19A6DF317671DF00026D06C /* Defaultold.png in Resources */,
+				B19A6DF517671DF00026D06C /* Default@2xold.png in Resources */,
+				B19A6DF717671DF00026D06C /* Default-568h@2xold.png in Resources */,
 				B19A6DFA17671DF00026D06C /* MainStoryboard.storyboard in Resources */,
 				49B5AF99176F3F8500BC2076 /* Afspraken.png in Resources */,
 				49B5AF9B176F3F8500BC2076 /* Afspraken@2x.png in Resources */,
@@ -616,6 +640,14 @@
 				492A159D1771E87A0009BA44 /* FacebookSDKResources.bundle in Resources */,
 				497CE6E2177310C7003B7B4F /* Logo.png in Resources */,
 				497CE6E5177310C7003B7B4F /* MainBG.png in Resources */,
+				49E3E92B177B18FA001C06C5 /* StartUpBackground.png in Resources */,
+				49E3E92E177B1DEA001C06C5 /* button bg.png in Resources */,
+				49E3E92F177B1DEA001C06C5 /* button bg1.png in Resources */,
+				49E3E933177B3DD0001C06C5 /* Default-568h@2x.png in Resources */,
+				49E3E934177B3DD0001C06C5 /* Default.png in Resources */,
+				49E3E935177B3DD0001C06C5 /* Default@2x.png in Resources */,
+				49E3E937177B3E02001C06C5 /* StartUpBackground2.png in Resources */,
+				49E3E939177B3F3D001C06C5 /* StartUpBackground3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

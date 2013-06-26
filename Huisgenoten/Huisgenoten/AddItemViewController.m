@@ -41,8 +41,12 @@
     [super viewDidLoad];
     UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
     [self.tableView addGestureRecognizer:gestureRecognizer];
-}
+    
+    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:51/255.0f green:51/255.0f blue:51/255.0f alpha:1];
+    
+    [self.nameField becomeFirstResponder];
 
+}
 
 - (void) hideKeyboard {
     [_nameField resignFirstResponder];
@@ -76,6 +80,12 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-
+// Minimum of 1 character in textfield before saving
+- (BOOL)textField:(UITextField *)theTextField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    NSString *newText = [theTextField.text stringByReplacingCharactersInRange:range withString:string];
+    self.doneBarButton.enabled = ([newText length] > 0);
+    return YES;
+}
 
 @end

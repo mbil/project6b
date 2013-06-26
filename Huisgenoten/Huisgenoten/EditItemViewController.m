@@ -57,13 +57,14 @@
     
     UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
     [self.tableView addGestureRecognizer:gestureRecognizer];
+    
+    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:51/255.0f green:51/255.0f blue:51/255.0f alpha:1];
 }
 
 - (void) hideKeyboard {
     [_nameField resignFirstResponder];
     [_priceField resignFirstResponder];
 }
-
 
 #pragma mark - IBActions
 - (void)itemDataChanged:(id)sender {

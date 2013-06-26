@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "AlarmDetailViewController.h"
+#import "ListDetailViewController.h"
+#import "AlarmsDataModel.h"
 
 @class Alarm;
 

@@ -49,6 +49,7 @@
     [super viewWillAppear:animated];
     
     [self.textField becomeFirstResponder];
+    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:51/255.0f green:51/255.0f blue:51/255.0f alpha:1];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

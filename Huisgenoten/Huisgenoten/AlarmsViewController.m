@@ -9,6 +9,7 @@
 #import "AlarmsViewController.h"
 #import "AlarmItem.h"
 #import "Alarm.h"
+#import "AlarmsDataModel.h"
 
 @interface AlarmsViewController ()
 
@@ -19,7 +20,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     self.title  =self.alarm.name;
+    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:51/255.0f green:51/255.0f blue:51/255.0f alpha:1];
+    self.tableView.tableFooterView = [[UIView alloc] init];
+
 }
 
 #pragma mark - Table view data source
@@ -80,12 +85,6 @@
     
     return cell;
 }
-
-//- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    cell.backgroundColor = (indexPath.row%2)
-//    ? [UIColor lightGrayColor] : [UIColor darkGrayColor];
-//}
 
 #pragma mark - Table view delegate
 
