@@ -50,6 +50,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.tableView.tableHeaderView = [[UIView alloc] init];
     self.finances = [[Finances alloc] init];
     [self show];
 
