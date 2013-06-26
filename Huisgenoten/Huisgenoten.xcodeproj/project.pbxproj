@@ -27,8 +27,6 @@
 		49756A85176E44BF00DF090E /* AlarmsDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 49756A84176E44BF00DF090E /* AlarmsDataModel.m */; };
 		49B5AFDB176F411400BC2076 /* IconPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B5AFDA176F411400BC2076 /* IconPickerViewController.m */; };
 		49B5AFDF176F57A700BC2076 /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B5AFDE176F57A700BC2076 /* DatePickerViewController.m */; };
-		49E3E948177B7B5B001C06C5 /* StartUpBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E3E946177B7B5B001C06C5 /* StartUpBackground.png */; };
-		49E3E949177B7B5B001C06C5 /* StartUpBackground3.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E3E947177B7B5B001C06C5 /* StartUpBackground3.png */; };
 		49E3E94D177B7B73001C06C5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E3E94A177B7B71001C06C5 /* Default-568h@2x.png */; };
 		49E3E94E177B7B73001C06C5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E3E94B177B7B71001C06C5 /* Default.png */; };
 		49E3E94F177B7B73001C06C5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E3E94C177B7B72001C06C5 /* Default@2x.png */; };
@@ -50,6 +48,8 @@
 		49E3E971177B7BD2001C06C5 /* Uitjes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E3E95F177B7BD2001C06C5 /* Uitjes@2x.png */; };
 		49E3E972177B7BD2001C06C5 /* Verjaardagen.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E3E960177B7BD2001C06C5 /* Verjaardagen.png */; };
 		49E3E973177B7BD2001C06C5 /* Verjaardagen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E3E961177B7BD2001C06C5 /* Verjaardagen@2x.png */; };
+		49E3E976177B883C001C06C5 /* HomeScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E3E974177B883C001C06C5 /* HomeScreen.png */; };
+		49E3E977177B883C001C06C5 /* LoadScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E3E975177B883C001C06C5 /* LoadScreen.png */; };
 		49EB987F176B51A2009B2627 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EB987D176B51A2009B2627 /* EventKit.framework */; };
 		49EB9880176B51A2009B2627 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EB987E176B51A2009B2627 /* EventKitUI.framework */; };
 		49EB9883176B5DC0009B2627 /* AlarmsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EB9882176B5DC0009B2627 /* AlarmsViewController.m */; };
@@ -117,8 +117,6 @@
 		49B5AFDA176F411400BC2076 /* IconPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconPickerViewController.m; sourceTree = "<group>"; };
 		49B5AFDD176F57A700BC2076 /* DatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerViewController.h; sourceTree = "<group>"; };
 		49B5AFDE176F57A700BC2076 /* DatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerViewController.m; sourceTree = "<group>"; };
-		49E3E946177B7B5B001C06C5 /* StartUpBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = StartUpBackground.png; path = Resources/StartUpBackground.png; sourceTree = SOURCE_ROOT; };
-		49E3E947177B7B5B001C06C5 /* StartUpBackground3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = StartUpBackground3.png; path = Resources/StartUpBackground3.png; sourceTree = SOURCE_ROOT; };
 		49E3E94A177B7B71001C06C5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Resources/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
 		49E3E94B177B7B71001C06C5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Default.png; sourceTree = SOURCE_ROOT; };
 		49E3E94C177B7B72001C06C5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Default@2x.png"; sourceTree = SOURCE_ROOT; };
@@ -140,6 +138,8 @@
 		49E3E95F177B7BD2001C06C5 /* Uitjes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Uitjes@2x.png"; path = "Resources/Alarm Icons/Uitjes@2x.png"; sourceTree = SOURCE_ROOT; };
 		49E3E960177B7BD2001C06C5 /* Verjaardagen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Verjaardagen.png; path = "Resources/Alarm Icons/Verjaardagen.png"; sourceTree = SOURCE_ROOT; };
 		49E3E961177B7BD2001C06C5 /* Verjaardagen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Verjaardagen@2x.png"; path = "Resources/Alarm Icons/Verjaardagen@2x.png"; sourceTree = SOURCE_ROOT; };
+		49E3E974177B883C001C06C5 /* HomeScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HomeScreen.png; path = Resources/HomeScreen.png; sourceTree = SOURCE_ROOT; };
+		49E3E975177B883C001C06C5 /* LoadScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LoadScreen.png; path = Resources/LoadScreen.png; sourceTree = SOURCE_ROOT; };
 		49EB987D176B51A2009B2627 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		49EB987E176B51A2009B2627 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		49EB9881176B5DC0009B2627 /* AlarmsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmsViewController.h; sourceTree = "<group>"; };
@@ -300,8 +300,7 @@
 		497CE6CC177310C7003B7B4F /* StartUp */ = {
 			isa = PBXGroup;
 			children = (
-				49E3E946177B7B5B001C06C5 /* StartUpBackground.png */,
-				49E3E947177B7B5B001C06C5 /* StartUpBackground3.png */,
+				49E3E975177B883C001C06C5 /* LoadScreen.png */,
 			);
 			name = StartUp;
 			path = Resources/Login;
@@ -455,6 +454,7 @@
 		B19A6DE717671DF00026D06C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				49E3E974177B883C001C06C5 /* HomeScreen.png */,
 				49E3E94A177B7B71001C06C5 /* Default-568h@2x.png */,
 				49E3E94B177B7B71001C06C5 /* Default.png */,
 				49E3E94C177B7B72001C06C5 /* Default@2x.png */,
@@ -605,8 +605,6 @@
 				B19A6DF717671DF00026D06C /* Default-568h@2xold.png in Resources */,
 				B19A6DFA17671DF00026D06C /* MainStoryboard.storyboard in Resources */,
 				492A159D1771E87A0009BA44 /* FacebookSDKResources.bundle in Resources */,
-				49E3E948177B7B5B001C06C5 /* StartUpBackground.png in Resources */,
-				49E3E949177B7B5B001C06C5 /* StartUpBackground3.png in Resources */,
 				49E3E94D177B7B73001C06C5 /* Default-568h@2x.png in Resources */,
 				49E3E94E177B7B73001C06C5 /* Default.png in Resources */,
 				49E3E94F177B7B73001C06C5 /* Default@2x.png in Resources */,
@@ -628,6 +626,8 @@
 				49E3E971177B7BD2001C06C5 /* Uitjes@2x.png in Resources */,
 				49E3E972177B7BD2001C06C5 /* Verjaardagen.png in Resources */,
 				49E3E973177B7BD2001C06C5 /* Verjaardagen@2x.png in Resources */,
+				49E3E976177B883C001C06C5 /* HomeScreen.png in Resources */,
+				49E3E977177B883C001C06C5 /* LoadScreen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

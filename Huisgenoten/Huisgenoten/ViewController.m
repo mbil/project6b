@@ -19,16 +19,10 @@
     [self.navigationController setNavigationBarHidden:YES];
 }
 
-- (void)viewDidLoad
+- (IBAction)infoButton:(id)sender
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Info" message:@"Druk op:\n\n - de wekker om een alarm te zetten\n\n - de koelkast om een boodschappenlijstje samen te stellen\n\n - het spaarvarkentje om je uitgaven te checken." delegate:nil cancelButtonTitle:@"Okey" otherButtonTitles:nil, nil];
+    [alert show];
 }
 
 @end

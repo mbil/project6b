@@ -11,4 +11,6 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)infoButton:(id)sender;
+
 @end
