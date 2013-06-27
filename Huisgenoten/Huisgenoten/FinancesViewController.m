@@ -15,23 +15,24 @@
 
 @implementation FinancesViewController
 
-@synthesize finances=_finances;
-@synthesize purchases=_purchases;
-@synthesize selectedCellText=_selectedCellText;
-@synthesize price=_price;
-@synthesize moneySpendLabel=_moneySpendLabel;
+//@synthesize finances=_finances;
+//@synthesize purchases=_purchases;
+//@synthesize selectedCellText=_selectedCellText;
+//@synthesize price=_price;
+//@synthesize moneySpendLabel=_moneySpendLabel;
 
-#pragma mark -
+//#pragma mark -
 #pragma mark Initialization
-- (id)initWithStyle:(UITableViewStyle)style {
-    self = [super initWithStyle:style];
-    
-    if (self) {
-        
-    }
-    
-    return self;
-}
+//- (id)initWithStyle:(UITableViewStyle)style
+//{
+//    self = [super initWithStyle:style];
+//    
+//    if (self) {
+//        
+//    }
+//    
+//    return self;
+//}
 
 
 - (NSManagedObjectContext *)managedObjectContext
@@ -41,11 +42,10 @@
     if ([delegate performSelector:@selector(managedObjectContext)]) {
         context = [delegate managedObjectContext];
     }
+    
     return context;
 }
 
-
-#pragma mark -
 #pragma mark View Life Cycle
 - (void)viewDidLoad
 {
@@ -53,12 +53,11 @@
     self.tableView.tableHeaderView = [[UIView alloc] init];
     self.finances = [[Finances alloc] init];
     [self show];
-
 }
 
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
     self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:51/255.0f green:51/255.0f blue:51/255.0f alpha:1];
 
     // Fetch the devices from persistent data store
@@ -68,17 +67,19 @@
     [self.tableView reloadData];
 }
 
-#pragma mark -
 #pragma mark Table View Data Source Methods
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     return self.purchases.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     static NSString *boughtCellIdentifier = @"BoughtItemCell";
     
     // Fetch Item
@@ -99,19 +100,13 @@
     } else {
         [cell.textLabel setText:@""];
     }
+    
     [cell.detailTextLabel setText:[NSString stringWithFormat:@"€%.2f", [[purchase valueForKey:@"price"] floatValue]]];
     
     return cell;
 }
 
-
-
-
 #pragma mark Table View Delegate Methods
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-}
-
-
 // Override to support conditional rearranging of the table view.
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -152,7 +147,8 @@
 }
 
 #pragma mark - IBActions
-- (IBAction)resetSpendings:(id)sender {
+- (IBAction)resetSpendings:(id)sender
+{
     NSInteger myValue = 0; // This is your number
     NSString *key = @"sum"; // This is a string to identify your number
     [[NSUserDefaults standardUserDefaults] setInteger:myValue forKey:key];
@@ -200,11 +196,13 @@
     [self show];
 }
 
-- (void)editButtonPressed:(id)sender {
+- (void)editButtonPressed:(id)sender
+{
     self.editing = !self.editing;
 }
 
-- (IBAction)backAction:(id)sender {
+- (IBAction)backAction:(id)sender
+{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

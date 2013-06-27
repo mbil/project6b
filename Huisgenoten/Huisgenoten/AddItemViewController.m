@@ -15,25 +15,14 @@
 
 @implementation AddItemViewController
 
-@synthesize nameField = _nameField;
-@synthesize itemListViewController = _itemListViewController;
-
-- (NSManagedObjectContext *)managedObjectContext {
+- (NSManagedObjectContext *)managedObjectContext
+{
     NSManagedObjectContext *context = nil;
     id delegate = [[UIApplication sharedApplication] delegate];
     if ([delegate performSelector:@selector(managedObjectContext)]) {
         context = [delegate managedObjectContext];
     }
     return context;
-}
-
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-
-    }
-    return self;
 }
 
 - (void)viewDidLoad
@@ -48,19 +37,20 @@
 
 }
 
-- (void) hideKeyboard {
+- (void) hideKeyboard
+{
     [_nameField resignFirstResponder];
 }
 
 #pragma mark - IBActions
-
-- (void)cancelButtonPressed:(id)sender {
+- (void)cancelButtonPressed:(id)sender
+{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)doneButtonPressed:(id)sender {
+- (void)doneButtonPressed:(id)sender
+{
     // add new item to the shoppinglist
-    
     NSManagedObjectContext *context = [self managedObjectContext];
     
     // Create a new managed object

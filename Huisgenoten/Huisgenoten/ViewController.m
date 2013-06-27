@@ -21,7 +21,7 @@
 
 - (IBAction)infoButton:(id)sender
 {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Info" message:@"Druk op:\n\n - de wekker om een alarm te zetten\n\n - de koelkast om een boodschappenlijstje samen te stellen\n\n - het spaarvarkentje om je uitgaven te checken." delegate:nil cancelButtonTitle:@"Okey" otherButtonTitles:nil, nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"" message:@"Druk op:\n\n - de wekker om een alarm te zetten\n\n - de koelkast om een boodschappenlijstje samen te stellen\n\n - het spaarvarkentje om je uitgaven te checken." delegate:nil cancelButtonTitle:@"Okey" otherButtonTitles:nil, nil];
     [alert show];
 }
 

@@ -28,7 +28,6 @@
 @property (nonatomic, weak) id <ListDetailViewControllerDelegate> delegate;
 @property (nonatomic, strong) Alarm *listToEdit;
 
-
 - (IBAction)cancel;
 - (IBAction)done;
 

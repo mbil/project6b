@@ -14,33 +14,16 @@
 
 @implementation EditItemViewController
 
-@synthesize nameField=_nameField;
-@synthesize priceField=_priceField;
-@synthesize boughtSwitch=_boughtSwitch;
-@synthesize purchase=_purchase;
-@synthesize item=_item;
-@synthesize finances=_finances;
-@synthesize price=_price;
-@synthesize sections=_sections;
-
-- (NSManagedObjectContext *)managedObjectContext {
+- (NSManagedObjectContext *)managedObjectContext
+{
     NSManagedObjectContext *context = nil;
     id delegate = [[UIApplication sharedApplication] delegate];
     if ([delegate performSelector:@selector(managedObjectContext)]) {
         context = [delegate managedObjectContext];
     }
+    
     return context;
 }
-
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 
 - (void)viewDidLoad
 {
@@ -61,23 +44,22 @@
     self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:51/255.0f green:51/255.0f blue:51/255.0f alpha:1];
 }
 
-- (void) hideKeyboard {
+- (void) hideKeyboard
+{
     [_nameField resignFirstResponder];
     [_priceField resignFirstResponder];
 }
 
 #pragma mark - IBActions
-- (void)itemDataChanged:(id)sender {
-    
+- (void)itemDataChanged:(id)sender
+{
     [self.item setValue:self.nameField.text forKey:@"item"];
     [self.item setValue:[NSNumber numberWithFloat:[self.priceField.text floatValue]] forKey:@"price"];
 }
 
-
-
 // Adding item to finance object
-- (void)addToFinances:(id)sender {
-    
+- (void)addToFinances:(id)sender
+{    
     // set price
     self.price = ([self.priceField.text floatValue] * 100);
     
@@ -96,12 +78,11 @@
     [newPurchase setValue:[NSDate date] forKey:@"date"];
 
     [self.navigationController popViewControllerAnimated:YES];
-    
 }
 
-
 // change number of sections in the view to make the pricefield appear
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
     // Return the number of sections.
     bool bought = [_item valueForKey:@"bought"];
     if (bought == NO) {
@@ -114,7 +95,8 @@
 }
 
 // make pricefield appear
-- (void)itemBought:(id)sender {
+- (void)itemBought:(id)sender
+{
     bool bought = self.boughtSwitch.isOn;
     if (bought == NO) {
         [self.item setValue:NO forKey:@"bought"];
@@ -130,8 +112,8 @@
 }
 
 // pricefield check
--(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
-   
+-(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
     if([string length]==0){
         return YES;
     }
@@ -155,29 +137,29 @@
                 NSString *sepStr=[NSString stringWithFormat:@"%@",[sep objectAtIndex:1]];
                 return !([sepStr length]>2);
             }
-            return YES;
             
+            return YES;
         }
-        
     }
     
     return NO;
 }
 
 // set placeholder for pricefield
-- (void)textFieldDidBeginEditing:(UITextField *)textField {
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
     textField.placeholder = textField.text;
     textField.text = @"";
 }
 
 // if pricefield hasnt been changed, set placeholder as text again
-- (void)textFieldDidEndEditing:(UITextField *)textField {
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
     if (textField.text.length == 0) {
         textField.text = textField.placeholder;
     }
+    
     textField.placeholder = @"";
 }
-
-
 
 @end

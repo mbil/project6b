@@ -10,7 +10,7 @@
 
 @implementation Finances
 
-@synthesize balance=_balance;
+//@synthesize balance=_balance;
 
 - (id)init
 {
@@ -21,6 +21,7 @@
         // zet de eerste balance op 0 of verder de waarde van de UserDefault zoals toegekend in EditItemViewController
         self.balance = [[NSUserDefaults standardUserDefaults] integerForKey:key];
     }
+    
     return self;
 }
 

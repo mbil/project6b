@@ -17,20 +17,7 @@
 
 @implementation ShoppinglistViewController
 
-@synthesize items = _items;
-
-#pragma mark -
 #pragma mark Initialization
-- (id)initWithStyle:(UITableViewStyle)style {
-    self = [super initWithStyle:style];
-    
-    if (self) {
-    
-    }
-    
-    return self;
-}
-
 - (NSManagedObjectContext *)managedObjectContext
 {
     NSManagedObjectContext *context = nil;
@@ -41,14 +28,15 @@
     return context;
 }
 
-#pragma mark -
 #pragma mark View Life Cycle
-
-- (void)viewWillAppear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated
+{
     [super viewDidAppear:animated];
     
     self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:51/255.0f green:51/255.0f blue:51/255.0f alpha:1];
     
+    self.tableView.tableFooterView = [[UIView alloc] init];
+
     // Fetch the items from persistent data store
     NSManagedObjectContext *managedObjectContext = [self managedObjectContext];
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Item"];
@@ -56,17 +44,19 @@
     [self.tableView reloadData];
 }
 
-#pragma mark -
 #pragma mark Table View Data Source Methods
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     return self.items.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {    
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     // Check if item is bought and assign cell identifier
     static NSString *notBoughtCellIdentifier = @"NotBoughtItemCell";
     static NSString *boughtCellIdentifier = @"BoughtItemCell";
@@ -86,15 +76,7 @@
     [cell.detailTextLabel setText:[NSString stringWithFormat:@"€ %.2f", [[item valueForKey:@"price"] floatValue]]];
     
     return cell;
-    
 }
-
-
-#pragma mark Table View Delegate Methods
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-}
-
 
 #pragma mark Actions
 // Prepare for segue
@@ -111,7 +93,6 @@
         EditItemViewController *editItemViewController = segue.destinationViewController;
         editItemViewController.item = selectedItem;
     }
-    
 }
 
 // Rearranging the table view
@@ -148,11 +129,13 @@
 }
 
 #pragma mark - IBActions
-- (void)editButtonPressed:(id)sender {
+- (void)editButtonPressed:(id)sender
+{
     self.editing = !self.editing;
 }
 
-- (IBAction)backAction:(id)sender {
+- (IBAction)backAction:(id)sender
+{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
